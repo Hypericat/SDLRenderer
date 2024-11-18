@@ -1,0 +1,12 @@
+# ninja log v6
+8	549	7536369884740236	CMakeFiles/SDLRenderer.dir/main.cpp.obj	4bff5be70bdcd393
+9	555	7536370403569704	CMakeFiles/SDLRenderer.dir/main.cpp.obj	860ffe383d9406dc
+22	600	7536370875935859	CMakeFiles/SDLRenderer.dir/main.cpp.obj	860ffe383d9406dc
+600	715	7536370881713189	SDLRenderer.exe	8683abb40126a659
+4	558	7536371498745024	CMakeFiles/SDLRenderer.dir/main.cpp.obj	860ffe383d9406dc
+558	608	7536371504286255	SDLRenderer.exe	8683abb40126a659
+4	602	7536371959105934	CMakeFiles/SDLRenderer.dir/main.cpp.obj	860ffe383d9406dc
+602	653	7536371965079365	SDLRenderer.exe	8683abb40126a659
+3	571	7536372242722539	CMakeFiles/SDLRenderer.dir/main.cpp.obj	860ffe383d9406dc
+3	597	7536372369534430	CMakeFiles/SDLRenderer.dir/main.cpp.obj	860ffe383d9406dc
+597	647	7536372375476436	SDLRenderer.exe	8683abb40126a659
