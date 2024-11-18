@@ -6,7 +6,13 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/SDL2")
 
 
-add_executable(SDLRenderer main.cpp)
+add_executable(SDLRenderer main.cpp
+        Window.cpp
+        Window.h
+        Uitl/RGB.cpp
+        Uitl/RGB.h
+        Uitl/Color.cpp
+        Uitl/Color.h)
 
 
 find_package(SDL2 REQUIRED)
