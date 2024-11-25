@@ -50,7 +50,7 @@ void Game::stop() {
 
 void Game::renderFrame() {
     this->window.getRenderer().render();
-    SDL_GL_SwapWindow(window.getSDLWindow());
+    //SDL_GL_SwapWindow(window.getSDLWindow());
 }
 
 

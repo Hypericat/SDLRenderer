@@ -5,45 +5,11 @@
 #include "Renderer.h"
 
 #include <cstdio>
-#include <SDL_opengl.h>
-#include <GL\GLU.h>
+#include <iostream>
+#include <ostream>
+#include <SDL.h>
 
 bool Renderer::init() {
-    //enable vsync
-    SDL_GL_SetSwapInterval(1);
-    GLenum error = GL_NO_ERROR;
-
-    //Initialize Projection Matrix
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-
-    //Check for error
-    error = glGetError();
-    if(error != GL_NO_ERROR) {
-        printf( "Error initializing OpenGL! %p\n", gluErrorString(error));
-        return false;
-    }
-
-    //Initialize Modelview Matrix
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
-
-    //Check for error
-    error = glGetError();
-    if(error != GL_NO_ERROR) {
-        printf( "Error initializing OpenGL! %p\n", gluErrorString(error));
-        return false;
-    }
-
-    //Initialize clear color
-    glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
-
-    error = glGetError();
-    if(error != GL_NO_ERROR) {
-        printf( "Error initializing OpenGL! %p\n", gluErrorString(error));
-        return false;
-    }
-
     return true;
 }
 
@@ -52,21 +18,75 @@ void Renderer::update() {
 }
 
 void Renderer::render() {
-    //Clear color buffer
-    glClear( GL_COLOR_BUFFER_BIT );
+    //SDL_Surface* surface = SDL_GetWindowSurface(m_window);
 
-    //Render quad
-    if(gRenderQuad)
-    {
-        glBegin( GL_QUADS );
-        glVertex2f( -0.5f, -0.5f );
-        glVertex2f( 0.5f, -0.5f );
-        glVertex2f( 0.5f, 0.5f );
-        glVertex2f( -0.5f, 0.5f );
-        glEnd();
-    }
+    //background color
+    SDL_SetRenderDrawColor(this->m_renderer, 255, 0, 0, 255);
+    SDL_RenderClear(this->m_renderer);
+
+    int* mouseX = new int();
+    int* mouseY = new int();
+    SDL_GetMouseState(mouseX, mouseY);
+
+    SDL_Rect rect = rectCentered(*mouseX, *mouseY, 50, 50);
+
+    std::cout << *mouseX << " " << *mouseY << std::endl;
+
+    delete mouseX;
+    delete mouseY;
+
+    //rect color
+    SDL_SetRenderDrawColor(this->m_renderer, 0, 0, 255, 255);
+
+    // Render rect
+    SDL_RenderFillRect(this->m_renderer, &rect);
+
+
+    // Render the rect to the screen
+    SDL_RenderPresent(this->m_renderer);
+
+    renderSprite(testSprite);
+
+    //SDL_UpdateWindowSurface(m_window);
 }
 
-void Renderer::close() {
+void Renderer::renderSurface(SDL_Surface *surface) {
+    SDL_Rect rect = rectCentered(50, 50, 50, 50);
+    SDL_BlitScaled( surface, NULL, m_windowSurface, &rect);
+}
 
+void Renderer::renderSprite(Sprite *sprite) {
+    this->renderSurface(sprite->getSurface());
+}
+
+void Renderer::destroy() {
+    SDL_FreeSurface(this->m_windowSurface);
+}
+
+SDL_Rect Renderer::rectCentered(int x, int y, int width, int height) {
+    SDL_Rect r;
+    r.x = x - (width >> 1);
+    r.y = y - (height >> 1);
+    r.w = width;
+    r.h = height;
+    return r;
+}
+
+SDL_Rect Renderer::rectCoord(int x1, int y1, int x2, int y2) {
+    int temp;
+    if (x1 > x2) {
+        temp = x1;
+        x1 = x2;
+        x2 = temp;
+    }
+    if (y1 > y2) {
+        temp = y1;
+        y1 = y2;
+        y2 = temp;
+    }
+    return rect(x1, y1, x2 - x1, y2 - y1);
+}
+
+SDL_Rect Renderer::rect(int x, int y, int width, int height) {
+    return SDL_Rect { x, y, width, height };
 }

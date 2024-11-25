@@ -31,21 +31,15 @@ void Window::initWindow(std::string name, int flags) {
       flags
     );
 
-    //this->m_renderer = SDL_CreateRenderer(this->m_sdlWindow, -1, SDL_WINDOW_OPENGL);
 
-    this->m_glContext = SDL_GL_CreateContext(this->m_sdlWindow);
-
-    if(this->m_glContext == NULL) {
-        printf( "OpenGL context could not be created! SDL Error: %s\n", SDL_GetError() );
-    }
-
-    // just allocated it on the heap I don't care anymore
-    this->m_renderer = new Renderer(m_sdlWindow, m_glContext);
+    this->m_renderer = new Renderer(m_sdlWindow, SDL_CreateRenderer(this->m_sdlWindow, -1, SDL_WINDOW_OPENGL));
     this->m_renderer->init();
 }
 
 void Window::destroyWindow() const {
+    m_renderer->destroy();
     SDL_DestroyWindow(this->m_sdlWindow);
+    delete this->m_renderer;
 }
 
 Renderer &Window::getRenderer() {
@@ -54,8 +48,4 @@ Renderer &Window::getRenderer() {
 
 SDL_Window *Window::getSDLWindow() {
     return this->m_sdlWindow;
-}
-
-SDL_GLContext Window::getGlContext() {
-    return this->m_glContext;
 }

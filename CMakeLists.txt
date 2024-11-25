@@ -12,12 +12,27 @@ add_executable(SDLRenderer main.cpp
         Game.cpp
         Game.h
         Renderer.cpp
-        Renderer.h)
+        Renderer.h
+        sprite.cpp
+        sprite.h)
 
 
 find_package(SDL2 REQUIRED)
+
 include_directories("${SDL2_INCLUDE_DIRS}")
+
 target_link_libraries(SDLRenderer SDL2::SDL2)
+
+
+
+
+#set(GLEW_INCLUDE_DIR "glew-2.2.0/include")
+#
+#set(CMAKE_PREFIX_PATH ${CMAKE_CURRENT_SOURCE_DIR}/glew-2.2.0)
+#
+#find_package(glew-2.2.0 REQUIRED)
+#
+#target_link_libraries(engine PUBLIC ${GLEW_LIBRARY})
 
 
 

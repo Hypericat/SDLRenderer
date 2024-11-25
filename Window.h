@@ -14,7 +14,6 @@ class Window {
 private:
     SDL_Window* m_sdlWindow{};
     Renderer *m_renderer{};
-    SDL_GLContext m_glContext{};
     int m_width;
     int m_height;
 
@@ -30,7 +29,6 @@ public:
     void destroyWindow() const;
 
     SDL_Window *getSDLWindow();
-    SDL_GLContext getGlContext();
     Renderer &getRenderer();
 
 
