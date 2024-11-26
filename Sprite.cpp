@@ -8,7 +8,8 @@
 
 Sprite::Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, std::string path) {
     this->m_path = "assets\\textures\\" + std::move(path);
-    this->m_surface = SDL_ConvertSurface(surface, fmt, 0);
+    //SDL_Surface *optimized = SDL_ConvertSurface(surface, fmt, 0);
+    this->m_texture = SDL_CreateTextureFromSurface(renderer, surface);
 
     // remove the original
     SDL_FreeSurface(surface);
@@ -25,8 +26,8 @@ std::unique_ptr<Sprite> Sprite::fromBMP(const std::string& path, const SDL_Pixel
     return std::unique_ptr<Sprite> (new Sprite(surface, fmt, path));
 }
 
-SDL_Surface *Sprite::getSurface() {
-    return m_surface;
+SDL_Texture *Sprite::getTexture() {
+    return m_texture;
 }
 
 const std::string &Sprite::getPath() {
@@ -34,6 +35,6 @@ const std::string &Sprite::getPath() {
 }
 
 Sprite::~Sprite() {
-    SDL_FreeSurface(m_surface);
-    m_surface = nullptr;
+    SDL_DestroyTexture(m_texture);
+    m_texture = nullptr;
 }

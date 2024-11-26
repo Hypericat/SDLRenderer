@@ -31,8 +31,12 @@ void Window::initWindow(std::string name, int flags) {
       flags
     );
 
+    SDL_Renderer *internalRenderer = SDL_CreateRenderer(this->m_sdlWindow, -1, SDL_WINDOW_OPENGL);
 
-    this->m_renderer = new Renderer(m_sdlWindow, SDL_CreateRenderer(this->m_sdlWindow, -1, SDL_WINDOW_OPENGL));
+    Sprite::renderer = internalRenderer;
+
+
+    this->m_renderer = new Renderer(m_sdlWindow, internalRenderer);
     this->m_renderer->init();
 }
 

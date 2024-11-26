@@ -1534,9 +1534,11 @@ CMakeFiles/SDLRenderer.dir/sprite.cpp.obj: C:/Users/Hypericats/CLionProjects/SDL
   C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_pixels.h \
   C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_platform.h \
   C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_rect.h \
+  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_render.h \
   C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_rwops.h \
   C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_stdinc.h \
   C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_surface.h \
+  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_video.h \
   C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/begin_code.h \
   C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/close_code.h \
   C:/Users/Hypericats/CLionProjects/SDLRenderer/Sprite.h \

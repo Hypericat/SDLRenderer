@@ -334,4 +334,5 @@ CMakeFiles/SDLRenderer.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
  C:\Users\Hypericats\CLionProjects\SDLRenderer\Sprite.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_render.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_surface.h

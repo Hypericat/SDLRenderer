@@ -17,7 +17,7 @@ private:
     SDL_Renderer *m_renderer;
     SDL_Surface *m_windowSurface;
     bool gRenderQuad = true;
-    void renderSurface(SDL_Surface *surface);
+    void renderTex(SDL_Texture *texture);
     void renderSprite(Sprite *sprite);
 
 

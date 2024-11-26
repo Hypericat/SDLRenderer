@@ -30,33 +30,51 @@ void Renderer::render() {
 
     SDL_Rect rect = rectCentered(*mouseX, *mouseY, 50, 50);
 
-    std::cout << *mouseX << " " << *mouseY << std::endl;
+    //std::cout << *mouseX << " " << *mouseY << std::endl;
 
     delete mouseX;
     delete mouseY;
 
     //rect color
-    SDL_SetRenderDrawColor(this->m_renderer, 0, 0, 255, 255);
+    SDL_SetRenderDrawColor(this->m_renderer, 0, 255, 0, 255);
 
     // Render rect
     SDL_RenderFillRect(this->m_renderer, &rect);
 
 
-    // Render the rect to the screen
-    SDL_RenderPresent(this->m_renderer);
+    // Render the rect to the screen DONT CALL THIS MORE THAN ONCE PER FRAME
+    //SDL_RenderPresent(this->m_renderer);
 
     renderSprite(testSprite);
 
     //SDL_UpdateWindowSurface(m_window);
 }
 
-void Renderer::renderSurface(SDL_Surface *surface) {
+//void Renderer::renderSurface(SDL_Surface *surface) {
+//    SDL_Rect rect = rectCentered(50, 50, 50, 50);
+//   SDL_BlitScaled( surface, NULL, m_windowSurface, &rect);
+//}
+
+void Renderer::renderTex(SDL_Texture *texture) {
     SDL_Rect rect = rectCentered(50, 50, 50, 50);
-    SDL_BlitScaled( surface, NULL, m_windowSurface, &rect);
+
+    if (texture == nullptr) {
+        std::cout << "texture is null" << std::endl;
+    }
+
+    SDL_RenderClear(m_renderer);
+    SDL_RenderCopy(m_renderer, texture, NULL, &rect);
+    SDL_RenderPresent(m_renderer);
+
+    SDL_UpdateWindowSurface(m_window);
+
 }
 
 void Renderer::renderSprite(Sprite *sprite) {
-    this->renderSurface(sprite->getSurface());
+    if (sprite == nullptr) {
+        std::cout << "sprite is null" << std::endl;
+    }
+    this->renderTex(sprite->getTexture());
 }
 
 void Renderer::destroy() {

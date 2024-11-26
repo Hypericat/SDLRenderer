@@ -224,6 +224,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sprite.obj: sprite.cpp.obj
+.PHONY : sprite.obj
+
+# target to build an object file
+sprite.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/sprite.cpp.obj
+.PHONY : sprite.cpp.obj
+
+sprite.i: sprite.cpp.i
+.PHONY : sprite.i
+
+# target to preprocess a source file
+sprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/sprite.cpp.i
+.PHONY : sprite.cpp.i
+
+sprite.s: sprite.cpp.s
+.PHONY : sprite.s
+
+# target to generate assembly for a file
+sprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/sprite.cpp.s
+.PHONY : sprite.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -245,6 +269,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... sprite.obj
+	@echo ... sprite.i
+	@echo ... sprite.s
 .PHONY : help
 
 

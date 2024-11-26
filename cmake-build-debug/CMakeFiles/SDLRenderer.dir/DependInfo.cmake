@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Renderer.cpp" "CMakeFiles/SDLRenderer.dir/Renderer.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Renderer.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Window.cpp" "CMakeFiles/SDLRenderer.dir/Window.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Window.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/main.cpp" "CMakeFiles/SDLRenderer.dir/main.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/main.cpp.obj.d"
+  "C:/Users/Hypericats/CLionProjects/SDLRenderer/sprite.cpp" "CMakeFiles/SDLRenderer.dir/sprite.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/sprite.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDLRenderer.dir/Window.cpp.obj.d"
   "CMakeFiles/SDLRenderer.dir/main.cpp.obj"
   "CMakeFiles/SDLRenderer.dir/main.cpp.obj.d"
+  "CMakeFiles/SDLRenderer.dir/sprite.cpp.obj"
+  "CMakeFiles/SDLRenderer.dir/sprite.cpp.obj.d"
   "SDLRenderer.exe"
   "SDLRenderer.exe.manifest"
   "SDLRenderer.pdb"
