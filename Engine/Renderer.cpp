@@ -7,6 +7,7 @@
 #include <cstdio>
 #include <iostream>
 #include <ostream>
+#include <random>
 #include <SDL.h>
 
 bool Renderer::init() {
@@ -31,44 +32,48 @@ void Renderer::render() {
 
     SDL_Rect rect = rectCentered(*mouseX, *mouseY, 50, 50);
 
-    //std::cout << *mouseX << " " << *mouseY << std::endl;
-
-    delete mouseX;
-    delete mouseY;
-
     //rect color
     SDL_SetRenderDrawColor(this->m_renderer, 0, 255, 0, 255);
 
     // Render rect
     SDL_RenderFillRect(this->m_renderer, &rect);
 
+    renderCenteredSprite(testSprite, *mouseX, *mouseY);
 
-    // Render the rect to the screen DONT CALL THIS MORE THAN ONCE PER FRAME
-    //SDL_RenderPresent(this->m_renderer);
-
-    renderTex(testSprite->getTexture());
+    delete mouseX;
+    delete mouseY;
 
     //SDL_UpdateWindowSurface(m_window);
 
+
+
+    // Render frame to the screen DON'T CALL THIS MORE THAN ONCE PER FRAME
     SDL_RenderPresent(this->m_renderer);
 }
 
-void Renderer::renderTex(SDL_Texture *texture) const {
-    SDL_Rect rect = rectCentered(50, 50, 50, 50);
-
-    SDL_RenderClear(m_renderer);
-    SDL_RenderCopy(m_renderer, texture, NULL, &rect);
-
+void Renderer::renderTex(SDL_Texture *texture, const SDL_Rect *dimensions) const {
+    //SDL_RenderClear(m_renderer);
+    SDL_RenderCopy(m_renderer, texture, NULL, dimensions);
     SDL_UpdateWindowSurface(m_window);
-
 }
 
-void Renderer::renderSprite(Sprite *sprite) const {
-    if (sprite == nullptr) {
-        std::cout << "sprite is null" << std::endl;
-    }
-    this->renderTex(sprite->getTexture());
+void Renderer::renderSprite(const Sprite *sprite, int x, int y) const {
+    SDL_Rect dimensions;
+    dimensions.x = x;
+    dimensions.y = y;
+    dimensions.w = sprite->getWidth();
+    dimensions.h = sprite->getHeight();
+    this->renderTex(sprite->getTexture(), &dimensions);
 }
+void Renderer::renderCenteredSprite(const Sprite *sprite, int x, int y) const {
+    SDL_Rect dimensions;
+    dimensions.x = x - (sprite->getWidth() >> 1);
+    dimensions.y = y - (sprite->getHeight() >> 1);
+    dimensions.w = sprite->getWidth();
+    dimensions.h = sprite->getHeight();
+    this->renderTex(sprite->getTexture(), &dimensions);
+}
+
 
 void Renderer::destroy() {
     SDL_FreeSurface(this->m_windowSurface);

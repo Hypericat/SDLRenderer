@@ -7,14 +7,14 @@ set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/SDL2")
 
 
 add_executable(SDLRenderer main.cpp
-        Window.cpp
-        Window.h
-        Game.cpp
-        Game.h
-        Renderer.cpp
-        Renderer.h
-        sprite.cpp
-        sprite.h)
+        Engine/Window.cpp
+        Engine/Window.h
+        Game/Game.cpp
+        Game/Game.h
+        Engine/Renderer.cpp
+        Engine/Renderer.h
+        Engine/Sprite.cpp
+        Engine/Sprite.h)
 
 
 find_package(SDL2 REQUIRED)

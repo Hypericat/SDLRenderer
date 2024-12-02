@@ -4,7 +4,7 @@
 
 #ifndef GAME_H
 #define GAME_H
-#include "Window.h"
+#include "../Engine/Window.h"
 
 
 class Game {

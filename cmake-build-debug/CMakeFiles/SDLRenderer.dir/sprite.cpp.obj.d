@@ -193,5 +193,6 @@ CMakeFiles/SDLRenderer.dir/sprite.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_surface.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_blendmode.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_surface.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_filesystem.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h

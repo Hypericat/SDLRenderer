@@ -128,77 +128,101 @@ SDLRenderer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/build
 .PHONY : SDLRenderer/fast
 
-Game.obj: Game.cpp.obj
-.PHONY : Game.obj
+Engine/Renderer.obj: Engine/Renderer.cpp.obj
+.PHONY : Engine/Renderer.obj
 
 # target to build an object file
-Game.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game.cpp.obj
-.PHONY : Game.cpp.obj
+Engine/Renderer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj
+.PHONY : Engine/Renderer.cpp.obj
 
-Game.i: Game.cpp.i
-.PHONY : Game.i
+Engine/Renderer.i: Engine/Renderer.cpp.i
+.PHONY : Engine/Renderer.i
 
 # target to preprocess a source file
-Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game.cpp.i
-.PHONY : Game.cpp.i
+Engine/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.i
+.PHONY : Engine/Renderer.cpp.i
 
-Game.s: Game.cpp.s
-.PHONY : Game.s
+Engine/Renderer.s: Engine/Renderer.cpp.s
+.PHONY : Engine/Renderer.s
 
 # target to generate assembly for a file
-Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game.cpp.s
-.PHONY : Game.cpp.s
+Engine/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.s
+.PHONY : Engine/Renderer.cpp.s
 
-Renderer.obj: Renderer.cpp.obj
-.PHONY : Renderer.obj
+Engine/Sprite.obj: Engine/Sprite.cpp.obj
+.PHONY : Engine/Sprite.obj
 
 # target to build an object file
-Renderer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Renderer.cpp.obj
-.PHONY : Renderer.cpp.obj
+Engine/Sprite.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj
+.PHONY : Engine/Sprite.cpp.obj
 
-Renderer.i: Renderer.cpp.i
-.PHONY : Renderer.i
+Engine/Sprite.i: Engine/Sprite.cpp.i
+.PHONY : Engine/Sprite.i
 
 # target to preprocess a source file
-Renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Renderer.cpp.i
-.PHONY : Renderer.cpp.i
+Engine/Sprite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.i
+.PHONY : Engine/Sprite.cpp.i
 
-Renderer.s: Renderer.cpp.s
-.PHONY : Renderer.s
+Engine/Sprite.s: Engine/Sprite.cpp.s
+.PHONY : Engine/Sprite.s
 
 # target to generate assembly for a file
-Renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Renderer.cpp.s
-.PHONY : Renderer.cpp.s
+Engine/Sprite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.s
+.PHONY : Engine/Sprite.cpp.s
 
-Window.obj: Window.cpp.obj
-.PHONY : Window.obj
+Engine/Window.obj: Engine/Window.cpp.obj
+.PHONY : Engine/Window.obj
 
 # target to build an object file
-Window.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Window.cpp.obj
-.PHONY : Window.cpp.obj
+Engine/Window.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj
+.PHONY : Engine/Window.cpp.obj
 
-Window.i: Window.cpp.i
-.PHONY : Window.i
+Engine/Window.i: Engine/Window.cpp.i
+.PHONY : Engine/Window.i
 
 # target to preprocess a source file
-Window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Window.cpp.i
-.PHONY : Window.cpp.i
+Engine/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.i
+.PHONY : Engine/Window.cpp.i
 
-Window.s: Window.cpp.s
-.PHONY : Window.s
+Engine/Window.s: Engine/Window.cpp.s
+.PHONY : Engine/Window.s
 
 # target to generate assembly for a file
-Window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Window.cpp.s
-.PHONY : Window.cpp.s
+Engine/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.s
+.PHONY : Engine/Window.cpp.s
+
+Game/Game.obj: Game/Game.cpp.obj
+.PHONY : Game/Game.obj
+
+# target to build an object file
+Game/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj
+.PHONY : Game/Game.cpp.obj
+
+Game/Game.i: Game/Game.cpp.i
+.PHONY : Game/Game.i
+
+# target to preprocess a source file
+Game/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Game.cpp.i
+.PHONY : Game/Game.cpp.i
+
+Game/Game.s: Game/Game.cpp.s
+.PHONY : Game/Game.s
+
+# target to generate assembly for a file
+Game/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Game.cpp.s
+.PHONY : Game/Game.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -224,30 +248,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-sprite.obj: sprite.cpp.obj
-.PHONY : sprite.obj
-
-# target to build an object file
-sprite.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/sprite.cpp.obj
-.PHONY : sprite.cpp.obj
-
-sprite.i: sprite.cpp.i
-.PHONY : sprite.i
-
-# target to preprocess a source file
-sprite.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/sprite.cpp.i
-.PHONY : sprite.cpp.i
-
-sprite.s: sprite.cpp.s
-.PHONY : sprite.s
-
-# target to generate assembly for a file
-sprite.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/sprite.cpp.s
-.PHONY : sprite.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -257,21 +257,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... SDLRenderer
-	@echo ... Game.obj
-	@echo ... Game.i
-	@echo ... Game.s
-	@echo ... Renderer.obj
-	@echo ... Renderer.i
-	@echo ... Renderer.s
-	@echo ... Window.obj
-	@echo ... Window.i
-	@echo ... Window.s
+	@echo ... Engine/Renderer.obj
+	@echo ... Engine/Renderer.i
+	@echo ... Engine/Renderer.s
+	@echo ... Engine/Sprite.obj
+	@echo ... Engine/Sprite.i
+	@echo ... Engine/Sprite.s
+	@echo ... Engine/Window.obj
+	@echo ... Engine/Window.i
+	@echo ... Engine/Window.s
+	@echo ... Game/Game.obj
+	@echo ... Game/Game.i
+	@echo ... Game/Game.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... sprite.obj
-	@echo ... sprite.i
-	@echo ... sprite.s
 .PHONY : help
 
 

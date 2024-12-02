@@ -16,9 +16,9 @@ private:
     SDL_Window *m_window;
     SDL_Renderer *m_renderer;
     SDL_Surface *m_windowSurface;
-    bool gRenderQuad = true;
-    void renderTex(SDL_Texture *texture) const;
-    void renderSprite(Sprite *sprite) const;
+    void renderTex(SDL_Texture *texture, const SDL_Rect *dimensions) const;
+    void renderSprite(const Sprite *sprite, int x, int y) const;
+    void renderCenteredSprite(const Sprite *sprite, int x, int y) const;
 
 
 public:

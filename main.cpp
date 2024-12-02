@@ -1,9 +1,10 @@
 #define SDL_MAIN_HANDLED
 
+#include <iostream>
 #include <SDL.h>
 
-#include "Game.h"
-#include "Window.h"
+#include "Game/Game.h"
+#include "Engine/Window.h"
 
 static const std::string WINDOW_TITLE = "Mighty Triangle";
 
