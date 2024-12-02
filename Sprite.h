@@ -17,13 +17,13 @@ private:
     std::string m_path;
 
 public:
-    static std::unique_ptr<Sprite> fromBMP(const std::string& path, const SDL_PixelFormat *fmt);
+    static Sprite* fromBMP(std::string& path, const SDL_PixelFormat *fmt);
     ~Sprite();
 
     //idc
     inline static SDL_Renderer *renderer;
 
-    SDL_Texture *getTexture();
+    SDL_Texture *getTexture() const;
     const std::string& getPath();
 };
 

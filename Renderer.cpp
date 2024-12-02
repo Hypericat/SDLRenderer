@@ -10,6 +10,8 @@
 #include <SDL.h>
 
 bool Renderer::init() {
+    std::string path = "test.bmp";
+    testSprite = Sprite::fromBMP(path, m_windowSurface->format);
     return true;
 }
 
@@ -18,7 +20,6 @@ void Renderer::update() {
 }
 
 void Renderer::render() {
-    //SDL_Surface* surface = SDL_GetWindowSurface(m_window);
 
     //background color
     SDL_SetRenderDrawColor(this->m_renderer, 255, 0, 0, 255);
@@ -45,32 +46,24 @@ void Renderer::render() {
     // Render the rect to the screen DONT CALL THIS MORE THAN ONCE PER FRAME
     //SDL_RenderPresent(this->m_renderer);
 
-    renderSprite(testSprite);
+    renderTex(testSprite->getTexture());
 
     //SDL_UpdateWindowSurface(m_window);
+
+    SDL_RenderPresent(this->m_renderer);
 }
 
-//void Renderer::renderSurface(SDL_Surface *surface) {
-//    SDL_Rect rect = rectCentered(50, 50, 50, 50);
-//   SDL_BlitScaled( surface, NULL, m_windowSurface, &rect);
-//}
-
-void Renderer::renderTex(SDL_Texture *texture) {
+void Renderer::renderTex(SDL_Texture *texture) const {
     SDL_Rect rect = rectCentered(50, 50, 50, 50);
-
-    if (texture == nullptr) {
-        std::cout << "texture is null" << std::endl;
-    }
 
     SDL_RenderClear(m_renderer);
     SDL_RenderCopy(m_renderer, texture, NULL, &rect);
-    SDL_RenderPresent(m_renderer);
 
     SDL_UpdateWindowSurface(m_window);
 
 }
 
-void Renderer::renderSprite(Sprite *sprite) {
+void Renderer::renderSprite(Sprite *sprite) const {
     if (sprite == nullptr) {
         std::cout << "sprite is null" << std::endl;
     }
