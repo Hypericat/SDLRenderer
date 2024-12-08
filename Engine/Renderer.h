@@ -8,6 +8,7 @@
 #include <memory>
 #include <SDL.h>
 
+#include "GameObject.h"
 #include "Sprite.h"
 
 
@@ -25,7 +26,9 @@ public:
     bool init();
     void update();
     void render();
-    void destroy();
+    void destroy() const;
+
+    void renderGameObject(const GameObject *gameObject) const;
 
     Sprite* testSprite = nullptr;
 

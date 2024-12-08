@@ -65,6 +65,12 @@ void Renderer::renderSprite(const Sprite *sprite, int x, int y) const {
     dimensions.h = sprite->getHeight();
     this->renderTex(sprite->getTexture(), &dimensions);
 }
+
+void Renderer::renderGameObject(const GameObject *gameObject) const {
+    renderSprite(gameObject->getSprite(), gameObject->getX(), gameObject->getY());
+}
+
+
 void Renderer::renderCenteredSprite(const Sprite *sprite, int x, int y) const {
     SDL_Rect dimensions;
     dimensions.x = x - (sprite->getWidth() >> 1);
@@ -75,7 +81,7 @@ void Renderer::renderCenteredSprite(const Sprite *sprite, int x, int y) const {
 }
 
 
-void Renderer::destroy() {
+void Renderer::destroy() const {
     SDL_FreeSurface(this->m_windowSurface);
 }
 
