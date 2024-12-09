@@ -12,7 +12,11 @@
 
 bool Renderer::init() {
     std::string path = "test.bmp";
-    testSprite = Sprite::fromBMP(path, m_windowSurface->format);
+    Sprite* sprite = Sprite::fromBMP(path, m_windowSurface->format);
+
+    testGameObject = new GameObject(std::move(*sprite));
+    // Delete old instance
+    delete sprite;
     return true;
 }
 
@@ -20,17 +24,20 @@ void Renderer::update() {
     //nothing for now
 }
 
-void Renderer::render() {
 
+void Renderer::render() const {
+    // Render frame to the screen DON'T CALL THIS MORE THAN ONCE PER FRAME
+    SDL_RenderPresent(this->m_renderer);
+}
+
+void Renderer::testRender() const {
     //background color
     SDL_SetRenderDrawColor(this->m_renderer, 255, 0, 0, 255);
     SDL_RenderClear(this->m_renderer);
 
-    int* mouseX = new int();
-    int* mouseY = new int();
-    SDL_GetMouseState(mouseX, mouseY);
+    SDL_GetMouseState(testGameObject->getXPtr(), testGameObject->getYPtr());
 
-    SDL_Rect rect = rectCentered(*mouseX, *mouseY, 50, 50);
+    SDL_Rect rect = rectCentered(testGameObject->getX(), testGameObject->getY(), 50, 50);
 
     //rect color
     SDL_SetRenderDrawColor(this->m_renderer, 0, 255, 0, 255);
@@ -38,17 +45,7 @@ void Renderer::render() {
     // Render rect
     SDL_RenderFillRect(this->m_renderer, &rect);
 
-    renderCenteredSprite(testSprite, *mouseX, *mouseY);
-
-    delete mouseX;
-    delete mouseY;
-
-    //SDL_UpdateWindowSurface(m_window);
-
-
-
-    // Render frame to the screen DON'T CALL THIS MORE THAN ONCE PER FRAME
-    SDL_RenderPresent(this->m_renderer);
+    renderGameObject(testGameObject);
 }
 
 void Renderer::renderTex(SDL_Texture *texture, const SDL_Rect *dimensions) const {

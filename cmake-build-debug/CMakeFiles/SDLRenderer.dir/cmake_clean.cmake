@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SDLRenderer.dir/Engine/GameObject.cpp.obj"
+  "CMakeFiles/SDLRenderer.dir/Engine/GameObject.cpp.obj.d"
+  "CMakeFiles/SDLRenderer.dir/Engine/GameObjectDispatcher.cpp.obj"
+  "CMakeFiles/SDLRenderer.dir/Engine/GameObjectDispatcher.cpp.obj.d"
   "CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj"
   "CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj.d"
   "CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj"

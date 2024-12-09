@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/GameObject.cpp" "CMakeFiles/SDLRenderer.dir/Engine/GameObject.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/GameObject.cpp.obj.d"
+  "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/GameObjectDispatcher.cpp" "CMakeFiles/SDLRenderer.dir/Engine/GameObjectDispatcher.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/GameObjectDispatcher.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Renderer.cpp" "CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Sprite.cpp" "CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Window.cpp" "CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj.d"

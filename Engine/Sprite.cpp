@@ -88,6 +88,37 @@ void Sprite::setScale(float scale) {
     this->scale = scale;
 }
 
+Sprite::Sprite(Sprite &&other) noexcept {
+    this->m_texture = other.m_texture;
+    this->m_path = std::move(other.m_path);
+    this->width = other.width;
+    this->height = other.height;
+    this->scale = other.scale;
+
+    // Remove other instance so it isn't freed
+    other.m_texture = nullptr;
+}
+
+Sprite& Sprite::operator=(Sprite&& other) noexcept {
+    if (this == &other) return *this;
+
+    // If had existing texture free it
+    if (m_texture) {
+        SDL_DestroyTexture(m_texture);
+    }
+
+    this->m_texture = other.m_texture;
+    this->m_path = std::move(other.m_path);
+    this->width = other.width;
+    this->height = other.height;
+    this->scale = other.scale;
+
+
+    // Remove other instance so it isn't freed
+    other.m_texture = nullptr;
+    return *this;
+}
+
 
 std::string Sprite::toString() const {
     return std::string ("Sprite: " + this->m_path + " width : " + (this->width + " height : " + this->height));

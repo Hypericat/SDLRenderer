@@ -13,6 +13,7 @@ Game::Game(Window &window): window(window) {
 }
 
 void Game::run() {
+    this->registerGameObject(this->window.getRenderer().testGameObject);
     this->running = true;
 
 
@@ -48,9 +49,32 @@ void Game::stop() {
     this->running = false;
 }
 
-void Game::renderFrame() {
+void Game::renderFrame() const {
+    //Update physics and such
+
+
+    // Render GameObjects
+    for (const std::pair<unsigned long, GameObject*> pair : objects) {
+        this->window.getRenderer().renderGameObject(pair.second);
+    }
+    //this->window.getRenderer().testRender();
     this->window.getRenderer().render();
-    //SDL_GL_SwapWindow(window.getSDLWindow());
+}
+
+void Game::registerGameObject(GameObject *gameObject) {
+    objects.insert({*gameObject->getId(), gameObject});
+}
+
+void Game::freeGameObject(GameObject *gameObject) {
+    const GameObject* ptr = objects.at(*gameObject->getId());
+    objects.erase(*gameObject->getId());
+    delete ptr;
+}
+
+void Game::freeGameObject(const unsigned long* id) {
+    const GameObject* ptr = objects.at(*id);
+    objects.erase(*id);
+    delete ptr;
 }
 
 

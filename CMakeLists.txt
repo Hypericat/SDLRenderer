@@ -16,7 +16,10 @@ add_executable(SDLRenderer main.cpp
         Engine/Sprite.cpp
         Engine/Sprite.h
         Engine/GameObject.cpp
-        Engine/GameObject.h)
+        Engine/GameObject.h
+        Engine/GameObjectDispatcher.cpp
+        Engine/GameObjectDispatcher.h
+)
 
 
 find_package(SDL2 REQUIRED)

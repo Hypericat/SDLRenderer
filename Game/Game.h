@@ -4,15 +4,19 @@
 
 #ifndef GAME_H
 #define GAME_H
+#include <map>
+#include <unordered_map>
+
 #include "../Engine/Window.h"
 
 
 class Game {
 private:
     bool running = false;
-    float lastFrameDelta;
+    float lastFrameDelta = 0.0F;
     Window& window;
-    void renderFrame();
+    std::unordered_map<unsigned long, GameObject*> objects;
+    void renderFrame() const;
     void pollWindowEvents();
 
 public:
@@ -23,6 +27,9 @@ public:
     float getFrameDelta() const;
     void run();
     void stop();
+    void registerGameObject(GameObject* gameObject);
+    void freeGameObject(GameObject* gameObject);
+    void freeGameObject(const unsigned long* id);
 };
 
 

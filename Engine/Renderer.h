@@ -7,6 +7,7 @@
 
 #include <memory>
 #include <SDL.h>
+#include <unordered_map>
 
 #include "GameObject.h"
 #include "Sprite.h"
@@ -25,12 +26,13 @@ private:
 public:
     bool init();
     void update();
-    void render();
+    void render() const;
+    void testRender() const;
     void destroy() const;
 
     void renderGameObject(const GameObject *gameObject) const;
 
-    Sprite* testSprite = nullptr;
+    GameObject *testGameObject;
 
     static SDL_Rect rectCentered(int x, int y, int width, int height);
     static SDL_Rect rectCoord(int x1, int y1, int x2, int y2);
@@ -39,8 +41,6 @@ public:
     Renderer(SDL_Window *window, SDL_Renderer* renderer): m_window(window), m_renderer(renderer), m_windowSurface(SDL_GetWindowSurface(m_window)) {
 
     }
-
-
 };
 
 
