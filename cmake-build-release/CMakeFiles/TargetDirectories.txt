@@ -1,0 +1,3 @@
+C:/Users/Hypericats/CLionProjects/SDLRenderer/cmake-build-release/CMakeFiles/SDLRenderer.dir
+C:/Users/Hypericats/CLionProjects/SDLRenderer/cmake-build-release/CMakeFiles/edit_cache.dir
+C:/Users/Hypericats/CLionProjects/SDLRenderer/cmake-build-release/CMakeFiles/rebuild_cache.dir

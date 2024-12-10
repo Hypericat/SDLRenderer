@@ -4,7 +4,8 @@
 
 #ifndef VECTOR2i_H
 #define VECTOR2i_H
-#include "Vector2f.h"
+
+class Vector2f;
 
 
 class Vector2i {
@@ -15,7 +16,7 @@ public:
     explicit Vector2i(int x, int y) : m_x(x), m_y(y) {};
     explicit Vector2i(float x, float y) : m_x(x), m_y(y) {};
     explicit Vector2i(const Vector2i* vec2i) : Vector2i(vec2i->m_x, vec2i->m_y) {};
-    explicit Vector2i(const Vector2f* vec2f) : Vector2i(vec2f->getX(), vec2f->getY()) {};
+    explicit Vector2i(const Vector2f* vec2f);
 
     int getX() const;
     int getY() const;

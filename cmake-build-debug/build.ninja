@@ -105,20 +105,6 @@ build CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj: CXX_COMPILER__SDLRendere
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine
 
-build CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.cpp || cmake_object_order_depends_target_SDLRenderer
-  DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Math\Vector2i.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
-  OBJECT_DIR = CMakeFiles\SDLRenderer.dir
-  OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine\Math
-
-build CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2f.cpp || cmake_object_order_depends_target_SDLRenderer
-  DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Math\Vector2f.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
-  OBJECT_DIR = CMakeFiles\SDLRenderer.dir
-  OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine\Math
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SDLRenderer
@@ -127,7 +113,7 @@ build CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.obj: CXX_COMPILER__SDL
 #############################################
 # Link the executable SDLRenderer.exe
 
-build SDLRenderer.exe: CXX_EXECUTABLE_LINKER__SDLRenderer_Debug CMakeFiles/SDLRenderer.dir/main.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/GameObject.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/GameObjectDispatcher.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.obj | C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/lib/x64/SDL2.lib
+build SDLRenderer.exe: CXX_EXECUTABLE_LINKER__SDLRenderer_Debug CMakeFiles/SDLRenderer.dir/main.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/GameObject.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/GameObjectDispatcher.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj | C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/lib/x64/SDL2.lib
   FLAGS = -g
   LINK_LIBRARIES = C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/lib/x64/SDL2.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir

@@ -3,6 +3,7 @@
 //
 
 #include "Vector2f.h"
+#include "Vector2i.h"
 
 float Vector2f::getX() const {
     return m_x;
@@ -56,4 +57,8 @@ Vector2f Vector2f::withY(float y) const {
 
 Vector2f Vector2f::withX(float x) const {
     return Vector2f(x, getY());
+}
+
+Vector2f::Vector2f(const Vector2i *vec2i) : Vector2f(vec2i->getX(), vec2i->getY()) {
+
 }

@@ -3,8 +3,8 @@
 //
 
 #include "Vector2i.h"
+#include "Vector2f.h"
 
-#include <algorithm>
 
 int Vector2i::getX() const {
     return m_x;
@@ -58,4 +58,8 @@ Vector2i Vector2i::withY(int y) const {
 
 Vector2i Vector2i::withX(int x) const {
     return Vector2i(x, getY());
+}
+
+Vector2i::Vector2i(const Vector2f *vec2f) : Vector2i(vec2f->getX(), vec2f->getY()) {
+
 }
