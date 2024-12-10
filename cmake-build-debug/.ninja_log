@@ -7,3 +7,12 @@
 20	1016	7554926527226265	CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj	ebdb75b9a475ae3d
 15	755	7554926527175695	CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj	9c31d875fcb47f10
 18	844	7554926527195946	CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj	515af6369770ff03
+20	62	7555759283091945	CMakeFiles/SDLRenderer.dir/Engine/GameObjectDispatcher.cpp.obj	beaeae2301ee777a
+23	65	7555759283113260	CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj	e67615432b0f15eb
+17	372	7555759283061045	CMakeFiles/SDLRenderer.dir/Engine/GameObject.cpp.obj	2c0dea51f205df7a
+15	442	7555759283040755	CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj	a50f3587acd23323
+7	748	7555759282969207	CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj	9c31d875fcb47f10
+4	813	7555759282938376	CMakeFiles/SDLRenderer.dir/main.cpp.obj	860ffe383d9406dc
+10	841	7555759282989825	CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj	515af6369770ff03
+12	887	7555759283020187	CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj	ebdb75b9a475ae3d
+887	964	7555759291759980	SDLRenderer.exe	f64412dbce9f3995
