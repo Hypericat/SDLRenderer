@@ -2,38 +2,38 @@
 // Created by Hypericats on 12/10/2024.
 //
 
-#ifndef VECTOR2_H
-#define VECTOR2_H
+#ifndef VECTOR2f_H
+#define VECTOR2f_H
 #include "Vector2i.h"
 
 
 class Vector2f {
 private:
-    const int m_x;
-    const int m_y;
+    const float m_x;
+    const float m_y;
 public:
     explicit Vector2f(int x, int y) : m_x(x), m_y(y) {};
     explicit Vector2f(float x, float y) : m_x(x), m_y(y) {};
-    Vector2f(Vector2i* vec2i) : Vector2f(vec2i->m_x, vec2i->m_y) {};
-    Vector2f(Vector2f* vec2f) : Vector2f(vec2f->x, vec2f->y) {};
+    explicit Vector2f(const Vector2i* vec2i) : Vector2f(vec2i->getX(), vec2i->getY()) {};
+    explicit Vector2f(const Vector2f* vec2f) : Vector2f(vec2f->m_x, vec2f->m_y) {};
 
-    int getX();
-    int getY();
+    float getX() const;
+    float getY() const;
 
-    Vector2i toVec2i();
-    Vector2f operator+(Vector2f& vec);
-    Vector2f operator-(Vector2f& vec);
-    bool operator>(Vector2f& vec);
-    bool operator<(Vector2f& vec);
-    bool operator<=(Vector2f& vec);
-    bool operator>=(Vector2f& vec);
-    bool operator==(Vector2f& vec);
-    bool operator!=(Vector2f& vec);
+    Vector2i toVec2i() const;
+    Vector2f operator+(Vector2f& vec) const;
+    Vector2f operator-(Vector2f& vec) const;
+    bool operator>(Vector2f& vec) const;
+    bool operator<(Vector2f& vec) const;
+    bool operator<=(Vector2f& vec) const;
+    bool operator>=(Vector2f& vec) const;
+    bool operator==(Vector2f& vec) const;
+    bool operator!=(Vector2f& vec) const;
 
-    Vector2f withY(int y);
-    Vector2f withX(int x);
+    Vector2f withY(float y) const;
+    Vector2f withX(float x) const;
 };
 
 
 
-#endif //VECTOR2_H
+#endif //VECTOR2f_H

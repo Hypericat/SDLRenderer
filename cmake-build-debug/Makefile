@@ -128,6 +128,30 @@ SDLRenderer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/build
 .PHONY : SDLRenderer/fast
 
+Engine/Camera.obj: Engine/Camera.cpp.obj
+.PHONY : Engine/Camera.obj
+
+# target to build an object file
+Engine/Camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj
+.PHONY : Engine/Camera.cpp.obj
+
+Engine/Camera.i: Engine/Camera.cpp.i
+.PHONY : Engine/Camera.i
+
+# target to preprocess a source file
+Engine/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.i
+.PHONY : Engine/Camera.cpp.i
+
+Engine/Camera.s: Engine/Camera.cpp.s
+.PHONY : Engine/Camera.s
+
+# target to generate assembly for a file
+Engine/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.s
+.PHONY : Engine/Camera.cpp.s
+
 Engine/GameObject.obj: Engine/GameObject.cpp.obj
 .PHONY : Engine/GameObject.obj
 
@@ -175,6 +199,54 @@ Engine/GameObjectDispatcher.s: Engine/GameObjectDispatcher.cpp.s
 Engine/GameObjectDispatcher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/GameObjectDispatcher.cpp.s
 .PHONY : Engine/GameObjectDispatcher.cpp.s
+
+Engine/Math/Vector2f.obj: Engine/Math/Vector2f.cpp.obj
+.PHONY : Engine/Math/Vector2f.obj
+
+# target to build an object file
+Engine/Math/Vector2f.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.obj
+.PHONY : Engine/Math/Vector2f.cpp.obj
+
+Engine/Math/Vector2f.i: Engine/Math/Vector2f.cpp.i
+.PHONY : Engine/Math/Vector2f.i
+
+# target to preprocess a source file
+Engine/Math/Vector2f.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.i
+.PHONY : Engine/Math/Vector2f.cpp.i
+
+Engine/Math/Vector2f.s: Engine/Math/Vector2f.cpp.s
+.PHONY : Engine/Math/Vector2f.s
+
+# target to generate assembly for a file
+Engine/Math/Vector2f.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.s
+.PHONY : Engine/Math/Vector2f.cpp.s
+
+Engine/Math/Vector2i.obj: Engine/Math/Vector2i.cpp.obj
+.PHONY : Engine/Math/Vector2i.obj
+
+# target to build an object file
+Engine/Math/Vector2i.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.obj
+.PHONY : Engine/Math/Vector2i.cpp.obj
+
+Engine/Math/Vector2i.i: Engine/Math/Vector2i.cpp.i
+.PHONY : Engine/Math/Vector2i.i
+
+# target to preprocess a source file
+Engine/Math/Vector2i.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.i
+.PHONY : Engine/Math/Vector2i.cpp.i
+
+Engine/Math/Vector2i.s: Engine/Math/Vector2i.cpp.s
+.PHONY : Engine/Math/Vector2i.s
+
+# target to generate assembly for a file
+Engine/Math/Vector2i.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.s
+.PHONY : Engine/Math/Vector2i.cpp.s
 
 Engine/Renderer.obj: Engine/Renderer.cpp.obj
 .PHONY : Engine/Renderer.obj
@@ -305,12 +377,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... SDLRenderer
+	@echo ... Engine/Camera.obj
+	@echo ... Engine/Camera.i
+	@echo ... Engine/Camera.s
 	@echo ... Engine/GameObject.obj
 	@echo ... Engine/GameObject.i
 	@echo ... Engine/GameObject.s
 	@echo ... Engine/GameObjectDispatcher.obj
 	@echo ... Engine/GameObjectDispatcher.i
 	@echo ... Engine/GameObjectDispatcher.s
+	@echo ... Engine/Math/Vector2f.obj
+	@echo ... Engine/Math/Vector2f.i
+	@echo ... Engine/Math/Vector2f.s
+	@echo ... Engine/Math/Vector2i.obj
+	@echo ... Engine/Math/Vector2i.i
+	@echo ... Engine/Math/Vector2i.s
 	@echo ... Engine/Renderer.obj
 	@echo ... Engine/Renderer.i
 	@echo ... Engine/Renderer.s
