@@ -21,6 +21,10 @@ add_executable(SDLRenderer main.cpp
         Engine/GameObjectDispatcher.h
         Engine/Camera.cpp
         Engine/Camera.h
+        Engine/Math/Vector2i.cpp
+        Engine/Math/Vector2i.h
+        Engine/Math/Vector2f.cpp
+        Engine/Math/Vector2f.h
 )
 
 

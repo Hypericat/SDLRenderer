@@ -9,6 +9,7 @@
 #include <SDL.h>
 #include <unordered_map>
 
+#include "Camera.h"
 #include "GameObject.h"
 #include "Sprite.h"
 
@@ -18,6 +19,7 @@ private:
     SDL_Window *m_window;
     SDL_Renderer *m_renderer;
     SDL_Surface *m_windowSurface;
+    Camera* m_camera;
     void renderTex(SDL_Texture *texture, const SDL_Rect *dimensions) const;
     void renderSprite(const Sprite *sprite, int x, int y) const;
     void renderCenteredSprite(const Sprite *sprite, int x, int y) const;
@@ -38,7 +40,7 @@ public:
     static SDL_Rect rectCoord(int x1, int y1, int x2, int y2);
     static SDL_Rect rect(int x1, int y1, int x2, int y2);
 
-    Renderer(SDL_Window *window, SDL_Renderer* renderer): m_window(window), m_renderer(renderer), m_windowSurface(SDL_GetWindowSurface(m_window)) {
+    Renderer(SDL_Window *window, SDL_Renderer* renderer, Camera* camera): m_window(window), m_renderer(renderer), m_windowSurface(SDL_GetWindowSurface(m_window)), m_camera(camera) {
 
     }
 };

@@ -36,7 +36,7 @@ void Window::initWindow(std::string name, int flags) {
     Sprite::renderer = internalRenderer;
 
 
-    this->m_renderer = new Renderer(m_sdlWindow, internalRenderer);
+    this->m_renderer = new Renderer(m_sdlWindow, internalRenderer, &m_camera);
     this->m_renderer->init();
 }
 
@@ -52,4 +52,8 @@ Renderer &Window::getRenderer() {
 
 SDL_Window *Window::getSDLWindow() {
     return this->m_sdlWindow;
+}
+
+Camera& Window::getCamera() {
+    return this->m_camera;
 }

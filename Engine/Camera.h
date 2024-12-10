@@ -21,6 +21,7 @@ public:
     void setX(int x);
     void setY(int y);
     void setZoom(float zoom);
+
 };
 
 
