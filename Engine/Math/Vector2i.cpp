@@ -52,12 +52,18 @@ bool Vector2i::operator>=(Vector2i& vec) const {
     return *this > vec || *this == vec;
 }
 
-Vector2i Vector2i::withY(int y) const {
-    return Vector2i(getX(), y);
+void Vector2i::setY(int y) {
+    this->m_y = y;
 }
 
-Vector2i Vector2i::withX(int x) const {
-    return Vector2i(x, getY());
+void Vector2i::setX(int x) {
+    this->m_x = x;
+}
+
+Vector2i& Vector2i::operator=(const Vector2i &vec) {
+    this->m_x = vec.getX();
+    this->m_y = vec.getY();
+    return *this;
 }
 
 Vector2i::Vector2i(const Vector2f *vec2f) : Vector2i(vec2f->getX(), vec2f->getY()) {

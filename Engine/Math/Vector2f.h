@@ -2,16 +2,18 @@
 // Created by Hypericats on 12/10/2024.
 //
 
-#ifndef VECTOR2f_H
-#define VECTOR2f_H
+#ifndef VECTOR2F_H
+#define VECTOR2F_H
 
 class Vector2i;
 
 
 class Vector2f {
+    const static Vector2f ZERO;
+
 private:
-    const float m_x;
-    const float m_y;
+    float m_x;
+    float m_y;
 public:
     explicit Vector2f(int x, int y) : m_x(x), m_y(y) {};
     explicit Vector2f(float x, float y) : m_x(x), m_y(y) {};
@@ -30,11 +32,14 @@ public:
     bool operator>=(Vector2f& vec) const;
     bool operator==(Vector2f& vec) const;
     bool operator!=(Vector2f& vec) const;
+    Vector2f& operator=(const Vector2f& vec);
 
-    Vector2f withY(float y) const;
-    Vector2f withX(float x) const;
+    void setY(float y);
+    void setX(float x);
 };
 
+const Vector2f ZERO = Vector2f(0.0F, 0.0F);
 
 
-#endif //VECTOR2f_H
+
+#endif //VECTOR2F_H

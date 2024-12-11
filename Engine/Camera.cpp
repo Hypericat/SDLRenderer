@@ -4,12 +4,16 @@
 
 #include "Camera.h"
 
+Vector2i& Camera::getPos() {
+    return m_cameraPosition;
+}
+
 int Camera::getX() const {
-    return this->m_x;
+    return this->m_cameraPosition.getX();
 }
 
 int Camera::getY() const {
-    return this->m_y;
+    return this->m_cameraPosition.getY();
 }
 
 float Camera::getZoom() const {
@@ -17,11 +21,15 @@ float Camera::getZoom() const {
 }
 
 void Camera::setX(int x) {
-    this->m_x = x;
+    this->m_cameraPosition.setX(x);
 }
 
 void Camera::setY(int y) {
-    this->m_y = y;
+    this->m_cameraPosition.setY(y);
+}
+
+void Camera::setPos(const Vector2i &pos) {
+    this->m_cameraPosition = pos;
 }
 
 void Camera::setZoom(float zoom) {
