@@ -25,6 +25,8 @@ add_executable(SDLRenderer main.cpp
         Engine/Math/Vector2i.h
         Engine/Math/Vector2f.cpp
         Engine/Math/Vector2f.h
+        Engine/Input/KeyInputHandler.cpp
+        Engine/Input/KeyInputHandler.h
 )
 
 

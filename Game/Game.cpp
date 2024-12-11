@@ -8,12 +8,12 @@
 #include <SDL_events.h>
 #include <SDL_timer.h>
 
-Game::Game(Window &window): window(window) {
+Game::Game(Window &window): m_window(window), m_keyInputHandler(window) {
 
 }
 
 void Game::run() {
-    this->registerGameObject(this->window.getRenderer().testGameObject);
+    this->registerGameObject(this->m_window.getRenderer().testGameObject);
     this->running = true;
 
 
@@ -42,12 +42,7 @@ void Game::pollWindowEvents() {
             std::cout << "Quitting!" << std::endl;
             this->stop();
         }
-
-        if (event.type == SDL_KEYDOWN) {
-            if (event.key.keysym.scancode == SDL_SCANCODE_W) {
-                this->window.getCamera().setY(window.getCamera().getY() + 10);
-            }
-        }
+        this->m_keyInputHandler.handleEvent(event);
     }
 }
 
@@ -61,10 +56,10 @@ void Game::renderFrame() const {
 
     // Render GameObjects
     for (const std::pair<unsigned long, GameObject*> pair : objects) {
-        this->window.getRenderer().renderGameObject(pair.second);
+        this->m_window.getRenderer().renderGameObject(pair.second);
     }
     //this->window.getRenderer().testRender();
-    this->window.getRenderer().render();
+    this->m_window.getRenderer().render();
 }
 
 void Game::registerGameObject(GameObject *gameObject) {

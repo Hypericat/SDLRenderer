@@ -8,13 +8,16 @@
 #include <unordered_map>
 
 #include "../Engine/Window.h"
+#include "../Engine/Input/KeyInputHandler.h"
 
 
 class Game {
 private:
     bool running = false;
     float lastFrameDelta = 0.0F;
-    Window& window;
+    Window& m_window;
+    KeyInputHandler m_keyInputHandler;
+
     std::unordered_map<unsigned long, GameObject*> objects;
     void renderFrame() const;
     void pollWindowEvents();
