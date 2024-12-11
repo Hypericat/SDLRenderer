@@ -60,6 +60,38 @@ void Vector2i::setX(int x) {
     this->m_x = x;
 }
 
+Vector2i Vector2i::operator*(Vector2i &vec) const {
+    return Vector2i(getX() * vec.getX(), getY() * vec.getY());
+}
+
+Vector2i Vector2i::operator/(Vector2i &vec) const {
+    return Vector2i(getX() / vec.getX(), getY() / vec.getY());
+}
+
+Vector2i & Vector2i::operator+=(const Vector2i &vec) {
+    this->m_x += vec.getX();
+    this->m_y += vec.getY();
+    return *this;
+}
+
+Vector2i & Vector2i::operator-=(const Vector2i &vec) {
+    this->m_x -= vec.getX();
+    this->m_y -= vec.getY();
+    return *this;
+}
+
+Vector2i & Vector2i::operator*=(const Vector2i &vec) {
+    this->m_x *= vec.getX();
+    this->m_y *= vec.getY();
+    return *this;
+}
+
+Vector2i & Vector2i::operator/=(const Vector2i &vec) {
+    this->m_x /= vec.getX();
+    this->m_y /= vec.getY();
+    return *this;
+}
+
 Vector2i& Vector2i::operator=(const Vector2i &vec) {
     this->m_x = vec.getX();
     this->m_y = vec.getY();
@@ -69,3 +101,5 @@ Vector2i& Vector2i::operator=(const Vector2i &vec) {
 Vector2i::Vector2i(const Vector2f *vec2f) : Vector2i(vec2f->getX(), vec2f->getY()) {
 
 }
+
+const Vector2i Vector2i::ZERO = Vector2i(0, 0);

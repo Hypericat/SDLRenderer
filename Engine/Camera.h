@@ -9,7 +9,7 @@
 
 class Camera {
 private:
-    Vector2i m_cameraPosition = Vector2i(0, 0);
+    Vector2i m_cameraPosition = Vector2i::ZERO;
     float m_zoom = 1.0F;
 
 public:
@@ -22,6 +22,8 @@ public:
     void setY(int y);
     void setPos(const Vector2i& pos);
     void setZoom(float zoom);
+
+    void applyOffset(Vector2i& vec) const;
 
 };
 

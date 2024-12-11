@@ -68,3 +68,37 @@ void Vector2f::setX(float x) {
 Vector2f::Vector2f(const Vector2i *vec2i) : Vector2f(vec2i->getX(), vec2i->getY()) {
 
 }
+
+Vector2f Vector2f::operator*(Vector2f &vec) const {
+    return Vector2f(getX() * vec.getX(), getY() * vec.getY());
+}
+
+Vector2f Vector2f::operator/(Vector2f &vec) const {
+    return Vector2f(getX() / vec.getX(), getY() / vec.getY());
+}
+
+Vector2f& Vector2f::operator+=(const Vector2f &vec) {
+    this->m_x += vec.getX();
+    this->m_y += vec.getY();
+    return *this;
+}
+
+Vector2f & Vector2f::operator-=(const Vector2f &vec) {
+    this->m_x -= vec.getX();
+    this->m_y -= vec.getY();
+    return *this;
+}
+
+Vector2f & Vector2f::operator/=(const Vector2f &vec) {
+    this->m_x /= vec.getX();
+    this->m_y /= vec.getY();
+    return *this;
+}
+
+Vector2f & Vector2f::operator*=(const Vector2f &vec) {
+    this->m_x *= vec.getX();
+    this->m_y *= vec.getY();
+    return *this;
+}
+
+const Vector2f Vector2f::ZERO = Vector2f(0.0F, 0.0F);

@@ -64,7 +64,9 @@ void Renderer::renderSprite(const Sprite *sprite, int x, int y) const {
 }
 
 void Renderer::renderGameObject(const GameObject *gameObject) const {
-    renderSprite(gameObject->getSprite(), gameObject->getX(), gameObject->getY());
+    Vector2i pos(gameObject->getX(), gameObject->getY());
+    this->m_camera->applyOffset(pos);
+    renderSprite(gameObject->getSprite(), pos.getX(), pos.getY());
 }
 
 

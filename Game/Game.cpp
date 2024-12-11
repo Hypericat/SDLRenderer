@@ -42,6 +42,12 @@ void Game::pollWindowEvents() {
             std::cout << "Quitting!" << std::endl;
             this->stop();
         }
+
+        if (event.type == SDL_KEYDOWN) {
+            if (event.key.keysym.scancode == SDL_SCANCODE_W) {
+                this->window.getCamera().setY(window.getCamera().getY() + 10);
+            }
+        }
     }
 }
 

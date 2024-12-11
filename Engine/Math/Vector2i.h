@@ -26,6 +26,8 @@ public:
     Vector2f toVec2f() const;
     Vector2i operator+(Vector2i& vec) const;
     Vector2i operator-(Vector2i& vec) const;
+    Vector2i operator*(Vector2i& vec) const;
+    Vector2i operator/(Vector2i& vec) const;
     bool operator>(Vector2i& vec) const;
     bool operator<(Vector2i& vec) const;
     bool operator<=(Vector2i& vec) const;
@@ -33,12 +35,14 @@ public:
     bool operator==(Vector2i& vec) const;
     bool operator!=(Vector2i& vec) const;
     Vector2i& operator=(const Vector2i& vec);
+    Vector2i& operator+=(const Vector2i& vec);
+    Vector2i& operator-=(const Vector2i& vec);
+    Vector2i& operator*=(const Vector2i& vec);
+    Vector2i& operator/=(const Vector2i& vec);
 
     void setY(int y);
     void setX(int x);
 };
-
-const Vector2i Vector2i::ZERO = Vector2i(0, 0);
 
 
 
