@@ -5,24 +5,28 @@
 #ifndef KEYINPUTHANDLER_H
 #define KEYINPUTHANDLER_H
 #include <math.h>
-#include <unordered_set>
 
 #include "../Window.h"
 
 
 class KeyInputHandler {
 public:
-    static inline const int KEY_BYTE_COUNT = (int) std::ceil(SDL_NUM_SCANCODES / 8.0F);
-    KeyInputHandler(Window &window);
-    void handleEvent(const SDL_Event& event) const;
+    static inline const int KEY_BYTE_COUNT = (int) std::ceil(static_cast<int>(SDL_NUM_SCANCODES) / 8.0F);
+    explicit KeyInputHandler(const Window &window);
+    void handleEvent(const SDL_Event& event);
     bool isKeyDown(SDL_Keycode keycode) const;
-    bool frameUpdate();
-    
+
 private:
-    Window& m_window;
+    const Window& m_window;
     unsigned char m_heldKey[KEY_BYTE_COUNT];
+
+    void setKeyState(SDL_Keycode keycode, unsigned char value);
     unsigned char getKeyState(SDL_Keycode keycode) const;
-    void setKeyState(SDL_Keycode keycode, unsigned char value) const;
+    void debugStates() const;
+    void debugKeys();
+
+
+
 };
 
 

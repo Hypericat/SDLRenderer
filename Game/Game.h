@@ -18,8 +18,9 @@ private:
     Window& m_window;
     KeyInputHandler m_keyInputHandler;
 
-    std::unordered_map<unsigned long, GameObject*> objects;
-    void renderFrame() const;
+    std::unordered_map<unsigned long, GameObject*> m_objects;
+    std::multimap<int, GameObject*> m_layerObjects;
+    void renderFrame();
     void pollWindowEvents();
 
 public:
@@ -30,9 +31,14 @@ public:
     float getFrameDelta() const;
     void run();
     void stop();
+
     void registerGameObject(GameObject* gameObject);
     void freeGameObject(GameObject* gameObject);
     void freeGameObject(const unsigned long* id);
+
+    GameObject* getObjectByID(const unsigned long* id);
+
+    void updateTestControls() const;
 };
 
 

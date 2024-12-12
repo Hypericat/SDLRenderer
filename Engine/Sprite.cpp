@@ -7,12 +7,13 @@
 #include <SDL_filesystem.h>
 #include <utility>
 
-Sprite::Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, std::string path, int width, int height, float scale) {
+#include "Util.h"
+
+Sprite::Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, const std::string& path, int width, int height) {
     this->m_path = path;
     this->m_texture = SDL_CreateTextureFromSurface(renderer, surface);
-    this->width = width;
-    this->height = height;
-    this->scale = scale;
+    this->m_width = width;
+    this->m_height = height;
 
     if (this->m_texture == NULL) {
         printf("Failed to create texture from surface, most likely texture path invalid\n");
@@ -23,16 +24,22 @@ Sprite::Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, std::string pat
     SDL_FreeSurface(surface);
 }
 
-Sprite::Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, std::string path) {
+Sprite::Sprite(const Sprite &sprite) {
+    this->m_path = sprite.m_path;
+    this->m_texture = Util::copyTexture(sprite.m_texture, renderer);
+    this->m_width = sprite.m_width;
+    this->m_height = sprite.m_height;
+}
+
+Sprite::Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, const std::string &path) {
     this->m_path = path;
     this->m_texture = SDL_CreateTextureFromSurface(renderer, surface);
 
-    this->scale = 1.0F;
-    this->width = -1;
-    this->height = -1;
+    this->m_width = -1;
+    this->m_height = -1;
 
     // Set width and height
-    SDL_QueryTexture(this->m_texture, nullptr, nullptr, &width, &height);
+    SDL_QueryTexture(this->m_texture, nullptr, nullptr, &m_width, &m_height);
 
     // Probably fine to call
     SDL_FreeSurface(surface);
@@ -40,12 +47,10 @@ Sprite::Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, std::string pat
 
 
 Sprite* Sprite::fromBMP(std::string& path, const SDL_PixelFormat *fmt) {
-
     path = std::string(SDL_GetBasePath()) + R"(\assets\textures\)" + path;
     SDL_Surface* surface = SDL_LoadBMP(path.c_str());
 
-    if(surface == NULL)
-    {
+    if(surface == NULL) {
         printf( "Unable to load image %s! SDL Error: %s\n", path.c_str(), SDL_GetError() );
     }
 
@@ -61,39 +66,26 @@ const std::string &Sprite::getPath() {
 }
 
 int Sprite::getWidth() const {
-    return this->getDefaultWidth() * this->scale;
+    return this->m_width;
 }
 
 int Sprite::getHeight() const {
-    return this->getDefaultHeight() * this->scale;
-}
-
-int Sprite::getDefaultWidth() const {
-    return this->width;
-}
-
-int Sprite::getDefaultHeight() const {
-    return this->height;
+    return this->m_height;
 }
 
 void Sprite::setWidth(int width) {
-    this->width = width;
+    this->m_width = width;
 }
 
 void Sprite::setHeight(int height) {
-    this->height = height;
-}
-
-void Sprite::setScale(float scale) {
-    this->scale = scale;
+    this->m_height = height;
 }
 
 Sprite::Sprite(Sprite &&other) noexcept {
     this->m_texture = other.m_texture;
     this->m_path = std::move(other.m_path);
-    this->width = other.width;
-    this->height = other.height;
-    this->scale = other.scale;
+    this->m_width = other.m_width;
+    this->m_height = other.m_height;
 
     // Remove other instance so it isn't freed
     other.m_texture = nullptr;
@@ -109,9 +101,8 @@ Sprite& Sprite::operator=(Sprite&& other) noexcept {
 
     this->m_texture = other.m_texture;
     this->m_path = std::move(other.m_path);
-    this->width = other.width;
-    this->height = other.height;
-    this->scale = other.scale;
+    this->m_width = other.m_width;
+    this->m_height = other.m_height;
 
 
     // Remove other instance so it isn't freed
@@ -121,7 +112,7 @@ Sprite& Sprite::operator=(Sprite&& other) noexcept {
 
 
 std::string Sprite::toString() const {
-    return std::string ("Sprite: " + this->m_path + " width : " + (this->width + " height : " + this->height));
+    return std::string ("Sprite: " + this->m_path + " width : " + (this->m_width + " height : " + this->m_height));
 }
 
 Sprite::~Sprite() {

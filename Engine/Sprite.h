@@ -12,17 +12,16 @@
 
 class Sprite {
 private:
-    Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, std::string path, int width, int height, float scale);
-    Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, std::string path);
-
     SDL_Texture *m_texture;
     std::string m_path;
-    int width;
-    int height;
-    float scale;
+    int m_width;
+    int m_height;
 
 public:
+    Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, const std::string& path, int width, int height);
+    Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, const std::string& path);
     Sprite(Sprite&& other) noexcept;
+    Sprite(const Sprite &sprite);
     static Sprite* fromBMP(std::string& path, const SDL_PixelFormat *fmt);
     ~Sprite();
 
@@ -37,13 +36,10 @@ public:
     const std::string& getPath();
 
     int getWidth() const;
-    int getDefaultWidth() const;
     int getHeight() const;
-    int getDefaultHeight() const;
 
     void setWidth(int width);
     void setHeight(int height);
-    void setScale(float scale);
     std::string toString() const;
 
 };

@@ -48,25 +48,32 @@ void Renderer::testRender() const {
     renderGameObject(testGameObject);
 }
 
+void Renderer::initRender() const {
+    SDL_RenderClear(this->m_renderer);
+}
+
 void Renderer::renderTex(SDL_Texture *texture, const SDL_Rect *dimensions) const {
-    //SDL_RenderClear(m_renderer);
     SDL_RenderCopy(m_renderer, texture, NULL, dimensions);
-    SDL_UpdateWindowSurface(m_window);
+    //SDL_UpdateWindowSurface(m_window); // Might not need to be called every frame
 }
 
 void Renderer::renderSprite(const Sprite *sprite, int x, int y) const {
+    renderSprite(sprite, x, y, sprite->getWidth(), sprite->getHeight());
+}
+
+void Renderer::renderSprite(const Sprite *sprite, int x, int y, int width, int height) const {
     SDL_Rect dimensions;
     dimensions.x = x;
     dimensions.y = y;
-    dimensions.w = sprite->getWidth();
-    dimensions.h = sprite->getHeight();
+    dimensions.w = width;
+    dimensions.h = height;
     this->renderTex(sprite->getTexture(), &dimensions);
 }
 
 void Renderer::renderGameObject(const GameObject *gameObject) const {
     Vector2i pos(gameObject->getX(), gameObject->getY());
     this->m_camera->applyOffset(pos);
-    renderSprite(gameObject->getSprite(), pos.getX(), pos.getY());
+    renderSprite(gameObject->getSprite(), pos.getX(), pos.getY(), gameObject->getScaledWidth(), gameObject->getScaledHeight());
 }
 
 
