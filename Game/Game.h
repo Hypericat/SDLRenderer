@@ -18,7 +18,7 @@ private:
     float lastFrameDelta = 0.0F;
     Window& m_window;
     KeyInputHandler m_keyInputHandler;
-    Scene* m_scene;
+    Scene* m_scene = nullptr;
 
     std::unordered_map<unsigned long, GameObject*> m_objects;
     std::multimap<int, GameObject*> m_layerObjects;
@@ -43,6 +43,8 @@ public:
 
     void offsetToWorldPosition(Vector2i& pos);
     void offsetToScreenPosition(Vector2i& pos);
+
+    void loadScene(Scene *scene);
 
     Window& getWindow();
 

@@ -11,8 +11,7 @@ Scene::Scene(const std::string& name) {
 }
 
 void Scene::initScene(Game* game) const {
-    this->m_background->setX(0);
-    this->m_background->setY(0);
+
 }
 
 void Scene::initGameObject(GameObject *gameObject, Game* game) {
@@ -22,15 +21,6 @@ void Scene::initGameObject(GameObject *gameObject, Game* game) {
 
 std::string& Scene::getName() {
     return m_name;
-}
-
-void Scene::loadGameObjects(Game *game) {
-    std::string path = "testBackground.bmp";
-    Sprite* sprite = Sprite::fromBMP(path);
-    this->m_background = new GameObject(std::move(*sprite));
-    this->m_background->setScale(10.0F);
-    this->m_background->setLayer(-10000);
-    initGameObject(this->m_background, game);
 }
 
 void Scene::initCamera(Camera *camera) {

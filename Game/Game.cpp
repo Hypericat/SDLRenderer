@@ -8,27 +8,15 @@
 #include <SDL_events.h>
 #include <SDL_timer.h>
 
+#include "Scenes/TestScene.h"
+
 Game::Game(Window &window): m_window(window), m_keyInputHandler(window) {
 
 
 }
 
 void Game::run() {
-    //this->m_window.getRenderer().testGameObject->setLayer(200);
-    //this->registerGameObject(this->m_window.getRenderer().testGameObject);
-    //GameObject* other = new GameObject(*this->m_window.getRenderer().testGameObject);
-    //other->setX(1000);
-    //other->setY(1000);
-    //other->setScale(1.5F);
-    //other->setLayer(21);
-    //this->registerGameObject(other);
-
-    std::string name = "GAME";
-
-    this->m_scene = new Scene(name);
-
-    m_scene->loadGameObjects(this);
-    m_scene->initScene(this);
+    this->loadScene(new TestScene());
 
     this->running = true;
 
@@ -143,6 +131,18 @@ void Game::freeGameObject(const unsigned long* id) {
 
 Window& Game::getWindow() {
     return this->m_window;
+}
+
+void Game::loadScene(Scene *scene) {
+    if (this->m_scene != nullptr && scene != m_scene) {
+        this->m_scene->freeScene();
+        delete m_scene;
+    }
+
+
+    this->m_scene = scene;
+    scene->loadGameObjects(this);
+    scene->initScene(this);
 }
 
 void Game::updateTestControls() const {

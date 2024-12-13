@@ -18,17 +18,20 @@ protected:
     std::string m_name;
 
     void initGameObject(GameObject* gameObject, Game* game);
-public:
-    Scene(const std::string& name);
-    void loadGameObjects(Game* game);
 
-    // Gets called after the objects are loaded
-    void initScene(Game* game) const;
-    void initCamera(Camera* camera);
+public:
+    virtual ~Scene() = default;
+    explicit Scene(const std::string& name);
+
     std::string& getName();
     std::vector<GameObject*>& getGameObjects();
     GameObject* getBackground() const;
-    void freeScene();
+
+    // Gets called after the objects are loaded
+    virtual void initScene(Game* game) const;
+    virtual void loadGameObjects(Game* game) = 0; // Must be implemented
+    virtual void initCamera(Camera* camera);
+    virtual void freeScene();
 
 };
 

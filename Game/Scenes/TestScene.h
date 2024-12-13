@@ -9,13 +9,14 @@
 
 class TestScene : public Scene {
 public:
-    explicit TestScene(const std::string& name);
+    TestScene() : Scene("Test Scene") {};
 
     // Gets called after the objects are loaded
-    void initScene(Game* game) const;
-    void initCamera(Camera* camera);
-    void freeScene();
-    void loadGameObjects(Game* game);
+    void initScene(Game* game) const override; // Remove this line if not needed
+    void loadGameObjects(Game* game) override;
+
+    void initCamera(Camera* camera) override; // Remove this line to use default implementation
+    void freeScene() override; // Remove this line to use default implementation
 
 };
 
