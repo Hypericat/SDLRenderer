@@ -15,10 +15,10 @@ add_executable(SDLRenderer main.cpp
         Engine/Renderer.h
         Engine/Sprite.cpp
         Engine/Sprite.h
-        Engine/GameObject.cpp
-        Engine/GameObject.h
-        Engine/GameObjectDispatcher.cpp
-        Engine/GameObjectDispatcher.h
+        Engine/Scene/GameObject.cpp
+        Engine/Scene/GameObject.h
+        Engine/Scene/GameObjectDispatcher.cpp
+        Engine/Scene/GameObjectDispatcher.h
         Engine/Camera.cpp
         Engine/Camera.h
         Engine/Math/Vector2i.cpp
@@ -29,6 +29,10 @@ add_executable(SDLRenderer main.cpp
         Engine/Input/KeyInputHandler.h
         Engine/Util.cpp
         Engine/Util.h
+        Engine/Scene/Scene.cpp
+        Engine/Scene/Scene.h
+        Game/Scenes/TestScene.cpp
+        Game/Scenes/TestScene.h
 )
 
 

@@ -9,7 +9,7 @@
 
 #include "Util.h"
 
-Sprite::Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, const std::string& path, int width, int height) {
+Sprite::Sprite(SDL_Surface *surface, const std::string& path, int width, int height) {
     this->m_path = path;
     this->m_texture = SDL_CreateTextureFromSurface(renderer, surface);
     this->m_width = width;
@@ -31,7 +31,9 @@ Sprite::Sprite(const Sprite &sprite) {
     this->m_height = sprite.m_height;
 }
 
-Sprite::Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, const std::string &path) {
+
+
+Sprite::Sprite(SDL_Surface *surface, const std::string &path) {
     this->m_path = path;
     this->m_texture = SDL_CreateTextureFromSurface(renderer, surface);
 
@@ -46,15 +48,15 @@ Sprite::Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, const std::stri
 }
 
 
-Sprite* Sprite::fromBMP(std::string& path, const SDL_PixelFormat *fmt) {
-    path = std::string(SDL_GetBasePath()) + R"(\assets\textures\)" + path;
+Sprite* Sprite::fromBMP(std::string& path) {
+    path = std::string(SDL_GetBasePath()) + R"(assets\textures\)" + path;
     SDL_Surface* surface = SDL_LoadBMP(path.c_str());
 
     if(surface == NULL) {
         printf( "Unable to load image %s! SDL Error: %s\n", path.c_str(), SDL_GetError() );
     }
 
-    return new Sprite(surface, fmt, path);
+    return new Sprite(surface, path);
 }
 
 SDL_Texture *Sprite::getTexture() const {

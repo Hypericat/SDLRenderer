@@ -98,8 +98,11 @@ Vector2i& Vector2i::operator=(const Vector2i &vec) {
     return *this;
 }
 
+void Vector2i::div(const int divisor) {
+    this->m_x /= divisor;
+    this->m_y /= divisor;
+}
+
 Vector2i::Vector2i(const Vector2f *vec2f) : Vector2i(vec2f->getX(), vec2f->getY()) {
 
 }
-
-const Vector2i Vector2i::ZERO = Vector2i(0, 0);

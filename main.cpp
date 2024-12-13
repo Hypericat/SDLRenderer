@@ -12,9 +12,9 @@ static const std::string WINDOW_TITLE = "Mighty Triangle";
 
 int main(int argc, char *argv[]) {
     Window window = Window(640, 480);
-    window.initWindow(WINDOW_TITLE, SDL_WINDOW_RESIZABLE | SDL_WINDOW_SHOWN);
 
     Game game = Game(window);
+    window.initWindow(WINDOW_TITLE, SDL_WINDOW_RESIZABLE | SDL_WINDOW_SHOWN, &game);
     game.run();
 
     window.destroyWindow();

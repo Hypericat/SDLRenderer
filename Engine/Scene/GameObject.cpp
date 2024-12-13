@@ -65,9 +65,10 @@ void GameObject::setScale(float f) {
 }
 
 // The layer must be set before it is added to the scene or it will not work correctly
-
-void GameObject::setLayer(int layer) {
+bool GameObject::setLayer(const int layer) {
+    if (this->isRegistered()) return false;
     this->m_layer = layer;
+    return true;
 }
 
 int GameObject::getScaledWidth() const {
@@ -78,8 +79,12 @@ int GameObject::getScaledHeight() const {
     return this->getScale() * this->m_sprite.getHeight();
 }
 
-int GameObject::getLogicalLayer() const {
-    return 2147483647 - this->m_layer;
+bool GameObject::isRegistered() const {
+    return this->m_registered;
+}
+
+void GameObject::registerObject() {
+    this->m_registered = true;
 }
 
 GameObject::~GameObject() {

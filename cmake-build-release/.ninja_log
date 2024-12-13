@@ -1,13 +1,11 @@
 # ninja log v6
-18	56	7555759476470196	CMakeFiles/SDLRenderer.dir/Engine/GameObjectDispatcher.cpp.obj	75fb11066953e2b1
+18	78	7555812462160172	CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.obj	2fca2e9859906ca2
 15	65	7555812462139901	CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj	fafb802323176f74
-15	368	7555759476439024	CMakeFiles/SDLRenderer.dir/Engine/GameObject.cpp.obj	76505cd985d183b2
 12	519	7555759476408579	CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj	93a506bc0aff6ade
 13	901	7555812462116792	CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj	d842208a84ead578
 8	761	7555812462055887	CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj	2faa08eaff60c430
 5	809	7555812462025598	CMakeFiles/SDLRenderer.dir/main.cpp.obj	b7419bb2fd20c28b
 10	862	7555812462086204	CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj	21bf6b875d88999f
 20	82	7555812462190550	CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.obj	98b80e1a564a8ed2
-18	78	7555812462160172	CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.obj	2fca2e9859906ca2
 758	822	7555784323208659	SDLRenderer.exe	58984bccf7d8efc
-2	191	7556665091352323	build.ninja	8e7c55e3595706f2
+2	191	7557538148529444	build.ninja	8e7c55e3595706f2

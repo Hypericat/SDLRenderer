@@ -39,3 +39,7 @@ void Camera::setZoom(float zoom) {
 void Camera::applyOffset(Vector2i &vec) const {
     vec -= this->m_cameraPosition;
 }
+
+void Camera::negateOffset(Vector2i &vec) const {
+    vec += this->m_cameraPosition;
+}

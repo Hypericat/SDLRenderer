@@ -10,24 +10,25 @@
 #include <string>
 
 #include "Renderer.h"
+#include "../Game/Game.h"
 
-void Window::initWindow(std::string name, int flags) {
+void Window::initWindow(std::string name, int flags, Game* game) {
     //should be null without init therefore this should only call the first time
     if (this->m_sdlWindow) return;
 
     std::cout << "Initializing SDL window..." << std::endl;
 
     SDL_Init(SDL_INIT_VIDEO);
-    SDL_GL_SetAttribute( SDL_GL_CONTEXT_MAJOR_VERSION, 2 );
-    SDL_GL_SetAttribute( SDL_GL_CONTEXT_MINOR_VERSION, 1 );
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 2);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
 
     // Create Window
     this->m_sdlWindow = SDL_CreateWindow(
       name.c_str(),
       SDL_WINDOWPOS_UNDEFINED,
       SDL_WINDOWPOS_UNDEFINED,
-      this->m_width,
-      this->m_height,
+      this->dimensions.getX(),
+      this->dimensions.getY(),
       flags
     );
 
@@ -36,7 +37,7 @@ void Window::initWindow(std::string name, int flags) {
     Sprite::renderer = internalRenderer;
 
 
-    this->m_renderer = new Renderer(m_sdlWindow, internalRenderer, &m_camera);
+    this->m_renderer = new Renderer(game, internalRenderer);
     this->m_renderer->init();
 }
 
@@ -46,14 +47,22 @@ void Window::destroyWindow() const {
     delete this->m_renderer;
 }
 
-Renderer &Window::getRenderer() {
+Renderer &Window::getRenderer() const {
     return *this->m_renderer;
 }
 
-SDL_Window *Window::getSDLWindow() {
+SDL_Window *Window::getSDLWindow() const {
     return this->m_sdlWindow;
 }
 
 Camera& Window::getCamera() {
     return this->m_camera;
+}
+
+Vector2i* Window::getDimensions() {
+    return &this->dimensions;
+}
+
+Vector2i Window::getCenter() const {
+    return Vector2i(dimensions.getX() >> 1, dimensions.getY() >> 1);
 }

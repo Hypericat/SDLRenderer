@@ -13,8 +13,6 @@ private:
     int m_x;
     int m_y;
 public:
-    const static Vector2i ZERO;
-
     explicit Vector2i(int x, int y) : m_x(x), m_y(y) {};
     explicit Vector2i(float x, float y) : m_x(x), m_y(y) {};
     explicit Vector2i(const Vector2i* vec2i) : Vector2i(vec2i->m_x, vec2i->m_y) {};
@@ -39,6 +37,8 @@ public:
     Vector2i& operator-=(const Vector2i& vec);
     Vector2i& operator*=(const Vector2i& vec);
     Vector2i& operator/=(const Vector2i& vec);
+
+    void div(int divisor);
 
     void setY(int y);
     void setX(int x);

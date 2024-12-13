@@ -9,8 +9,6 @@ class Vector2i;
 
 
 class Vector2f {
-    const static Vector2f ZERO;
-
 private:
     float m_x;
     float m_y;

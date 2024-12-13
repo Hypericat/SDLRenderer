@@ -6,13 +6,22 @@
 
 #include <cstdio>
 #include <iostream>
-#include <ostream>
 #include <random>
 #include <SDL.h>
+#include "../Game/Game.h"
+#include "Window.h"
+
+
+Renderer::Renderer(Game *game, SDL_Renderer *renderer) : m_renderer(renderer), m_windowSurface(SDL_GetWindowSurface(game->getWindow().getSDLWindow())) {
+    this->m_game = game;
+    this->m_window = &game->getWindow();
+    this->m_camera = &m_window->getCamera();
+    this->m_renderer = renderer;
+}
 
 bool Renderer::init() {
     std::string path = "test.bmp";
-    Sprite* sprite = Sprite::fromBMP(path, m_windowSurface->format);
+    Sprite* sprite = Sprite::fromBMP(path);
 
     testGameObject = new GameObject(std::move(*sprite));
     // Delete old instance
@@ -28,6 +37,12 @@ void Renderer::update() {
 void Renderer::render() const {
     // Render frame to the screen DON'T CALL THIS MORE THAN ONCE PER FRAME
     SDL_RenderPresent(this->m_renderer);
+
+    int x = 0;
+    int y = 0;
+    SDL_GetMouseState(&x, &y);
+
+    Vector2i worldPos = m_game->toWorldPosition(x, y);
 }
 
 void Renderer::testRender() const {
@@ -71,11 +86,14 @@ void Renderer::renderSprite(const Sprite *sprite, int x, int y, int width, int h
 }
 
 void Renderer::renderGameObject(const GameObject *gameObject) const {
-    Vector2i pos(gameObject->getX(), gameObject->getY());
-    this->m_camera->applyOffset(pos);
+    // Adjust for the fact that positions are centered
+    Vector2i pos = Vector2i(gameObject->getX(), gameObject->getY());
+    pos -= Vector2i(gameObject->getScaledWidth() >> 1, gameObject->getScaledHeight() >> 1);
+
+    this->m_game->offsetToScreenPosition(pos);
+
     renderSprite(gameObject->getSprite(), pos.getX(), pos.getY(), gameObject->getScaledWidth(), gameObject->getScaledHeight());
 }
-
 
 void Renderer::renderCenteredSprite(const Sprite *sprite, int x, int y) const {
     SDL_Rect dimensions;

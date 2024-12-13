@@ -4,7 +4,7 @@
 
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
-#include "Sprite.h"
+#include "../Sprite.h"
 
 
 class GameObject {
@@ -15,6 +15,8 @@ private:
     float m_scale = 1.0F;
     int m_layer = 0;
     unsigned long id;
+
+    bool m_registered = false;
 
 public:
     explicit GameObject(Sprite&& sprite);
@@ -34,13 +36,13 @@ public:
     int getScaledHeight() const;
 
     int getLayer() const;
+    bool setLayer(int layer);
 
-    // Returns MAX_INT - layer because multimap sorts in descending order but we want ascending
-    int getLogicalLayer() const;
     float getScale() const;
-
     void setScale(float f);
-    void setLayer(int layer);
+
+    bool isRegistered() const;
+    void registerObject();
 
     const unsigned long* getId() const {
         return &id;

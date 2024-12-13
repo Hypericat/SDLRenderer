@@ -100,5 +100,3 @@ Vector2f & Vector2f::operator*=(const Vector2f &vec) {
     this->m_y *= vec.getY();
     return *this;
 }
-
-const Vector2f Vector2f::ZERO = Vector2f(0.0F, 0.0F);

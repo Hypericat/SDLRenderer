@@ -84,19 +84,19 @@ build CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj: CXX_COMPILER__SDLRendere
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine
 
-build CMakeFiles/SDLRenderer.dir/Engine/GameObject.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/GameObject.cpp || cmake_object_order_depends_target_SDLRenderer
-  DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\GameObject.cpp.obj.d
+build CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObject.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.cpp || cmake_object_order_depends_target_SDLRenderer
+  DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Scene\GameObject.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
-  OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine
+  OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine\Scene
 
-build CMakeFiles/SDLRenderer.dir/Engine/GameObjectDispatcher.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/GameObjectDispatcher.cpp || cmake_object_order_depends_target_SDLRenderer
-  DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\GameObjectDispatcher.cpp.obj.d
+build CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObjectDispatcher.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObjectDispatcher.cpp || cmake_object_order_depends_target_SDLRenderer
+  DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Scene\GameObjectDispatcher.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
-  OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine
+  OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine\Scene
 
 build CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Camera.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Camera.cpp.obj.d
@@ -133,6 +133,20 @@ build CMakeFiles/SDLRenderer.dir/Engine/Util.cpp.obj: CXX_COMPILER__SDLRenderer_
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine
 
+build CMakeFiles/SDLRenderer.dir/Engine/Scene/Scene.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/Scene.cpp || cmake_object_order_depends_target_SDLRenderer
+  DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Scene\Scene.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  OBJECT_DIR = CMakeFiles\SDLRenderer.dir
+  OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine\Scene
+
+build CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Scenes/TestScene.cpp || cmake_object_order_depends_target_SDLRenderer
+  DEP_FILE = CMakeFiles\SDLRenderer.dir\Game\Scenes\TestScene.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  OBJECT_DIR = CMakeFiles\SDLRenderer.dir
+  OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Game\Scenes
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SDLRenderer
@@ -141,7 +155,7 @@ build CMakeFiles/SDLRenderer.dir/Engine/Util.cpp.obj: CXX_COMPILER__SDLRenderer_
 #############################################
 # Link the executable SDLRenderer.exe
 
-build SDLRenderer.exe: CXX_EXECUTABLE_LINKER__SDLRenderer_Debug CMakeFiles/SDLRenderer.dir/main.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/GameObject.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/GameObjectDispatcher.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Input/KeyInputHandler.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Util.cpp.obj | C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/lib/x64/SDL2.lib
+build SDLRenderer.exe: CXX_EXECUTABLE_LINKER__SDLRenderer_Debug CMakeFiles/SDLRenderer.dir/main.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObject.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObjectDispatcher.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Input/KeyInputHandler.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Util.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Scene/Scene.cpp.obj CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj | C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/lib/x64/SDL2.lib
   FLAGS = -g
   LINK_LIBRARIES = C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/lib/x64/SDL2.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir

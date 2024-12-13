@@ -18,11 +18,11 @@ private:
     int m_height;
 
 public:
-    Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, const std::string& path, int width, int height);
-    Sprite(SDL_Surface *surface, const SDL_PixelFormat *fmt, const std::string& path);
+    Sprite(SDL_Surface *surface, const std::string& path, int width, int height);
+    Sprite(SDL_Surface *surface, const std::string& path);
     Sprite(Sprite&& other) noexcept;
     Sprite(const Sprite &sprite);
-    static Sprite* fromBMP(std::string& path, const SDL_PixelFormat *fmt);
+    static Sprite* fromBMP(std::string& path);
     ~Sprite();
 
     // Move Operator

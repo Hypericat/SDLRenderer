@@ -10,28 +10,32 @@
 #include "Camera.h"
 #include "Renderer.h"
 
+class Game;
 
 class Window {
 private:
     SDL_Window* m_sdlWindow{};
     Renderer *m_renderer{};
     Camera m_camera{};
-    int m_width;
-    int m_height;
+    Vector2i dimensions {0, 0};
 
 
 
 public:
     Window(int width, int height) {
-        this->m_width = width;
-        this->m_height = height;
+        this->dimensions.setX(width);
+        this->dimensions.setY(height);
     }
 
-    void initWindow(std::string name, int flags);
+    void initWindow(std::string name, int flags, Game *game);
     void destroyWindow() const;
+    Vector2i getCenter() const;
 
-    SDL_Window* getSDLWindow();
-    Renderer& getRenderer();
+
+    Vector2i* getDimensions();
+
+    SDL_Window* getSDLWindow() const;
+    Renderer& getRenderer() const;
     Camera& getCamera();
 
 

@@ -14,16 +14,22 @@ Game::Game(Window &window): m_window(window), m_keyInputHandler(window) {
 }
 
 void Game::run() {
-    this->m_window.getRenderer().testGameObject->setLayer(-200);
-    this->registerGameObject(this->m_window.getRenderer().testGameObject);
-    GameObject* other = new GameObject(*this->m_window.getRenderer().testGameObject);
-    other->setX(500);
-    other->setY(500);
-    other->setScale(1.5F);
-    other->setLayer(21);
-    this->registerGameObject(other);
+    //this->m_window.getRenderer().testGameObject->setLayer(200);
+    //this->registerGameObject(this->m_window.getRenderer().testGameObject);
+    //GameObject* other = new GameObject(*this->m_window.getRenderer().testGameObject);
+    //other->setX(1000);
+    //other->setY(1000);
+    //other->setScale(1.5F);
+    //other->setLayer(21);
+    //this->registerGameObject(other);
 
-    // Need copy constructor for objects
+    std::string name = "GAME";
+
+    this->m_scene = new Scene(name);
+
+    m_scene->loadGameObjects(this);
+    m_scene->initScene(this);
+
     this->running = true;
 
 
@@ -52,8 +58,37 @@ void Game::pollWindowEvents() {
             std::cout << "Quitting!" << std::endl;
             this->stop();
         }
+
+        if (event.type == SDL_WINDOWEVENT && event.window.event == SDL_WINDOWEVENT_RESIZED) {
+            Vector2i* size = this->getWindow().getDimensions();
+            size->setX(event.window.data1);
+            size->setY(event.window.data2);
+        }
+
         this->m_keyInputHandler.handleEvent(event);
     }
+}
+
+Vector2i Game::toWorldPosition(int screenX, int screenY) {
+    Vector2i pos(screenX, screenY);
+    pos -= this->m_window.getCenter();
+    this->m_window.getCamera().negateOffset(pos);
+    return pos;
+}
+
+Vector2i Game::toScreenPos(const int worldX, const int worldY) {
+    Vector2i pos(worldX, worldY);
+    pos += this->m_window.getCenter();
+    this->m_window.getCamera().applyOffset(pos);
+    return pos;
+}
+
+void Game::offsetToWorldPosition(Vector2i &pos) {
+    pos = toWorldPosition(pos.getX(), pos.getY());
+}
+
+void Game::offsetToScreenPosition(Vector2i &pos) {
+    pos = toScreenPos(pos.getX(), pos.getY());
 }
 
 void Game::stop() {
@@ -63,9 +98,6 @@ void Game::stop() {
 void Game::renderFrame() {
     //Update physics and such
     this->updateTestControls();
-
-
-
 
     this->m_window.getRenderer().initRender();
 
@@ -86,6 +118,7 @@ GameObject* Game::getObjectByID(const unsigned long *id) {
 }
 
 void Game::registerGameObject(GameObject *gameObject) {
+    gameObject->registerObject();
     m_objects.insert({*gameObject->getId(), gameObject});
     m_layerObjects.insert({gameObject->getLayer(), gameObject});
 }
@@ -106,6 +139,10 @@ void Game::freeGameObject(GameObject *gameObject) {
 
 void Game::freeGameObject(const unsigned long* id) {
     freeGameObject(getObjectByID(id));
+}
+
+Window& Game::getWindow() {
+    return this->m_window;
 }
 
 void Game::updateTestControls() const {
