@@ -22,7 +22,7 @@ public:
     Sprite(SDL_Surface *surface, const std::string& path);
     Sprite(Sprite&& other) noexcept;
     Sprite(const Sprite &sprite);
-    static Sprite* fromBMP(std::string& path);
+    static Sprite* fromBMP(const std::string& path);
     ~Sprite();
 
     // Move Operator

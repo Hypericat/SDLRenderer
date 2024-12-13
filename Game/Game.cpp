@@ -85,7 +85,16 @@ void Game::stop() {
 
 void Game::renderFrame() {
     //Update physics and such
-    this->updateTestControls();
+
+
+    Player* player = this->m_scene->getPlayer();
+    if (player != nullptr) {
+        this->getWindow().getCamera().setPos(player->getPos());
+        player->updateControls(this->m_keyInputHandler, this);
+    } else {
+        this->updateTestControls();
+    }
+
 
     this->m_window.getRenderer().initRender();
 
@@ -95,6 +104,9 @@ void Game::renderFrame() {
     }
     //this->window.getRenderer().testRender();
     this->m_window.getRenderer().render();
+
+
+    //Post frame render
 }
 
 GameObject* Game::getObjectByID(const unsigned long *id) {

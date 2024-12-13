@@ -33,6 +33,8 @@ add_executable(SDLRenderer main.cpp
         Engine/Scene/Scene.h
         Game/Scenes/TestScene.cpp
         Game/Scenes/TestScene.h
+        Game/Objects/Player.cpp
+        Game/Objects/Player.h
 )
 
 

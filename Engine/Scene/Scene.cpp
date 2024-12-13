@@ -46,3 +46,7 @@ void Scene::freeScene() {
 
     this->m_gameObjects.clear();
 }
+
+Player* Scene::getPlayer() {
+    return this->m_player;
+}

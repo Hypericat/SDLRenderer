@@ -64,6 +64,19 @@ void GameObject::setScale(float f) {
     this->m_scale = f;
 }
 
+
+Vector2i GameObject::getPos() const {
+    return Vector2i(this->m_x, this->m_y);
+}
+
+void GameObject::addY(const int y) {
+    this->m_y += y;
+}
+
+void GameObject::addX(const int x) {
+    this->m_x += x;
+}
+
 // The layer must be set before it is added to the scene or it will not work correctly
 bool GameObject::setLayer(const int layer) {
     if (this->isRegistered()) return false;

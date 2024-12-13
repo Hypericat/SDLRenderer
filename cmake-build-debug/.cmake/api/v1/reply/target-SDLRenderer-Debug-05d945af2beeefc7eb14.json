@@ -35,13 +35,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 43,
+				"line" : 45,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 41,
+				"line" : 43,
 				"parent" : 0
 			}
 		]
@@ -87,7 +87,8 @@
 				19,
 				21,
 				23,
-				25
+				25,
+				27
 			]
 		}
 	],
@@ -142,7 +143,8 @@
 				19,
 				21,
 				23,
-				25
+				25,
+				27
 			]
 		},
 		{
@@ -161,7 +163,8 @@
 				20,
 				22,
 				24,
-				26
+				26,
+				28
 			]
 		}
 	],
@@ -314,6 +317,17 @@
 		{
 			"backtrace" : 1,
 			"path" : "Game/Scenes/TestScene.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Game/Objects/Player.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Game/Objects/Player.h",
 			"sourceGroupIndex" : 1
 		}
 	],

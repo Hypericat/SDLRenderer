@@ -5,6 +5,7 @@
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
 #include "../Sprite.h"
+#include "../Math/Vector2i.h"
 
 
 class GameObject {
@@ -31,6 +32,8 @@ public:
     int* getYPtr();
     void setX(int x);
     void setY(int y);
+    void addY(int y);
+    void addX(int x);
 
     int getScaledWidth() const;
     int getScaledHeight() const;
@@ -43,6 +46,9 @@ public:
 
     bool isRegistered() const;
     void registerObject();
+
+    Vector2i getPos() const;
+
 
     const unsigned long* getId() const {
         return &id;

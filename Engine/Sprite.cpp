@@ -48,15 +48,15 @@ Sprite::Sprite(SDL_Surface *surface, const std::string &path) {
 }
 
 
-Sprite* Sprite::fromBMP(std::string& path) {
-    path = std::string(SDL_GetBasePath()) + R"(assets\textures\)" + path;
-    SDL_Surface* surface = SDL_LoadBMP(path.c_str());
+Sprite* Sprite::fromBMP(const std::string& path) {
+    const std::string fullPath = std::string(SDL_GetBasePath()) + R"(assets\textures\)" + path;
+    SDL_Surface* surface = SDL_LoadBMP(fullPath.c_str());
 
     if(surface == NULL) {
-        printf( "Unable to load image %s! SDL Error: %s\n", path.c_str(), SDL_GetError() );
+        printf( "Unable to load image %s! SDL Error: %s\n", fullPath.c_str(), SDL_GetError() );
     }
 
-    return new Sprite(surface, path);
+    return new Sprite(surface, fullPath);
 }
 
 SDL_Texture *Sprite::getTexture() const {
