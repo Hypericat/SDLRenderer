@@ -5,6 +5,7 @@
 #ifndef BOX_H
 #define BOX_H
 #include "Vector2i.h"
+#include "Direction.h"
 
 class Box {
 private:
@@ -25,7 +26,7 @@ public:
 
     bool isInside(int x, int y) const;
     bool isInside(const Vector2i &pos) const;
-    bool collidesWith(const Box& box) const;
+    Direction::ENUM testCollision(const Box& box) const;
     Vector2i getCenter();
 
     int getWidth() const;

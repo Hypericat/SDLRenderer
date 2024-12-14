@@ -4,6 +4,7 @@
 
 #include "Game.h"
 
+#include <chrono>
 #include <iostream>
 #include <SDL_events.h>
 #include <SDL_timer.h>
@@ -100,9 +101,8 @@ void Game::updatePhysics() {
         pair.second->updateBoundingBox();
 
         if (!pair.second->isCollideable() || player == nullptr || pair.second->getId() == player->getId()) continue;
-
-        if (pair.second->getBoundingBox().collidesWith(player->getBoundingBox())) {
-            player->collideWith(pair.second);
+        if (Direction::ENUM dir = pair.second->getBoundingBox().testCollision(player->getBoundingBox()); dir != Direction::NONE) {
+            player->collideWith(pair.second, dir);
         }
     }
 }

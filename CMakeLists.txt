@@ -38,6 +38,7 @@ add_executable(SDLRenderer main.cpp
         Engine/Math/Box.h
         Game/Objects/WallObject.cpp
         Game/Objects/WallObject.h
+        Engine/Math/Direction.h
 )
 
 

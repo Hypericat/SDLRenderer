@@ -4,6 +4,9 @@
 
 #include "Box.h"
 
+#include <iostream>
+#include <ostream>
+
 const Vector2i& Box::getMax() const {
     return m_max;
 }
@@ -20,34 +23,46 @@ bool Box::isInside(const Vector2i& pos) const {
     return isInside(pos.getX(), pos.getY());
 }
 
-bool Box::collidesWith(const Box &box) const {
+Direction::ENUM Box::testCollision(const Box &box) const {
+
+    // This makes it slightly faster if not colliding, but twice as slow if colliding
+    // If adding this back remove the if below for checking NONE Direction
     /*
-    int temp;
-    int x1 = this->getMax().getX();
-    int x2 = box.getMax().getX();
-    int y1 = this->getMin().getY();
-    int y2 = box.getMin().getY();
-
-    if (x1 < x2) {
-        temp = x1;
-        x1 = x2;
-        x2 = temp;
-    }
-
-    if (y1 < y2) {
-        temp = y1;
-        y1 = y2;
-        y2 = temp;
-    }
-
-    // X1 is bigger than x2
-    // Y1 is bigger than y2
+    // Determine if intersection at all
+    if (this->getMax().getX() < box.getMin().getX() ||
+        this->getMin().getX() > box.getMax().getX() ||
+        this->getMax().getY() < box.getMin().getY() ||
+        this->getMin().getY() > box.getMax().getY()) {
+        return Direction::NONE;
+    }s
     */
 
-    return !(this->getMax().getX() < box.getMin().getX() ||
-             this->getMin().getX() > box.getMax().getX() ||
-             this->getMax().getY() < box.getMin().getY() ||
-             this->getMin().getY() > box.getMax().getY());
+    int dx1 = this->getMax().getX() - box.getMin().getX(); // Left
+    int dy1 = this->getMax().getY() - box.getMin().getY(); // Down
+
+    int dx2 = box.getMax().getX() - this->getMin().getX(); // Right
+    int dy2 = box.getMax().getY() - this->getMin().getY(); // Up
+
+    if (!(dx1 > 0 && dy1 > 0 && dx2 > 0 && dy2 > 0)) {
+        return Direction::NONE;
+    }
+
+    // The smallest value will have the biggest overlap
+    if (dy1 <= dx1 && dy1 <= dx2 && dy1 <= dy2) {
+        return Direction::DOWN;
+    }
+    if (dx2 <= dy1 && dx2 <= dx1 && dx2 <= dy2) {
+        return Direction::RIGHT;
+    }
+    if (dx1 <= dy1 && dx1 <= dx2 && dx1 <= dy2) {
+        return Direction::LEFT;
+    }
+    if (dy2 <= dy1 && dy2 <= dx2 && dy2 <= dx1) {
+        return Direction::UP;
+    }
+
+    std::cerr << "Could not find collision" << std::endl;
+    return Direction::NONE;
 }
 
 Vector2i Box::getCenter() {

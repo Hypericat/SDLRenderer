@@ -14,8 +14,10 @@ Player::Player() : GameObject(std::move(*Sprite::fromBMP("player.bmp"))) {
     this->setDrawHitbox(true);
 }
 
-void Player::collideWith(GameObject *other) {
-    std::cout << "Colliding" << std::endl;
+void Player::collideWith(GameObject *other, const Direction::ENUM& dir) {
+    std::string str;
+    Direction::toString(dir, str);
+    std::cout << "Colliding with direction " << str << std::endl;
 }
 
 void Player::updateControls(const KeyInputHandler& inputHandler, Game* game) {
