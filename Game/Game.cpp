@@ -26,6 +26,7 @@ void Game::run() {
         startFrameTime = SDL_GetPerformanceCounter();
 
         pollWindowEvents();
+        updatePhysics();
         renderFrame();
         lastFrameDelta = (SDL_GetPerformanceCounter() - startFrameTime) * 1000 / (float) SDL_GetPerformanceFrequency();
 
@@ -83,24 +84,37 @@ void Game::stop() {
     this->running = false;
 }
 
-void Game::renderFrame() {
-    //Update physics and such
-
-
+void Game::updatePhysics() {
     Player* player = this->m_scene->getPlayer();
+
     if (player != nullptr) {
-        this->getWindow().getCamera().setPos(player->getPos());
+        // Update controls before so the camera does not lag behind
         player->updateControls(this->m_keyInputHandler, this);
+        this->getWindow().getCamera().setPos(player->getPos());
     } else {
         this->updateTestControls();
     }
 
+    //Update physics and such
+    for (const std::pair<int, GameObject*> pair : m_layerObjects) {
+        pair.second->updateBoundingBox();
 
+        if (!pair.second->isCollideable() || player == nullptr || pair.second->getId() == player->getId()) continue;
+
+        if (pair.second->getBoundingBox().collidesWith(player->getBoundingBox())) {
+            player->collideWith(pair.second);
+        }
+    }
+}
+
+void Game::renderFrame() {
     this->m_window.getRenderer().initRender();
 
     // Render GameObjects
     for (const std::pair<int, GameObject*> pair : m_layerObjects) {
         this->m_window.getRenderer().renderGameObject(pair.second);
+        if (pair.second->shouldDrawHitbox())
+            this->m_window.getRenderer().drawBox(pair.second->getBoundingBox());
     }
     //this->window.getRenderer().testRender();
     this->m_window.getRenderer().render();

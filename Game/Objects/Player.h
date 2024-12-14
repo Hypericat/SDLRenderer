@@ -14,6 +14,7 @@ public:
     Player();
 
     void updateControls(const KeyInputHandler& inputHandler, Game* game);
+    void collideWith(GameObject* other);
 
 };
 

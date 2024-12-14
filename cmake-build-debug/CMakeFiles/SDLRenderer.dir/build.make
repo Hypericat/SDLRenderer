@@ -293,6 +293,36 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hypericats\CLionProjects\SDLRenderer\Game\Objects\Player.cpp -o CMakeFiles\SDLRenderer.dir\Game\Objects\Player.cpp.s
 
+CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj: CMakeFiles/SDLRenderer.dir/flags.make
+CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj: CMakeFiles/SDLRenderer.dir/includes_CXX.rsp
+CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj: C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Box.cpp
+CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj: CMakeFiles/SDLRenderer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Hypericats\CLionProjects\SDLRenderer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj -MF CMakeFiles\SDLRenderer.dir\Engine\Math\Box.cpp.obj.d -o CMakeFiles\SDLRenderer.dir\Engine\Math\Box.cpp.obj -c C:\Users\Hypericats\CLionProjects\SDLRenderer\Engine\Math\Box.cpp
+
+CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hypericats\CLionProjects\SDLRenderer\Engine\Math\Box.cpp > CMakeFiles\SDLRenderer.dir\Engine\Math\Box.cpp.i
+
+CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hypericats\CLionProjects\SDLRenderer\Engine\Math\Box.cpp -o CMakeFiles\SDLRenderer.dir\Engine\Math\Box.cpp.s
+
+CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj: CMakeFiles/SDLRenderer.dir/flags.make
+CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj: CMakeFiles/SDLRenderer.dir/includes_CXX.rsp
+CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj: C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/WallObject.cpp
+CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj: CMakeFiles/SDLRenderer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Hypericats\CLionProjects\SDLRenderer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj -MF CMakeFiles\SDLRenderer.dir\Game\Objects\WallObject.cpp.obj.d -o CMakeFiles\SDLRenderer.dir\Game\Objects\WallObject.cpp.obj -c C:\Users\Hypericats\CLionProjects\SDLRenderer\Game\Objects\WallObject.cpp
+
+CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hypericats\CLionProjects\SDLRenderer\Game\Objects\WallObject.cpp > CMakeFiles\SDLRenderer.dir\Game\Objects\WallObject.cpp.i
+
+CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Hypericats\CLionProjects\SDLRenderer\Game\Objects\WallObject.cpp -o CMakeFiles\SDLRenderer.dir\Game\Objects\WallObject.cpp.s
+
 # Object files for target SDLRenderer
 SDLRenderer_OBJECTS = \
 "CMakeFiles/SDLRenderer.dir/main.cpp.obj" \
@@ -309,7 +339,9 @@ SDLRenderer_OBJECTS = \
 "CMakeFiles/SDLRenderer.dir/Engine/Util.cpp.obj" \
 "CMakeFiles/SDLRenderer.dir/Engine/Scene/Scene.cpp.obj" \
 "CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj" \
-"CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj"
+"CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj" \
+"CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj" \
+"CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj"
 
 # External object files for target SDLRenderer
 SDLRenderer_EXTERNAL_OBJECTS =
@@ -329,12 +361,14 @@ SDLRenderer.exe: CMakeFiles/SDLRenderer.dir/Engine/Util.cpp.obj
 SDLRenderer.exe: CMakeFiles/SDLRenderer.dir/Engine/Scene/Scene.cpp.obj
 SDLRenderer.exe: CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj
 SDLRenderer.exe: CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj
+SDLRenderer.exe: CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj
+SDLRenderer.exe: CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj
 SDLRenderer.exe: CMakeFiles/SDLRenderer.dir/build.make
 SDLRenderer.exe: C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/lib/x64/SDL2.lib
 SDLRenderer.exe: CMakeFiles/SDLRenderer.dir/linkLibs.rsp
 SDLRenderer.exe: CMakeFiles/SDLRenderer.dir/objects1.rsp
 SDLRenderer.exe: CMakeFiles/SDLRenderer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Hypericats\CLionProjects\SDLRenderer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable SDLRenderer.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Hypericats\CLionProjects\SDLRenderer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable SDLRenderer.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SDLRenderer.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

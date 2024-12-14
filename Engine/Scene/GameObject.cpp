@@ -6,17 +6,17 @@
 
 #include "GameObjectDispatcher.h"
 
-GameObject::GameObject(Sprite&& sprite) : m_sprite(std::move(sprite)) {
+GameObject::GameObject(Sprite&& sprite) : m_sprite(std::move(sprite)), m_boundingBox(this->getPos(), this->getScaledWidth(), this->getScaledHeight()) {
     this->id = GameObjectDispatcher::getNextID();
 }
 
-GameObject::GameObject(Sprite&& sprite, const int x, const int y) : m_sprite(std::move(sprite)) {
+GameObject::GameObject(Sprite&& sprite, const int x, const int y) : m_sprite(std::move(sprite)), m_boundingBox(this->getPos(), this->getScaledWidth(), this->getScaledHeight()) {
     this->id = GameObjectDispatcher::getNextID();
     this->m_x = x;
     this->m_y = y;
 }
 
-GameObject::GameObject(const GameObject &gameObject) : m_sprite(gameObject.m_sprite) {
+GameObject::GameObject(const GameObject &gameObject) : m_sprite(gameObject.m_sprite), m_boundingBox(this->getPos(), this->getScaledWidth(), this->getScaledHeight()) {
     this->id = GameObjectDispatcher::getNextID();
     this->m_layer = gameObject.m_layer;
     this->m_scale = gameObject.m_scale;
@@ -64,6 +64,30 @@ void GameObject::setScale(float f) {
     this->m_scale = f;
 }
 
+void GameObject::updateBoundingBox() {
+    this->m_boundingBox = Box(this->getPos(), this->getScaledWidth(), this->getScaledHeight());
+}
+
+const Box& GameObject::getBoundingBox() {
+    return this->m_boundingBox;
+}
+
+
+bool GameObject::shouldDrawHitbox() const {
+    return this->m_drawHitbox;
+}
+
+bool GameObject::isCollideable() const {
+    return this->m_collideable;
+}
+
+void GameObject::setCollideable(bool b) {
+    this->m_collideable = b;
+}
+
+void GameObject::setDrawHitbox(bool b) {
+    this->m_drawHitbox = b;
+}
 
 Vector2i GameObject::getPos() const {
     return Vector2i(this->m_x, this->m_y);

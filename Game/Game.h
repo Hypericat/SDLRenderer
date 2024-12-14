@@ -23,6 +23,7 @@ private:
     std::unordered_map<unsigned long, GameObject*> m_objects;
     std::multimap<int, GameObject*> m_layerObjects;
     void renderFrame();
+    void updatePhysics();
     void pollWindowEvents();
 
 public:

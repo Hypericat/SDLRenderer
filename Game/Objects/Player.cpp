@@ -3,11 +3,19 @@
 //
 
 #include "Player.h"
+
+#include <iostream>
+
 #include "../Game.h"
 
 Player::Player() : GameObject(std::move(*Sprite::fromBMP("player.bmp"))) {
     this->setScale(10.0F);
     this->setLayer(1000);
+    this->setDrawHitbox(true);
+}
+
+void Player::collideWith(GameObject *other) {
+    std::cout << "Colliding" << std::endl;
 }
 
 void Player::updateControls(const KeyInputHandler& inputHandler, Game* game) {

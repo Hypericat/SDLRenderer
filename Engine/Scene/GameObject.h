@@ -5,6 +5,7 @@
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
 #include "../Sprite.h"
+#include "../Math/Box.h"
 #include "../Math/Vector2i.h"
 
 
@@ -15,15 +16,18 @@ private:
     int m_y = 0;
     float m_scale = 1.0F;
     int m_layer = 0;
+    Box m_boundingBox;
     unsigned long id;
-
+    bool m_drawHitbox = false;
     bool m_registered = false;
+    bool m_collideable = false;
 
 public:
     explicit GameObject(Sprite&& sprite);
     explicit GameObject(const GameObject& gameObject);
     GameObject(Sprite&& sprite, int x, int y);
-    ~GameObject();
+
+    virtual ~GameObject();
 
     const Sprite* getSprite() const;
     int getX() const;
@@ -47,7 +51,18 @@ public:
     bool isRegistered() const;
     void registerObject();
 
+    const Box& getBoundingBox();
+    virtual void updateBoundingBox();
+
     Vector2i getPos() const;
+
+    bool shouldDrawHitbox() const;
+    void setDrawHitbox(bool b);
+
+    bool isCollideable() const;
+    void setCollideable(bool b);
+
+
 
 
     const unsigned long* getId() const {

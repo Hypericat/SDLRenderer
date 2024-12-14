@@ -176,6 +176,30 @@ Engine/Input/KeyInputHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Input/KeyInputHandler.cpp.s
 .PHONY : Engine/Input/KeyInputHandler.cpp.s
 
+Engine/Math/Box.obj: Engine/Math/Box.cpp.obj
+.PHONY : Engine/Math/Box.obj
+
+# target to build an object file
+Engine/Math/Box.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj
+.PHONY : Engine/Math/Box.cpp.obj
+
+Engine/Math/Box.i: Engine/Math/Box.cpp.i
+.PHONY : Engine/Math/Box.i
+
+# target to preprocess a source file
+Engine/Math/Box.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.i
+.PHONY : Engine/Math/Box.cpp.i
+
+Engine/Math/Box.s: Engine/Math/Box.cpp.s
+.PHONY : Engine/Math/Box.s
+
+# target to generate assembly for a file
+Engine/Math/Box.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.s
+.PHONY : Engine/Math/Box.cpp.s
+
 Engine/Math/Vector2f.obj: Engine/Math/Vector2f.cpp.obj
 .PHONY : Engine/Math/Vector2f.obj
 
@@ -440,6 +464,30 @@ Game/Objects/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.s
 .PHONY : Game/Objects/Player.cpp.s
 
+Game/Objects/WallObject.obj: Game/Objects/WallObject.cpp.obj
+.PHONY : Game/Objects/WallObject.obj
+
+# target to build an object file
+Game/Objects/WallObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj
+.PHONY : Game/Objects/WallObject.cpp.obj
+
+Game/Objects/WallObject.i: Game/Objects/WallObject.cpp.i
+.PHONY : Game/Objects/WallObject.i
+
+# target to preprocess a source file
+Game/Objects/WallObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.i
+.PHONY : Game/Objects/WallObject.cpp.i
+
+Game/Objects/WallObject.s: Game/Objects/WallObject.cpp.s
+.PHONY : Game/Objects/WallObject.s
+
+# target to generate assembly for a file
+Game/Objects/WallObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.s
+.PHONY : Game/Objects/WallObject.cpp.s
+
 Game/Scenes/TestScene.obj: Game/Scenes/TestScene.cpp.obj
 .PHONY : Game/Scenes/TestScene.obj
 
@@ -503,6 +551,9 @@ help:
 	@echo ... Engine/Input/KeyInputHandler.obj
 	@echo ... Engine/Input/KeyInputHandler.i
 	@echo ... Engine/Input/KeyInputHandler.s
+	@echo ... Engine/Math/Box.obj
+	@echo ... Engine/Math/Box.i
+	@echo ... Engine/Math/Box.s
 	@echo ... Engine/Math/Vector2f.obj
 	@echo ... Engine/Math/Vector2f.i
 	@echo ... Engine/Math/Vector2f.s
@@ -536,6 +587,9 @@ help:
 	@echo ... Game/Objects/Player.obj
 	@echo ... Game/Objects/Player.i
 	@echo ... Game/Objects/Player.s
+	@echo ... Game/Objects/WallObject.obj
+	@echo ... Game/Objects/WallObject.i
+	@echo ... Game/Objects/WallObject.s
 	@echo ... Game/Scenes/TestScene.obj
 	@echo ... Game/Scenes/TestScene.i
 	@echo ... Game/Scenes/TestScene.s

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Camera.cpp" "CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Input/KeyInputHandler.cpp" "CMakeFiles/SDLRenderer.dir/Engine/Input/KeyInputHandler.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/Input/KeyInputHandler.cpp.obj.d"
+  "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Box.cpp" "CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2f.cpp" "CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.cpp" "CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Renderer.cpp" "CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj.d"
@@ -21,6 +22,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Window.cpp" "CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Game.cpp" "CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Player.cpp" "CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj.d"
+  "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/WallObject.cpp" "CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Scenes/TestScene.cpp" "CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/main.cpp" "CMakeFiles/SDLRenderer.dir/main.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/main.cpp.obj.d"
   )

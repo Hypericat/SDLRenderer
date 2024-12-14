@@ -7,6 +7,7 @@
 #include <iostream>
 #include "../Game.h"
 #include "../Objects/Player.h"
+#include "../Objects/WallObject.h"
 
 void TestScene::loadGameObjects(Game *game) {
     std::cout << "LOADING" << std::endl;
@@ -24,6 +25,10 @@ void TestScene::loadGameObjects(Game *game) {
     other->setY(1000);
     other->setScale(2.0F);
     initGameObject(other, game);
+
+    GameObject* object = new WallObject("wall.bmp");
+    object->setScale(10.0F);
+    initGameObject(object, game);
 
     this->m_player = new Player();
     initGameObject(m_player, game);

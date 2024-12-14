@@ -38,6 +38,9 @@ public:
     void testRender() const;
     void destroy() const;
 
+    void drawLine(const Vector2i& pos1, const Vector2i& pos2) const;
+    void drawBox(const Box& box) const;
+
     void renderGameObject(const GameObject *gameObject) const;
 
     GameObject *testGameObject;

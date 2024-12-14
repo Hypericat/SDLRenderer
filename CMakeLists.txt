@@ -5,7 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/SDL2")
 
-
 add_executable(SDLRenderer main.cpp
         Engine/Window.cpp
         Engine/Window.h
@@ -35,6 +34,10 @@ add_executable(SDLRenderer main.cpp
         Game/Scenes/TestScene.h
         Game/Objects/Player.cpp
         Game/Objects/Player.h
+        Engine/Math/Box.cpp
+        Engine/Math/Box.h
+        Game/Objects/WallObject.cpp
+        Game/Objects/WallObject.h
 )
 
 
@@ -43,6 +46,13 @@ find_package(SDL2 REQUIRED)
 include_directories("${SDL2_INCLUDE_DIRS}")
 
 target_link_libraries(SDLRenderer SDL2::SDL2)
+
+
+# Removes terminal and adds static libraries for release
+if(${CMAKE_BUILD_TYPE} STREQUAL "Release")
+    set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libstdc++ -static-libgcc -O3")
+    target_link_options(SDLRenderer PRIVATE "-mwindows")
+endif ()
 
 
 

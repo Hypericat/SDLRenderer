@@ -200,6 +200,8 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_surface.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_blendmode.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_surface.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Box.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Camera.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
@@ -386,4 +388,6 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Window.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Input/KeyInputHandler.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/Scene.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Player.h
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Player.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/WallObject.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Game.h

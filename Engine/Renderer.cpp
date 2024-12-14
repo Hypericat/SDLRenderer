@@ -64,6 +64,7 @@ void Renderer::testRender() const {
 }
 
 void Renderer::initRender() const {
+    SDL_SetRenderDrawColor(this->m_renderer, 0, 0, 0, 255);
     SDL_RenderClear(this->m_renderer);
 }
 
@@ -102,6 +103,25 @@ void Renderer::renderCenteredSprite(const Sprite *sprite, int x, int y) const {
     dimensions.w = sprite->getWidth();
     dimensions.h = sprite->getHeight();
     this->renderTex(sprite->getTexture(), &dimensions);
+}
+
+void Renderer::drawLine(const Vector2i &pos1, const Vector2i &pos2) const {
+    SDL_SetRenderDrawColor(this->m_renderer, 0, 255, 0, 255);
+    const Vector2i screenPos1 = m_game->toScreenPos(pos1.getX(), pos1.getY());
+    const Vector2i screenPos2 = m_game->toScreenPos(pos2.getX(), pos2.getY());
+    SDL_RenderDrawLine(this->m_renderer, screenPos1.getX(), screenPos1.getY(), screenPos2.getX(), screenPos2.getY());
+}
+
+void Renderer::drawBox(const Box &box) const {
+    Vector2i topRight = box.getMax();
+    Vector2i bottomLeft = box.getMin();
+    topRight.setX(box.getMin().getX());
+    bottomLeft.setX(box.getMax().getX());
+
+    drawLine(box.getMax(), topRight);
+    drawLine(topRight, box.getMin());
+    drawLine(box.getMin(), bottomLeft);
+    drawLine(bottomLeft, box.getMax());
 }
 
 
