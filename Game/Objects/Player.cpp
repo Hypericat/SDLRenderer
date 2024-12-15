@@ -9,10 +9,23 @@
 #include "../Game.h"
 #include "../../Engine/Util.h"
 
-Player::Player() : GameObject(std::move(*Sprite::fromBMP("player.bmp"))) {
-    this->setScale(10.0F);
+Player::Player() : GameObject(std::move(*Sprite::fromPNG("player\\idle00.png")), 13, 18) {
+    this->setCollisionScale(6.0F);
+    this->setRenderScale(8.0f);
     this->setLayer(1000);
-    this->setDrawHitbox(true);
+
+    idleAnimation = Animation();
+    int length = 5;
+    idleAnimation.addSprite(Sprite::fromPNG("player\\idle00.png"), length);
+    idleAnimation.addSprite(Sprite::fromPNG("player\\idle01.png"), length);
+    idleAnimation.addSprite(Sprite::fromPNG("player\\idle02.png"), length);
+    idleAnimation.addSprite(Sprite::fromPNG("player\\idle03.png"), length);
+    idleAnimation.addSprite(Sprite::fromPNG("player\\idle04.png"), length);
+    idleAnimation.addSprite(Sprite::fromPNG("player\\idle05.png"), length);
+    idleAnimation.addSprite(Sprite::fromPNG("player\\idle06.png"), length);
+    idleAnimation.addSprite(Sprite::fromPNG("player\\idle07.png"), length);
+    idleAnimation.addSprite(Sprite::fromPNG("player\\idle08.png"), length);
+
 }
 
 
@@ -68,10 +81,12 @@ void Player::updateControls(const KeyInputHandler& inputHandler, Game* game) {
     if (inputHandler.isKeyDown(SDL_SCANCODE_W)) {
         this->m_velocity.setY(0);
         this->addY(30);
+        //this->setRenderScale(this->getRenderScale() + 0.1f);
     }
     if (inputHandler.isKeyDown(SDL_SCANCODE_S)) {
         this->addY(-30);
         this->m_velocity.setY(0);
+        //this->setRenderScale(this->getRenderScale() - 0.1f);
     }
     if (inputHandler.isKeyDown(SDL_SCANCODE_A)) {
         this->m_velocity.setX(0);
@@ -99,4 +114,12 @@ void Player::jump() {
         this->m_velocity.setY(0);
     }
     this->m_velocity.addY(JUMP_VEL);
+}
+
+const Sprite* Player::getSprite() {
+    return idleAnimation.nextSprite();
+}
+
+void Player::applyTextureYOffset(Vector2i& vec) {
+    vec.setY(this->getBoundingBox().getMin().getY() + 16 * this->getRenderScale());
 }

@@ -52,100 +52,128 @@ build cmake_object_order_depends_target_SDLRenderer: phony || .
 build CMakeFiles/SDLRenderer.dir/main.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/main.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir
 
 build CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Window.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Window.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine
 
 build CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Game.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Game\Game.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Game
 
 build CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Renderer.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Renderer.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine
 
 build CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Sprite.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Sprite.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine
 
 build CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObject.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Scene\GameObject.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine\Scene
 
 build CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObjectDispatcher.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObjectDispatcher.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Scene\GameObjectDispatcher.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine\Scene
 
 build CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Camera.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Camera.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine
 
 build CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Math\Vector2i.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine\Math
 
 build CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2f.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Math\Vector2f.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine\Math
 
 build CMakeFiles/SDLRenderer.dir/Engine/Input/KeyInputHandler.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Input/KeyInputHandler.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Input\KeyInputHandler.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine\Input
 
 build CMakeFiles/SDLRenderer.dir/Engine/Util.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Util.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Util.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine
 
 build CMakeFiles/SDLRenderer.dir/Engine/Scene/Scene.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/Scene.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Scene\Scene.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine\Scene
 
 build CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Scenes/TestScene.cpp || cmake_object_order_depends_target_SDLRenderer
   DEP_FILE = CMakeFiles\SDLRenderer.dir\Game\Scenes\TestScene.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Game\Scenes
+
+build CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Player.cpp || cmake_object_order_depends_target_SDLRenderer
+  DEP_FILE = CMakeFiles\SDLRenderer.dir\Game\Objects\Player.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
+  OBJECT_DIR = CMakeFiles\SDLRenderer.dir
+  OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Game\Objects
+
+build CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Box.cpp || cmake_object_order_depends_target_SDLRenderer
+  DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Math\Box.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
+  OBJECT_DIR = CMakeFiles\SDLRenderer.dir
+  OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine\Math
+
+build CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/WallObject.cpp || cmake_object_order_depends_target_SDLRenderer
+  DEP_FILE = CMakeFiles\SDLRenderer.dir\Game\Objects\WallObject.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
+  OBJECT_DIR = CMakeFiles\SDLRenderer.dir
+  OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Game\Objects
+
+build CMakeFiles/SDLRenderer.dir/Engine/Scene/Animation.cpp.obj: CXX_COMPILER__SDLRenderer_unscanned_Debug C$:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/Animation.cpp || cmake_object_order_depends_target_SDLRenderer
+  DEP_FILE = CMakeFiles\SDLRenderer.dir\Engine\Scene\Animation.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2
+  OBJECT_DIR = CMakeFiles\SDLRenderer.dir
+  OBJECT_FILE_DIR = CMakeFiles\SDLRenderer.dir\Engine\Scene
 
 
 # =============================================================================
@@ -155,9 +183,9 @@ build CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj: CXX_COMPILER__SD
 #############################################
 # Link the executable SDLRenderer.exe
 
-build SDLRenderer.exe: CXX_EXECUTABLE_LINKER__SDLRenderer_Debug CMakeFiles/SDLRenderer.dir/main.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObject.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObjectDispatcher.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Input/KeyInputHandler.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Util.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Scene/Scene.cpp.obj CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj | C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/lib/x64/SDL2.lib
+build SDLRenderer.exe: CXX_EXECUTABLE_LINKER__SDLRenderer_Debug CMakeFiles/SDLRenderer.dir/main.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Sprite.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObject.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObjectDispatcher.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Camera.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Input/KeyInputHandler.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Util.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Scene/Scene.cpp.obj CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj CMakeFiles/SDLRenderer.dir/Engine/Scene/Animation.cpp.obj | C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/lib/x64/SDL2.lib C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/lib/libSDL2_image.dll.a
   FLAGS = -g
-  LINK_LIBRARIES = C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/lib/x64/SDL2.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/lib/x64/SDL2.lib  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/lib/libSDL2_image.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\SDLRenderer.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -210,14 +238,14 @@ build all: phony SDLRenderer.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FeatureSummary.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/Hypericats/CLionProjects/SDLRenderer/CMakeLists.txt C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/sdl2-config.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FeatureSummary.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/Hypericats/CLionProjects/SDLRenderer/CMakeLists.txt C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/sdl2-config.cmake C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/cmake/sdl2_image-config-version.cmake C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/cmake/sdl2_image-config.cmake C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/lib/cmake/SDL2_image/sdl2_image-config-version.cmake C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/lib/cmake/SDL2_image/sdl2_image-config.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FeatureSummary.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/Hypericats/CLionProjects/SDLRenderer/CMakeLists.txt C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/sdl2-config.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FeatureSummary.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/Hypericats/CLionProjects/SDLRenderer/CMakeLists.txt C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/sdl2-config.cmake C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/cmake/sdl2_image-config-version.cmake C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/cmake/sdl2_image-config.cmake C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/lib/cmake/SDL2_image/sdl2_image-config-version.cmake C$:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/lib/cmake/SDL2_image/sdl2_image-config.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
 
 
 #############################################

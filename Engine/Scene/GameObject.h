@@ -14,7 +14,10 @@ private:
     Sprite m_sprite;
     int m_x = 0;
     int m_y = 0;
-    float m_scale = 1.0F;
+    int m_width;
+    int m_height;
+    float m_collisionScale = 1.0F;
+    float m_renderScale = 1.0F;
     int m_layer = 0;
     Box m_boundingBox;
     unsigned long id;
@@ -25,11 +28,11 @@ private:
 public:
     explicit GameObject(Sprite&& sprite);
     GameObject(const GameObject& gameObject);
-    GameObject(Sprite&& sprite, int x, int y);
+    GameObject(Sprite&& sprite, int width, int height);
 
     virtual ~GameObject();
 
-    const Sprite* getSprite() const;
+    virtual const Sprite* getSprite();
     int getX() const;
     int getY() const;
     int* getXPtr();
@@ -39,14 +42,20 @@ public:
     void addY(int y);
     void addX(int x);
 
-    int getScaledWidth() const;
-    int getScaledHeight() const;
+    int getCollisionWidth() const;
+    int getCollisionHeight() const;
+
+    int getRenderWidth() const;
+    int getRenderHeight() const;
 
     int getLayer() const;
     bool setLayer(int layer);
 
-    float getScale() const;
-    void setScale(float f);
+    float getCollisionScale() const;
+    void setCollisionScale(float f);
+
+    void setRenderScale(float f);
+    float getRenderScale() const;
 
     bool isRegistered() const;
     void registerObject();
@@ -63,6 +72,9 @@ public:
     void setCollideable(bool b);
 
     void setAxisFromDir(const Vector2i& vec, const Direction::ENUM& dir);
+
+    virtual void applyTextureXOffset(Vector2i& vec);
+    virtual void applyTextureYOffset(Vector2i& vec);
 
 
 

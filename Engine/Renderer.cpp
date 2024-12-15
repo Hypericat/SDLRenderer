@@ -45,7 +45,7 @@ void Renderer::render() const {
     Vector2i worldPos = m_game->toWorldPosition(x, y);
 }
 
-void Renderer::testRender() const {
+void Renderer::testRender() {
     //background color
     SDL_SetRenderDrawColor(this->m_renderer, 255, 0, 0, 255);
     SDL_RenderClear(this->m_renderer);
@@ -86,14 +86,17 @@ void Renderer::renderSprite(const Sprite *sprite, int x, int y, int width, int h
     this->renderTex(sprite->getTexture(), &dimensions);
 }
 
-void Renderer::renderGameObject(const GameObject *gameObject) const {
+void Renderer::renderGameObject(GameObject *gameObject) const {
     // Adjust for the fact that positions are centered
     Vector2i pos = Vector2i(gameObject->getX(), gameObject->getY());
-    pos += Vector2i(gameObject->getScaledWidth() >> 1, gameObject->getScaledHeight() >> 1);
+
+    gameObject->applyTextureYOffset(pos);
+    gameObject->applyTextureXOffset(pos);
 
     this->m_game->offsetToScreenPosition(pos);
 
-    renderSprite(gameObject->getSprite(), pos.getX(), pos.getY(), gameObject->getScaledWidth(), gameObject->getScaledHeight());
+    pos -= Vector2i(gameObject->getRenderWidth() >> 1, gameObject->getRenderHeight() >> 1);
+    renderSprite(gameObject->getSprite(), pos.getX(), pos.getY(), gameObject->getRenderWidth(), gameObject->getRenderHeight());
 }
 
 void Renderer::renderCenteredSprite(const Sprite *sprite, int x, int y) const {

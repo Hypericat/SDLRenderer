@@ -6,6 +6,7 @@
 #define PLAYER_H
 #include "../../Engine/Input/KeyInputHandler.h"
 #include "../../Engine/Math/Vector2f.h"
+#include "../../Engine/Scene/Animation.h"
 #include "../../Engine/Scene/GameObject.h"
 
 class Game;
@@ -22,10 +23,16 @@ public:
     bool isOnGround() const;
     void setOnGround(bool bl);
     void jump();
+    const Sprite* getSprite() override;
+
+    void applyTextureYOffset(Vector2i& vec) override;
+
 private:
     static inline const float GRAVITY = 0.981F;
     static inline const float MAX_GRAVITY = 20.0F;
-    static inline const float JUMP_VEL = 32.0f;
+    static inline const float JUMP_VEL = 20.0f;
+
+    Animation idleAnimation;
 
 };
 

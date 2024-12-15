@@ -35,13 +35,13 @@ public:
     void update();
     void render() const;
     void initRender() const;
-    void testRender() const;
+    void testRender();
     void destroy() const;
 
     void drawLine(const Vector2i& pos1, const Vector2i& pos2) const;
     void drawBox(const Box& box) const;
 
-    void renderGameObject(const GameObject *gameObject) const;
+    void renderGameObject(GameObject *gameObject) const;
 
     GameObject *testGameObject;
 

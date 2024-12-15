@@ -7,6 +7,7 @@
 #include <memory>
 #include <SDL_render.h>
 #include <SDL_surface.h>
+#include <SDL_image.h>
 #include <string>
 
 
@@ -20,9 +21,13 @@ private:
 public:
     Sprite(SDL_Surface *surface, const std::string& path, int width, int height);
     Sprite(SDL_Surface *surface, const std::string& path);
+    Sprite(SDL_Texture *texture, const std::string& path);
+    Sprite(SDL_Texture *texture, const std::string& path, int width, int height);
     Sprite(Sprite&& other) noexcept;
     Sprite(const Sprite &sprite);
     static Sprite* fromBMP(const std::string& path);
+    static Sprite* fromPNG(const std::string& path);
+    static Sprite* fromPNG(const std::string& path, int width, int height);
     ~Sprite();
 
     // Move Operator

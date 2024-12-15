@@ -6,25 +6,23 @@
 
 #include "GameObjectDispatcher.h"
 
-GameObject::GameObject(Sprite&& sprite) : m_sprite(std::move(sprite)), m_boundingBox(this->getPos(), this->getScaledWidth(), this->getScaledHeight()) {
+GameObject::GameObject(Sprite&& sprite) : m_sprite(std::move(sprite)), m_width(sprite.getWidth()), m_height(sprite.getHeight()), m_boundingBox(this->getPos(), this->getCollisionWidth(), this->getCollisionHeight()) {
     this->id = GameObjectDispatcher::getNextID();
 }
 
-GameObject::GameObject(Sprite&& sprite, const int x, const int y) : m_sprite(std::move(sprite)), m_boundingBox(this->getPos(), this->getScaledWidth(), this->getScaledHeight()) {
+GameObject::GameObject(Sprite&& sprite, const int width, const int height) : m_sprite(std::move(sprite)), m_width(width), m_height(height), m_boundingBox(this->getPos(), this->getCollisionWidth(), this->getCollisionHeight()) {
     this->id = GameObjectDispatcher::getNextID();
-    this->m_x = x;
-    this->m_y = y;
 }
 
-GameObject::GameObject(const GameObject &gameObject) : m_sprite(gameObject.m_sprite), m_boundingBox(this->getPos(), this->getScaledWidth(), this->getScaledHeight()) {
+GameObject::GameObject(const GameObject &gameObject) : m_sprite(gameObject.m_sprite), m_width(gameObject.m_width), m_height(gameObject.m_height), m_boundingBox(this->getPos(), this->getCollisionWidth(), this->getCollisionHeight()) {
     this->id = GameObjectDispatcher::getNextID();
     this->m_layer = gameObject.m_layer;
-    this->m_scale = gameObject.m_scale;
+    this->m_collisionScale = gameObject.m_collisionScale;
     this->m_x = gameObject.getX();
     this->m_y = gameObject.getY();
 }
 
-const Sprite* GameObject::getSprite() const {
+const Sprite* GameObject::getSprite() {
     return &this->m_sprite;
 }
 
@@ -56,16 +54,16 @@ int GameObject::getLayer() const {
     return this->m_layer;
 }
 
-float GameObject::getScale() const {
-    return this->m_scale;
+float GameObject::getCollisionScale() const {
+    return this->m_collisionScale;
 }
 
-void GameObject::setScale(float f) {
-    this->m_scale = f;
+void GameObject::setCollisionScale(const float f) {
+    this->m_collisionScale = f;
 }
 
 void GameObject::updateBoundingBox() {
-    this->m_boundingBox = Box(this->getPos(), this->getScaledWidth(), this->getScaledHeight());
+    this->m_boundingBox = Box(this->getPos(), this->getCollisionWidth(), this->getCollisionHeight());
 }
 
 const Box& GameObject::getBoundingBox() {
@@ -117,16 +115,32 @@ bool GameObject::setLayer(const int layer) {
     return true;
 }
 
-int GameObject::getScaledWidth() const {
-    return this->getScale() * this->m_sprite.getWidth();
+int GameObject::getCollisionWidth() const {
+    return this->getCollisionScale() * this->m_width;
 }
 
-int GameObject::getScaledHeight() const {
-    return this->getScale() * this->m_sprite.getHeight();
+int GameObject::getCollisionHeight() const {
+    return this->getCollisionScale() * this->m_height;
 }
 
 bool GameObject::isRegistered() const {
     return this->m_registered;
+}
+
+int GameObject::getRenderWidth() const {
+    return this->getRenderScale() * this->m_sprite.getWidth();
+}
+
+int GameObject::getRenderHeight() const {
+    return this->getRenderScale() * this->m_sprite.getHeight();
+}
+
+void GameObject::setRenderScale(float f) {
+    this->m_renderScale = f;
+}
+
+float GameObject::getRenderScale() const {
+    return this->m_renderScale;
 }
 
 void GameObject::registerObject() {
@@ -134,6 +148,14 @@ void GameObject::registerObject() {
 }
 
 GameObject::~GameObject() {
+
+}
+
+void GameObject::applyTextureXOffset(Vector2i& vec) {
+
+}
+
+void GameObject::applyTextureYOffset(Vector2i& vec) {
 
 }
 

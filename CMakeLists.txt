@@ -3,8 +3,6 @@ project(SDLRenderer)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/SDL2")
-
 add_executable(SDLRenderer main.cpp
         Engine/Window.cpp
         Engine/Window.h
@@ -39,14 +37,21 @@ add_executable(SDLRenderer main.cpp
         Game/Objects/WallObject.cpp
         Game/Objects/WallObject.h
         Engine/Math/Direction.h
+        Engine/Scene/Animation.cpp
+        Engine/Scene/Animation.h
 )
 
+set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/SDL2")
 
 find_package(SDL2 REQUIRED)
 
-include_directories("${SDL2_INCLUDE_DIRS}")
+set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/SDL2_image")
 
-target_link_libraries(SDLRenderer SDL2::SDL2)
+find_package(SDL2_image REQUIRED SDL2_image>=2.0.0)
+
+include_directories(${SDL2_INCLUDE_DIRS} ${SDL2IMAGE_INCLUDE_DIRS})
+
+target_link_libraries(SDLRenderer SDL2::SDL2 SDL2_image::SDL2_image)
 
 
 # Removes terminal and adds static libraries for release

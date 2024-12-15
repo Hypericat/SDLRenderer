@@ -24,6 +24,7 @@ Sprite::Sprite(SDL_Surface *surface, const std::string& path, int width, int hei
     SDL_FreeSurface(surface);
 }
 
+
 Sprite::Sprite(const Sprite &sprite) {
     this->m_path = sprite.m_path;
     this->m_texture = Util::copyTexture(sprite.m_texture, renderer);
@@ -47,16 +48,60 @@ Sprite::Sprite(SDL_Surface *surface, const std::string &path) {
     SDL_FreeSurface(surface);
 }
 
+Sprite::Sprite(SDL_Texture *texture, const std::string &path) {
+    this->m_path = path;
+    this->m_texture = texture;
+
+    this->m_width = -1;
+    this->m_height = -1;
+
+    // Set width and height
+    SDL_QueryTexture(this->m_texture, nullptr, nullptr, &m_width, &m_height);
+}
+
+Sprite::Sprite(SDL_Texture *texture, const std::string &path, int width, int height) {
+    this->m_path = path;
+    this->m_texture = texture;
+    this->m_width = width;
+    this->m_height = height;
+}
+
+
+
 
 Sprite* Sprite::fromBMP(const std::string& path) {
     const std::string fullPath = std::string(SDL_GetBasePath()) + R"(assets\textures\)" + path;
     SDL_Surface* surface = SDL_LoadBMP(fullPath.c_str());
 
     if(surface == NULL) {
-        printf( "Unable to load image %s! SDL Error: %s\n", fullPath.c_str(), SDL_GetError() );
+        printf( "Unable to load image bmp %s! SDL Error: %s\n", fullPath.c_str(), SDL_GetError() );
     }
 
     return new Sprite(surface, fullPath);
+}
+
+Sprite* Sprite::fromPNG(const std::string& path) {
+    const std::string fullPath = std::string(SDL_GetBasePath()) + R"(assets\textures\)" + path;
+    IMG_Init(IMG_INIT_PNG);
+    SDL_Texture* texture = IMG_LoadTexture(renderer, fullPath.c_str());
+
+    if(texture == NULL) {
+        printf( "Unable to load image to texture png %s! SDL Error: %s\n", fullPath.c_str(), SDL_GetError() );
+    }
+
+    return new Sprite(texture, fullPath);
+}
+
+Sprite* Sprite::fromPNG(const std::string& path, int width, int height) {
+    const std::string fullPath = std::string(SDL_GetBasePath()) + R"(assets\textures\)" + path;
+    IMG_Init(IMG_INIT_PNG);
+    SDL_Texture* texture = IMG_LoadTexture(renderer, fullPath.c_str());
+
+    if(texture == NULL) {
+        printf( "Unable to load image to texture png %s! SDL Error: %s\n", fullPath.c_str(), SDL_GetError() );
+    }
+
+    return new Sprite(texture, fullPath, width, height);
 }
 
 SDL_Texture *Sprite::getTexture() const {
