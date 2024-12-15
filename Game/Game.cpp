@@ -113,7 +113,6 @@ void Game::updatePhysics() {
 
     if (!playerCollidedDown) {
         player->setOnGround(false);
-        std::cout << "Not on ground!" << std::endl;
     }
 
     this->getWindow().getCamera().setPos(player->getPos());

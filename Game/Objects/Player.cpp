@@ -41,19 +41,22 @@ void Player::collideWith(GameObject *other, const Direction::ENUM& dir) {
     if (cpy == Direction::UP) {
         this->setY(otherBoxOutline.getY() + (this->getBoundingBox().getHeight() >> 1));
         this->m_velocity.setY(0);
-        std::cout << "TOUCHED" << std::endl;
         this->setOnGround(true);
         return;
     }
 }
 
 void Player::tickPhysics(Game *game) {
-    m_velocity.multiply(0.98F);
-    this->m_velocity.addY(-0.1);
+    //m_velocity.multiply(0.98F);
 
-    std::cout << "VEL Y : " << Util::roundAwayFromZero(m_velocity.getY()) << std::endl;
-    this->addX(Util::roundAwayFromZero(m_velocity.getX()));
-    this->addY(Util::roundAwayFromZero(m_velocity.getY()));
+    float currentVelocity = m_velocity.getY();
+    if (currentVelocity > -MAX_GRAVITY) {
+        this->m_velocity.addY(std::max(-GRAVITY, -(currentVelocity + MAX_GRAVITY)));
+    }
+
+
+    this->addX((int) Util::roundAwayFromZero(m_velocity.getX()));
+    this->addY((int) Util::roundAwayFromZero(m_velocity.getY()));
 }
 
 bool Player::isOnGround() const {
@@ -62,23 +65,38 @@ bool Player::isOnGround() const {
 
 
 void Player::updateControls(const KeyInputHandler& inputHandler, Game* game) {
-    if (inputHandler.isKeyDown(SDL_SCANCODE_W))
-        this->addY(10);
-    if (inputHandler.isKeyDown(SDL_SCANCODE_S))
-        this->addY(-10);
-    if (inputHandler.isKeyDown(SDL_SCANCODE_A))
-        this->addX(10);
-    if (inputHandler.isKeyDown(SDL_SCANCODE_D))
-        this->addX(-10);
-    if (inputHandler.isKeyDown(SDL_SCANCODE_SPACE))
+    if (inputHandler.isKeyDown(SDL_SCANCODE_W)) {
+        this->m_velocity.setY(0);
+        this->addY(30);
+    }
+    if (inputHandler.isKeyDown(SDL_SCANCODE_S)) {
+        this->addY(-30);
+        this->m_velocity.setY(0);
+    }
+    if (inputHandler.isKeyDown(SDL_SCANCODE_A)) {
+        this->m_velocity.setX(0);
+        this->addX(30);
+    }
+    if (inputHandler.isKeyDown(SDL_SCANCODE_D)) {
+        this->m_velocity.setX(0);
+        this->addX(-30);
+    }
+    if (inputHandler.isKeyDown(SDL_SCANCODE_SPACE)) {
         this->jump();
+    }
 }
 
 void Player::setOnGround(const bool bl) {
     this->m_onGround = bl;
+    if (!bl) return;
+    this->m_velocity.setX(0);
+    this->m_velocity.setY(0);
 }
 
 void Player::jump() {
     if (!this->isOnGround()) return;
-    this->m_velocity.addY(5);
+    if (this->m_velocity.getY() < 0) {
+        this->m_velocity.setY(0);
+    }
+    this->m_velocity.addY(JUMP_VEL);
 }
