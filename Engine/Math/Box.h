@@ -4,8 +4,8 @@
 
 #ifndef BOX_H
 #define BOX_H
-#include "Vector2i.h"
 #include "Direction.h"
+#include "Vector2i.h"
 
 class Box {
 private:
@@ -18,6 +18,9 @@ public:
     Box(const Vector2i& center, int width, int height);
     Box(const Box& box) : m_min(box.m_min), m_max(box.m_max) {};
 
+    Vector2i getDirPos(const Direction::ENUM& dir) const;
+
+
     const Vector2i& getMax() const;
     const Vector2i& getMin() const;
 
@@ -27,7 +30,7 @@ public:
     bool isInside(int x, int y) const;
     bool isInside(const Vector2i &pos) const;
     Direction::ENUM testCollision(const Box& box) const;
-    Vector2i getCenter();
+    Vector2i getCenter() const;
 
     int getWidth() const;
     int getHeight() const;

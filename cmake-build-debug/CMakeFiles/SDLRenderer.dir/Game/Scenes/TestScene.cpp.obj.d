@@ -201,8 +201,8 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_blendmode.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_surface.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Box.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Direction.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Camera.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \

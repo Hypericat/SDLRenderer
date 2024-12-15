@@ -101,6 +101,15 @@ void GameObject::addX(const int x) {
     this->m_x += x;
 }
 
+void GameObject::setAxisFromDir(const Vector2i &vec, const Direction::ENUM &dir) {
+    if (dir == Direction::NONE) return;
+    if (dir == Direction::UP || dir == Direction::DOWN) {
+        this->m_y = vec.getY();
+        return;
+    }
+    this->m_x = vec.getX();
+}
+
 // The layer must be set before it is added to the scene or it will not work correctly
 bool GameObject::setLayer(const int layer) {
     if (this->isRegistered()) return false;

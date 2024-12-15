@@ -17,6 +17,25 @@ public:
         LEFT,
         RIGHT
     };
+    static void negate(ENUM& enumerator) {
+        if (enumerator == NONE) return;
+        if (enumerator == UP) {
+            enumerator = DOWN;
+            return;
+        }
+
+        if (enumerator == DOWN) {
+            enumerator = UP;
+            return;
+        }
+
+        if (enumerator == LEFT) {
+            enumerator = RIGHT;
+            return;
+        }
+
+        enumerator = LEFT;
+    }
     static void toString(const ENUM& enumerator, std::string& inStr) {
         if (enumerator == NONE) {
             inStr = "None";

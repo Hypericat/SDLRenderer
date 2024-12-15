@@ -195,7 +195,7 @@ CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObject.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_blendmode.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_surface.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Box.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Direction.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:\Users\Hypericats\CLionProjects\SDLRenderer\Engine\Scene\GameObjectDispatcher.h

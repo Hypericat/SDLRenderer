@@ -68,7 +68,7 @@ Vector2i Vector2i::operator/(Vector2i &vec) const {
     return Vector2i(getX() / vec.getX(), getY() / vec.getY());
 }
 
-Vector2i & Vector2i::operator+=(const Vector2i &vec) {
+Vector2i& Vector2i::operator+=(const Vector2i &vec) {
     this->m_x += vec.getX();
     this->m_y += vec.getY();
     return *this;

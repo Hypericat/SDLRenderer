@@ -60,16 +60,16 @@ void Game::pollWindowEvents() {
 }
 
 Vector2i Game::toWorldPosition(int screenX, int screenY) {
-    Vector2i pos(screenX, screenY);
+    Vector2i pos(-screenX, -screenY);
     pos -= this->m_window.getCenter();
-    this->m_window.getCamera().negateOffset(pos);
+    this->m_window.getCamera().applyOffset(pos);
     return pos;
 }
 
 Vector2i Game::toScreenPos(const int worldX, const int worldY) {
-    Vector2i pos(worldX, worldY);
+    Vector2i pos(-worldX, -worldY);
     pos += this->m_window.getCenter();
-    this->m_window.getCamera().applyOffset(pos);
+    this->m_window.getCamera().negateOffset(pos);
     return pos;
 }
 
@@ -87,24 +87,26 @@ void Game::stop() {
 
 void Game::updatePhysics() {
     Player* player = this->m_scene->getPlayer();
+    if (player == nullptr) return;
 
-    if (player != nullptr) {
-        // Update controls before so the camera does not lag behind
-        player->updateControls(this->m_keyInputHandler, this);
-        this->getWindow().getCamera().setPos(player->getPos());
-    } else {
-        this->updateTestControls();
-    }
+    // Update controls before so the camera does not lag behind
+    player->updateControls(this->m_keyInputHandler, this);
+    player->updateBoundingBox();
 
     //Update physics and such
     for (const std::pair<int, GameObject*> pair : m_layerObjects) {
-        pair.second->updateBoundingBox();
-
-        if (!pair.second->isCollideable() || player == nullptr || pair.second->getId() == player->getId()) continue;
-        if (Direction::ENUM dir = pair.second->getBoundingBox().testCollision(player->getBoundingBox()); dir != Direction::NONE) {
-            player->collideWith(pair.second, dir);
+        if (pair.second->isCollideable() && pair.second->getId() != player->getId()) {
+            if (Direction::ENUM dir = pair.second->getBoundingBox().testCollision(player->getBoundingBox()); dir != Direction::NONE) {
+                player->collideWith(pair.second, dir);
+                player->updateBoundingBox();
+                continue;
+            }
         }
+
+        pair.second->updateBoundingBox();
     }
+
+    this->getWindow().getCamera().setPos(player->getPos());
 }
 
 void Game::renderFrame() {
@@ -173,13 +175,13 @@ void Game::loadScene(Scene *scene) {
 
 void Game::updateTestControls() const {
     if (this->m_keyInputHandler.isKeyDown(SDL_SCANCODE_W))
-        this->m_window.getCamera().setY(m_window.getCamera().getY() - 10);
-    if (this->m_keyInputHandler.isKeyDown(SDL_SCANCODE_S))
         this->m_window.getCamera().setY(m_window.getCamera().getY() + 10);
+    if (this->m_keyInputHandler.isKeyDown(SDL_SCANCODE_S))
+        this->m_window.getCamera().setY(m_window.getCamera().getY() - 10);
     if (this->m_keyInputHandler.isKeyDown(SDL_SCANCODE_A))
-        this->m_window.getCamera().setX(m_window.getCamera().getX() - 10);
-    if (this->m_keyInputHandler.isKeyDown(SDL_SCANCODE_D))
         this->m_window.getCamera().setX(m_window.getCamera().getX() + 10);
+    if (this->m_keyInputHandler.isKeyDown(SDL_SCANCODE_D))
+        this->m_window.getCamera().setX(m_window.getCamera().getX() - 10);
 }
 
 

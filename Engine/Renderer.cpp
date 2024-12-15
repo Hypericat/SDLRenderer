@@ -89,7 +89,7 @@ void Renderer::renderSprite(const Sprite *sprite, int x, int y, int width, int h
 void Renderer::renderGameObject(const GameObject *gameObject) const {
     // Adjust for the fact that positions are centered
     Vector2i pos = Vector2i(gameObject->getX(), gameObject->getY());
-    pos -= Vector2i(gameObject->getScaledWidth() >> 1, gameObject->getScaledHeight() >> 1);
+    pos += Vector2i(gameObject->getScaledWidth() >> 1, gameObject->getScaledHeight() >> 1);
 
     this->m_game->offsetToScreenPosition(pos);
 
@@ -113,15 +113,15 @@ void Renderer::drawLine(const Vector2i &pos1, const Vector2i &pos2) const {
 }
 
 void Renderer::drawBox(const Box &box) const {
-    Vector2i topRight = box.getMax();
-    Vector2i bottomLeft = box.getMin();
-    topRight.setX(box.getMin().getX());
-    bottomLeft.setX(box.getMax().getX());
+    Vector2i topLeft = box.getMax();
+    Vector2i bottomRight = box.getMin();
+    topLeft.setX(box.getMin().getX());
+    bottomRight.setX(box.getMax().getX());
 
-    drawLine(box.getMax(), topRight);
-    drawLine(topRight, box.getMin());
-    drawLine(box.getMin(), bottomLeft);
-    drawLine(bottomLeft, box.getMax());
+    drawLine(box.getMax(), topLeft);
+    drawLine(topLeft, box.getMin());
+    drawLine(box.getMin(), bottomRight);
+    drawLine(bottomRight, box.getMax());
 }
 
 

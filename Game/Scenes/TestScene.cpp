@@ -30,6 +30,14 @@ void TestScene::loadGameObjects(Game *game) {
     object->setScale(10.0F);
     initGameObject(object, game);
 
+    GameObject* wall2 = new WallObject("wall.bmp");
+    wall2->setScale(10.0F);
+    wall2->addX(wall2->getScaledWidth());
+    wall2->addY(wall2->getScaledHeight() + 100);
+
+    initGameObject(wall2, game);
+
+
     this->m_player = new Player();
     initGameObject(m_player, game);
 }

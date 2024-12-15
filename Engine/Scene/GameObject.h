@@ -24,7 +24,7 @@ private:
 
 public:
     explicit GameObject(Sprite&& sprite);
-    explicit GameObject(const GameObject& gameObject);
+    GameObject(const GameObject& gameObject);
     GameObject(Sprite&& sprite, int x, int y);
 
     virtual ~GameObject();
@@ -61,6 +61,8 @@ public:
 
     bool isCollideable() const;
     void setCollideable(bool b);
+
+    void setAxisFromDir(const Vector2i& vec, const Direction::ENUM& dir);
 
 
 

@@ -364,8 +364,8 @@ CMakeFiles/SDLRenderer.dir/Engine/Input/KeyInputHandler.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_render.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_surface.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Box.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Direction.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Sprite.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \

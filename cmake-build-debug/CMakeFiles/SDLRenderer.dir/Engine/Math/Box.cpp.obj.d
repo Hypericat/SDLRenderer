@@ -1,7 +1,6 @@
 CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj: \
  C:\Users\Hypericats\CLionProjects\SDLRenderer\Engine\Math\Box.cpp \
  C:\Users\Hypericats\CLionProjects\SDLRenderer\Engine\Math\Box.h \
- C:\Users\Hypericats\CLionProjects\SDLRenderer\Engine\Math\Vector2i.h \
  C:\Users\Hypericats\CLionProjects\SDLRenderer\Engine\Math\Direction.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
@@ -108,6 +107,7 @@ CMakeFiles/SDLRenderer.dir/Engine/Math/Box.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_util.h \
+ C:\Users\Hypericats\CLionProjects\SDLRenderer\Engine\Math\Vector2i.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \

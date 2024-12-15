@@ -15,18 +15,37 @@ Player::Player() : GameObject(std::move(*Sprite::fromBMP("player.bmp"))) {
 }
 
 void Player::collideWith(GameObject *other, const Direction::ENUM& dir) {
-    std::string str;
-    Direction::toString(dir, str);
-    std::cout << "Colliding with direction " << str << std::endl;
+    Direction::ENUM cpy = dir;
+    Direction::negate(cpy);
+    Vector2i otherBoxOutline = other->getBoundingBox().getDirPos(cpy);
+
+    // Cpy is the direction we are hitting from the perspective of the gameObject
+    // Dir is from the player perspective
+    if (cpy == Direction::RIGHT) {
+        this->setX(otherBoxOutline.getX() - (this->getBoundingBox().getWidth() >> 1));
+        return;
+    }
+    if (cpy == Direction::DOWN) {
+        this->setY(otherBoxOutline.getY() - (this->getBoundingBox().getHeight() >> 1));
+        return;
+    }
+    if (cpy == Direction::LEFT) {
+        this->setX(otherBoxOutline.getX() + (this->getBoundingBox().getWidth() >> 1));
+        return;
+    }
+    if (cpy == Direction::UP) {
+        this->setY(otherBoxOutline.getY() + (this->getBoundingBox().getHeight() >> 1));
+        return;
+    }
 }
 
 void Player::updateControls(const KeyInputHandler& inputHandler, Game* game) {
     if (inputHandler.isKeyDown(SDL_SCANCODE_W))
-        this->addY(-10);
-    if (inputHandler.isKeyDown(SDL_SCANCODE_S))
         this->addY(10);
+    if (inputHandler.isKeyDown(SDL_SCANCODE_S))
+        this->addY(-10);
     if (inputHandler.isKeyDown(SDL_SCANCODE_A))
-        this->addX(-10);
-    if (inputHandler.isKeyDown(SDL_SCANCODE_D))
         this->addX(10);
+    if (inputHandler.isKeyDown(SDL_SCANCODE_D))
+        this->addX(-10);
 }
