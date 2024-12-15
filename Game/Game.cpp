@@ -91,19 +91,29 @@ void Game::updatePhysics() {
 
     // Update controls before so the camera does not lag behind
     player->updateControls(this->m_keyInputHandler, this);
+    player->tickPhysics(this);
     player->updateBoundingBox();
 
+    bool playerCollidedDown = false;
     //Update physics and such
     for (const std::pair<int, GameObject*> pair : m_layerObjects) {
         if (pair.second->isCollideable() && pair.second->getId() != player->getId()) {
             if (Direction::ENUM dir = pair.second->getBoundingBox().testCollision(player->getBoundingBox()); dir != Direction::NONE) {
                 player->collideWith(pair.second, dir);
                 player->updateBoundingBox();
+                if (dir == Direction::DOWN) {
+                    playerCollidedDown = true;
+                }
                 continue;
             }
         }
 
         pair.second->updateBoundingBox();
+    }
+
+    if (!playerCollidedDown) {
+        player->setOnGround(false);
+        std::cout << "Not on ground!" << std::endl;
     }
 
     this->getWindow().getCamera().setPos(player->getPos());

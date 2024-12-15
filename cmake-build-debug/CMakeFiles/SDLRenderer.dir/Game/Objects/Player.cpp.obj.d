@@ -369,6 +369,7 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Sprite.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2f.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
@@ -387,4 +388,5 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Camera.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Player.h
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Player.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Util.h

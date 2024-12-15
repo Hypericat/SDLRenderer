@@ -10,6 +10,7 @@
 class Util {
 public:
     static SDL_Texture* copyTexture(SDL_Texture* texture, SDL_Renderer* renderer);
+    static float roundAwayFromZero(float f);
 
 };
 

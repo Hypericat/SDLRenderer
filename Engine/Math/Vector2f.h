@@ -40,6 +40,11 @@ public:
 
     void setY(float y);
     void setX(float x);
+
+    void addY(float y);
+    void addX(float x);
+
+    void multiply(float scalar);
 };
 
 

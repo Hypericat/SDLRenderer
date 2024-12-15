@@ -384,4 +384,5 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Camera.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Player.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Input/KeyInputHandler.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2f.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h

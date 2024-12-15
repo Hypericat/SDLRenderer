@@ -376,6 +376,7 @@ CMakeFiles/SDLRenderer.dir/Engine/Scene/Scene.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Sprite.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2f.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Game.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \

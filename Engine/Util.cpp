@@ -3,6 +3,7 @@
 //
 
 #include "Util.h"
+#include <math.h>
 
 SDL_Texture* Util::copyTexture(SDL_Texture* texture, SDL_Renderer* renderer) {
     Uint32 format;
@@ -24,4 +25,8 @@ SDL_Texture* Util::copyTexture(SDL_Texture* texture, SDL_Renderer* renderer) {
     SDL_SetTextureBlendMode(copy, blendMode);
     SDL_SetRenderTarget(renderer, renderTarget);
     return copy;
+}
+
+float Util::roundAwayFromZero(const float f) {
+    return f < 0 ? std::floor(f) : std::ceil(f);
 }

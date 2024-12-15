@@ -13,6 +13,11 @@ float Vector2f::getY() const {
     return m_y;
 }
 
+void Vector2f::multiply(const float scalar) {
+    this->m_x *= scalar;
+    this->m_y *= scalar;
+}
+
 Vector2i Vector2f::toVec2i() const {
     return Vector2i(m_x, m_y);
 }
@@ -99,4 +104,12 @@ Vector2f & Vector2f::operator*=(const Vector2f &vec) {
     this->m_x *= vec.getX();
     this->m_y *= vec.getY();
     return *this;
+}
+
+void Vector2f::addY(float y) {
+    this->m_y += y;
+}
+
+void Vector2f::addX(float x) {
+    this->m_x += x;
 }
