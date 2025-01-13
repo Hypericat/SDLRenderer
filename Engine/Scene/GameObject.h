@@ -76,6 +76,9 @@ public:
     virtual void applyTextureXOffset(Vector2i& vec);
     virtual void applyTextureYOffset(Vector2i& vec);
 
+    virtual void preRender();
+    virtual void postRender();
+
 
 
 

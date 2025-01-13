@@ -272,6 +272,30 @@ Engine/Renderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.s
 .PHONY : Engine/Renderer.cpp.s
 
+Engine/Scene/Animation.obj: Engine/Scene/Animation.cpp.obj
+.PHONY : Engine/Scene/Animation.obj
+
+# target to build an object file
+Engine/Scene/Animation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Scene/Animation.cpp.obj
+.PHONY : Engine/Scene/Animation.cpp.obj
+
+Engine/Scene/Animation.i: Engine/Scene/Animation.cpp.i
+.PHONY : Engine/Scene/Animation.i
+
+# target to preprocess a source file
+Engine/Scene/Animation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Scene/Animation.cpp.i
+.PHONY : Engine/Scene/Animation.cpp.i
+
+Engine/Scene/Animation.s: Engine/Scene/Animation.cpp.s
+.PHONY : Engine/Scene/Animation.s
+
+# target to generate assembly for a file
+Engine/Scene/Animation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Engine/Scene/Animation.cpp.s
+.PHONY : Engine/Scene/Animation.cpp.s
+
 Engine/Scene/GameObject.obj: Engine/Scene/GameObject.cpp.obj
 .PHONY : Engine/Scene/GameObject.obj
 
@@ -464,6 +488,30 @@ Game/Objects/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.s
 .PHONY : Game/Objects/Player.cpp.s
 
+Game/Objects/PlayerHair.obj: Game/Objects/PlayerHair.cpp.obj
+.PHONY : Game/Objects/PlayerHair.obj
+
+# target to build an object file
+Game/Objects/PlayerHair.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/PlayerHair.cpp.obj
+.PHONY : Game/Objects/PlayerHair.cpp.obj
+
+Game/Objects/PlayerHair.i: Game/Objects/PlayerHair.cpp.i
+.PHONY : Game/Objects/PlayerHair.i
+
+# target to preprocess a source file
+Game/Objects/PlayerHair.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/PlayerHair.cpp.i
+.PHONY : Game/Objects/PlayerHair.cpp.i
+
+Game/Objects/PlayerHair.s: Game/Objects/PlayerHair.cpp.s
+.PHONY : Game/Objects/PlayerHair.s
+
+# target to generate assembly for a file
+Game/Objects/PlayerHair.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/PlayerHair.cpp.s
+.PHONY : Game/Objects/PlayerHair.cpp.s
+
 Game/Objects/WallObject.obj: Game/Objects/WallObject.cpp.obj
 .PHONY : Game/Objects/WallObject.obj
 
@@ -563,6 +611,9 @@ help:
 	@echo ... Engine/Renderer.obj
 	@echo ... Engine/Renderer.i
 	@echo ... Engine/Renderer.s
+	@echo ... Engine/Scene/Animation.obj
+	@echo ... Engine/Scene/Animation.i
+	@echo ... Engine/Scene/Animation.s
 	@echo ... Engine/Scene/GameObject.obj
 	@echo ... Engine/Scene/GameObject.i
 	@echo ... Engine/Scene/GameObject.s
@@ -587,6 +638,9 @@ help:
 	@echo ... Game/Objects/Player.obj
 	@echo ... Game/Objects/Player.i
 	@echo ... Game/Objects/Player.s
+	@echo ... Game/Objects/PlayerHair.obj
+	@echo ... Game/Objects/PlayerHair.i
+	@echo ... Game/Objects/PlayerHair.s
 	@echo ... Game/Objects/WallObject.obj
 	@echo ... Game/Objects/WallObject.i
 	@echo ... Game/Objects/WallObject.s

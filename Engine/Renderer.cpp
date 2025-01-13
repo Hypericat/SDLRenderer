@@ -87,6 +87,8 @@ void Renderer::renderSprite(const Sprite *sprite, int x, int y, int width, int h
 }
 
 void Renderer::renderGameObject(GameObject *gameObject) const {
+    gameObject->preRender();
+
     // Adjust for the fact that positions are centered
     Vector2i pos = Vector2i(gameObject->getX(), gameObject->getY());
 
@@ -97,6 +99,8 @@ void Renderer::renderGameObject(GameObject *gameObject) const {
 
     pos -= Vector2i(gameObject->getRenderWidth() >> 1, gameObject->getRenderHeight() >> 1);
     renderSprite(gameObject->getSprite(), pos.getX(), pos.getY(), gameObject->getRenderWidth(), gameObject->getRenderHeight());
+
+    gameObject->postRender();
 }
 
 void Renderer::renderCenteredSprite(const Sprite *sprite, int x, int y) const {

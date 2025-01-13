@@ -7,6 +7,7 @@
 #include <iostream>
 #include "../Game.h"
 #include "../Objects/Player.h"
+#include "../Objects/PlayerHair.h"
 #include "../Objects/WallObject.h"
 
 void TestScene::loadGameObjects(Game *game) {
@@ -46,6 +47,9 @@ void TestScene::loadGameObjects(Game *game) {
     this->m_player->setY(300);
     this->m_player->setDrawHitbox(true);
     initGameObject(m_player, game);
+
+    PlayerHair* hair = new PlayerHair(this);
+    initGameObject(hair, game);
 }
 
 // Can be removed

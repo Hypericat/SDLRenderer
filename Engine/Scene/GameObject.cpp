@@ -151,6 +151,12 @@ GameObject::~GameObject() {
 
 }
 
+void GameObject::preRender() {
+}
+
+void GameObject::postRender() {
+}
+
 void GameObject::applyTextureXOffset(Vector2i& vec) {
 
 }
