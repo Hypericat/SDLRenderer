@@ -68,9 +68,8 @@ void Renderer::initRender() const {
     SDL_RenderClear(this->m_renderer);
 }
 
-void Renderer::renderTex(SDL_Texture *texture, const SDL_Rect *dimensions) const {
-    SDL_RenderCopy(m_renderer, texture, NULL, dimensions);
-    //SDL_UpdateWindowSurface(m_window); // Might not need to be called every frame
+void Renderer::renderTex(SDL_Texture *texture, const SDL_Rect *dimensions, const SDL_RendererFlip flip) const {
+    SDL_RenderCopyEx(m_renderer, texture, nullptr, dimensions, 0, nullptr, flip);
 }
 
 void Renderer::renderSprite(const Sprite *sprite, int x, int y) const {
@@ -83,11 +82,12 @@ void Renderer::renderSprite(const Sprite *sprite, int x, int y, int width, int h
     dimensions.y = y;
     dimensions.w = width;
     dimensions.h = height;
-    this->renderTex(sprite->getTexture(), &dimensions);
+    this->renderTex(sprite->getTexture(), &dimensions, sprite->getFlip());
 }
 
 void Renderer::renderGameObject(GameObject *gameObject) const {
     gameObject->preRender();
+
 
     // Adjust for the fact that positions are centered
     Vector2i pos = Vector2i(gameObject->getX(), gameObject->getY());
@@ -109,7 +109,7 @@ void Renderer::renderCenteredSprite(const Sprite *sprite, int x, int y) const {
     dimensions.y = y - (sprite->getHeight() >> 1);
     dimensions.w = sprite->getWidth();
     dimensions.h = sprite->getHeight();
-    this->renderTex(sprite->getTexture(), &dimensions);
+    this->renderTex(sprite->getTexture(), &dimensions, sprite->getFlip());
 }
 
 void Renderer::drawLine(const Vector2i &pos1, const Vector2i &pos2) const {

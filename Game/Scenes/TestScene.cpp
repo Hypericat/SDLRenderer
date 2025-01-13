@@ -35,8 +35,8 @@ void TestScene::loadGameObjects(Game *game) {
     initGameObject(object, game);
 
     GameObject* wall2 = new WallObject("wall.bmp");
-    wall2->setCollisionScale(8.0F);
-    wall2->setRenderScale(8.0F);
+    wall2->setCollisionScale(20.0F);
+    wall2->setRenderScale(20.0F);
     wall2->addX(wall2->getCollisionWidth());
     wall2->addY(wall2->getCollisionHeight() + 100);
 

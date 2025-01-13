@@ -4,6 +4,8 @@
 
 #ifndef PLAYER_H
 #define PLAYER_H
+#include "FacingDirection.h"
+#include "PlayerState.h"
 #include "../../Engine/Input/KeyInputHandler.h"
 #include "../../Engine/Math/Vector2f.h"
 #include "../../Engine/Scene/Animation.h"
@@ -27,12 +29,23 @@ public:
 
     void applyTextureYOffset(Vector2i& vec) override;
 
+    PlayerState::ENUM getPlayerState() const;
+    void setPlayerState(PlayerState::ENUM state);
+
+    FacingDirection::ENUM getFacingDirection() const;
+    void setFacingDirection(FacingDirection::ENUM direction);
+
 private:
+    std::unordered_map<int, Animation*> m_animations;
+
+    FacingDirection::ENUM m_facingDirection = FacingDirection::RIGHT;;
+    PlayerState::ENUM m_playerState = PlayerState::IDLE;
+
     static inline const float GRAVITY = 0.981F;
     static inline const float MAX_GRAVITY = 20.0F;
     static inline const float JUMP_VEL = 20.0f;
 
-    Animation idleAnimation;
+    void registerAnimation(FacingDirection::ENUM direction, PlayerState::ENUM state, Animation* animation);
 
 };
 

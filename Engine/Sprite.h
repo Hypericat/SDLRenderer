@@ -17,6 +17,7 @@ private:
     std::string m_path;
     int m_width;
     int m_height;
+    SDL_RendererFlip m_flip = SDL_FLIP_NONE;
 
 public:
     Sprite(SDL_Surface *surface, const std::string& path, int width, int height);
@@ -46,6 +47,10 @@ public:
     void setWidth(int width);
     void setHeight(int height);
     std::string toString() const;
+
+    SDL_RendererFlip getFlip() const;
+    Sprite* setRenderFlip(SDL_RendererFlip flip);
+
 
 };
 

@@ -24,7 +24,7 @@ private:
     Window *m_window;
     Camera* m_camera;
 
-    void renderTex(SDL_Texture *texture, const SDL_Rect *dimensions) const;
+    void renderTex(SDL_Texture *texture, const SDL_Rect *dimensions, SDL_RendererFlip flip) const;
     void renderSprite(const Sprite *sprite, int x, int y) const;
     void renderSprite(const Sprite *sprite, int x, int y, int width, int height) const;
     void renderCenteredSprite(const Sprite *sprite, int x, int y) const;

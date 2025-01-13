@@ -66,9 +66,6 @@ Sprite::Sprite(SDL_Texture *texture, const std::string &path, int width, int hei
     this->m_height = height;
 }
 
-
-
-
 Sprite* Sprite::fromBMP(const std::string& path) {
     const std::string fullPath = std::string(SDL_GetBasePath()) + R"(assets\textures\)" + path;
     SDL_Surface* surface = SDL_LoadBMP(fullPath.c_str());
@@ -165,4 +162,13 @@ std::string Sprite::toString() const {
 Sprite::~Sprite() {
     SDL_DestroyTexture(m_texture);
     m_texture = nullptr;
+}
+
+SDL_RendererFlip Sprite::getFlip() const {
+    return this->m_flip;
+}
+
+Sprite* Sprite::setRenderFlip(const SDL_RendererFlip flip) {
+    this->m_flip = flip;
+    return this;
 }
