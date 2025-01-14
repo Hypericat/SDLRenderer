@@ -24,6 +24,12 @@ public:
     void reset();
     void free();
 
+    Animation* cpSetFlip(SDL_RendererFlip flip);
+
+private:
+    // This takes no length and assumes length 1
+    void addSprite(Sprite* sprite);
+
 };
 
 

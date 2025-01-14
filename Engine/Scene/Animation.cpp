@@ -42,3 +42,25 @@ void Animation::free() {
     }
     sprites.clear();
 }
+
+Animation* Animation::cpSetFlip(const SDL_RendererFlip flip) {
+    Animation* animation = new Animation();
+    Sprite* lastSprite = nullptr;
+    Sprite* newSprite = nullptr;
+    for (Sprite* sprite : sprites) {
+        if (lastSprite == sprite) {
+            animation->addSprite(newSprite);
+            continue;
+        }
+        // Copy texture would be better but has issues when resizing window
+        newSprite = Sprite::fromFullPNG(sprite->getPath());
+        newSprite->setRenderFlip(flip);
+        animation->addSprite(newSprite);
+        lastSprite = sprite;
+    }
+    return animation;
+}
+
+void Animation::addSprite(Sprite *sprite) {
+    sprites.push_back(sprite);
+}

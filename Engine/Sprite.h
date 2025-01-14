@@ -28,6 +28,7 @@ public:
     Sprite(const Sprite &sprite);
     static Sprite* fromBMP(const std::string& path);
     static Sprite* fromPNG(const std::string& path);
+    static Sprite* fromFullPNG(const std::string& path);
     static Sprite* fromPNG(const std::string& path, int width, int height);
     ~Sprite();
 

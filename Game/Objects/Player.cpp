@@ -27,18 +27,7 @@ Player::Player() : GameObject(std::move(*Sprite::fromPNG("player\\idle00.png")),
     animation->addSprite(Sprite::fromPNG("player\\idle07.png"), frameLength);
     animation->addSprite(Sprite::fromPNG("player\\idle08.png"), frameLength);
     registerAnimation(FacingDirection::RIGHT, PlayerState::IDLE, animation);
-
-    animation = new Animation();
-    animation->addSprite(Sprite::fromPNG("player\\idle00.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle01.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle02.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle03.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle04.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle05.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle06.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle07.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle08.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    registerAnimation(FacingDirection::LEFT, PlayerState::IDLE, animation);
+    registerAnimation(FacingDirection::LEFT, PlayerState::IDLE, animation->cpSetFlip(SDL_FLIP_HORIZONTAL));
 
     animation = new Animation();
     animation->addSprite(Sprite::fromPNG("player\\runFast00.png"), frameLength);
@@ -54,21 +43,8 @@ Player::Player() : GameObject(std::move(*Sprite::fromPNG("player\\idle00.png")),
     animation->addSprite(Sprite::fromPNG("player\\runFast10.png"), frameLength);
     animation->addSprite(Sprite::fromPNG("player\\runFast11.png"), frameLength);
     registerAnimation(FacingDirection::RIGHT, PlayerState::RUNNING, animation);
+    registerAnimation(FacingDirection::LEFT, PlayerState::RUNNING, animation->cpSetFlip(SDL_FLIP_HORIZONTAL));
 
-    animation = new Animation();
-    animation->addSprite(Sprite::fromPNG("player\\runFast00.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast01.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast02.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast03.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast04.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast05.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast06.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast07.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast08.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast09.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast10.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast11.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    registerAnimation(FacingDirection::LEFT, PlayerState::RUNNING, animation);
 
     animation = new Animation();
     animation->addSprite(Sprite::fromPNG("player\\jumpFast00.png"), frameLength);
@@ -76,19 +52,14 @@ Player::Player() : GameObject(std::move(*Sprite::fromPNG("player\\idle00.png")),
     animation->addSprite(Sprite::fromPNG("player\\jumpFast02.png"), frameLength);
     animation->addSprite(Sprite::fromPNG("player\\jumpFast03.png"), frameLength);
     registerAnimation(FacingDirection::RIGHT, PlayerState::JUMPING, animation);
+    registerAnimation(FacingDirection::LEFT, PlayerState::JUMPING, animation->cpSetFlip(SDL_FLIP_HORIZONTAL));
 
-    animation = new Animation();
-    animation->addSprite(Sprite::fromPNG("player\\jumpFast00.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\jumpFast01.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\jumpFast02.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\jumpFast03.png")->setRenderFlip(SDL_FLIP_HORIZONTAL), frameLength);
-    registerAnimation(FacingDirection::LEFT, PlayerState::JUMPING, animation);
 
 
 
 }
 
-
+\
 void Player::collideWith(GameObject *other, const Direction::ENUM& dir) {
     Direction::ENUM cpy = dir;
     Direction::negate(cpy);

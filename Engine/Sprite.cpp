@@ -89,6 +89,17 @@ Sprite* Sprite::fromPNG(const std::string& path) {
     return new Sprite(texture, fullPath);
 }
 
+Sprite* Sprite::fromFullPNG(const std::string& path) {
+    IMG_Init(IMG_INIT_PNG);
+    SDL_Texture* texture = IMG_LoadTexture(renderer, path.c_str());
+
+    if(texture == NULL) {
+        printf( "Unable to load image to texture png %s! SDL Error: %s\n", path.c_str(), SDL_GetError() );
+    }
+
+    return new Sprite(texture, path);
+}
+
 Sprite* Sprite::fromPNG(const std::string& path, int width, int height) {
     const std::string fullPath = std::string(SDL_GetBasePath()) + R"(assets\textures\)" + path;
     IMG_Init(IMG_INIT_PNG);
