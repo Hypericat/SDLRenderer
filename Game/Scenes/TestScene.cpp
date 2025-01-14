@@ -6,19 +6,21 @@
 
 #include <iostream>
 #include "../Game.h"
+#include "../Objects/MediumPlatform.h"
 #include "../Objects/Player.h"
 #include "../Objects/PlayerHair.h"
-#include "../Objects/WallObject.h"
+#include "../Objects/SmallPlatform.h"
 
 void TestScene::loadGameObjects(Game *game) {
     std::cout << "LOADING" << std::endl;
     std::string path = "testBackground.bmp";
     Sprite* sprite = Sprite::fromBMP(path);
-    this->m_background = new GameObject(std::move(*sprite));
-    this->m_background->setCollisionScale(8.0F);
-    this->m_background->setRenderScale(8.0F);
-    this->m_background->setLayer(-10000);
-    initGameObject(this->m_background, game);
+
+    GameObject* bg = new GameObject(std::move(*sprite));
+    bg->setCollisionScale(8.0F);
+    bg->setRenderScale(8.0F);
+    bg->setLayer(-10000);
+    this->populateBackground(bg);
 
     path = "test.bmp";
     sprite = Sprite::fromBMP(path);
@@ -29,18 +31,16 @@ void TestScene::loadGameObjects(Game *game) {
     other->setRenderScale(2.0F);
     initGameObject(other, game);
 
-    GameObject* object = new WallObject("wall.bmp");
-    object->setCollisionScale(8.0F);
-    object->setRenderScale(8.0F);
-    initGameObject(object, game);
 
-    GameObject* wall2 = new WallObject("wall.bmp");
-    wall2->setCollisionScale(20.0F);
-    wall2->setRenderScale(20.0F);
-    wall2->addX(wall2->getCollisionWidth());
-    wall2->addY(wall2->getCollisionHeight() + 100);
+    SmallPlatform* platform = new SmallPlatform();
+    platform->setX(500);
+    platform->setY(100);
+    initGameObject(platform, game);
 
-    initGameObject(wall2, game);
+    MediumPlatform* medium = new MediumPlatform();
+    medium->setX(1000);
+    medium->setY(200);
+    initGameObject(medium, game);
 
 
     this->m_player = new Player();

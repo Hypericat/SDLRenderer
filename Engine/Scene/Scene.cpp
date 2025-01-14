@@ -7,7 +7,6 @@
 
 Scene::Scene(const std::string& name) {
     this->m_name = name;
-    this->m_background = nullptr;
 }
 
 void Scene::initScene(Game* game) const {
@@ -32,13 +31,15 @@ std::vector<GameObject*>& Scene::getGameObjects() {
     return this->m_gameObjects;
 }
 
-GameObject* Scene::getBackground() const {
-    return this->m_background;
+std::vector<GameObject*>& Scene::getBackgrounds() {
+    return this->backgrounds;
 }
 
 void Scene::freeScene() {
-    delete this->m_background;
-    this->m_background = nullptr;
+    for (const GameObject* background : this->backgrounds) {
+        delete background;
+    }
+    backgrounds.clear();
 
     for (const GameObject* gameObject : this->m_gameObjects) {
         delete gameObject;
@@ -49,4 +50,39 @@ void Scene::freeScene() {
 
 Player* Scene::getPlayer() {
     return this->m_player;
+}
+
+void Scene::updateBackground(Game *game) {
+    if (this->backgrounds.empty()) return;
+    const Camera* camera = &game->getWindow().getCamera();
+    GameObject* background = this->backgrounds.at(0);
+    int width = background->getRenderWidth();
+    int height = background->getRenderHeight();
+    int yDistance = camera->getY() / height;
+    int xDistance = camera->getX() / width;
+    int finalY = yDistance * height;
+    int finalX   = xDistance * width;
+    background->setY(finalY);
+    background->setX(finalX);
+
+    // Not plus or minus, depends on sign of positon
+
+    this->backgrounds.at(1)->setX(finalX + width);
+    this->backgrounds.at(1)->setY(finalY);
+
+    this->backgrounds.at(2)->setX(finalX);
+    this->backgrounds.at(2)->setY(finalY + height);
+
+    this->backgrounds.at(3)->setX(finalX + width);
+    this->backgrounds.at(3)->setY(finalY + height);
+}
+
+void Scene::populateBackground(GameObject *bg) {
+    bg->setX(0);
+    bg->setY(0);
+    this->backgrounds.reserve(4);
+    this->backgrounds.push_back(bg);
+    this->backgrounds.push_back(new GameObject(*bg));
+    this->backgrounds.push_back(new GameObject(*bg));
+    this->backgrounds.push_back(new GameObject(*bg));
 }

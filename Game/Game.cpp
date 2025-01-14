@@ -9,6 +9,7 @@
 #include <SDL_events.h>
 #include <SDL_timer.h>
 
+#include "Scenes/Level.h"
 #include "Scenes/TestScene.h"
 
 Game::Game(Window &window): m_window(window), m_keyInputHandler(window) {
@@ -17,7 +18,7 @@ Game::Game(Window &window): m_window(window), m_keyInputHandler(window) {
 }
 
 void Game::run() {
-    this->loadScene(new TestScene());
+    this->loadScene(new Level());
 
     this->running = true;
 
@@ -121,6 +122,10 @@ void Game::updatePhysics() {
 void Game::renderFrame() {
     this->m_window.getRenderer().initRender();
 
+    this->m_scene->updateBackground(this);
+    for (GameObject* bg : this->m_scene->getBackgrounds()) {
+        this->m_window.getRenderer().renderGameObject(bg);
+    }
     // Render GameObjects
     for (const std::pair<int, GameObject*> pair : m_layerObjects) {
         this->m_window.getRenderer().renderGameObject(pair.second);

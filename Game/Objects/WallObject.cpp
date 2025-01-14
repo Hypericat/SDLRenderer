@@ -4,7 +4,7 @@
 
 #include "WallObject.h"
 
-WallObject::WallObject(const std::string &spriteName) : GameObject(std::move(*Sprite::fromBMP(spriteName))) {
+WallObject::WallObject(const std::string &spriteName) : GameObject(std::move(*Sprite::fromPNG(spriteName))) {
     this->setDrawHitbox(true);
     this->setCollideable(true);
 }

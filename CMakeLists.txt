@@ -43,6 +43,12 @@ add_executable(SDLRenderer main.cpp
         Game/Objects/PlayerHair.h
         Game/Objects/FacingDirection.h
         Game/Objects/PlayerState.h
+        Game/Objects/SmallPlatform.cpp
+        Game/Objects/SmallPlatform.h
+        Game/Objects/MediumPlatform.cpp
+        Game/Objects/MediumPlatform.h
+        Game/Scenes/Level.cpp
+        Game/Scenes/Level.h
 )
 
 set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/SDL2")

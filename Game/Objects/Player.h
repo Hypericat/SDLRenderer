@@ -44,6 +44,7 @@ private:
     static inline const float GRAVITY = 0.981F;
     static inline const float MAX_GRAVITY = 20.0F;
     static inline const float JUMP_VEL = 20.0f;
+    static inline const float MOVE_MULTIPLIER = 2.0f;
 
     void registerAnimation(FacingDirection::ENUM direction, PlayerState::ENUM state, Animation* animation);
 

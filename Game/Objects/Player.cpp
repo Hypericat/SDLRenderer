@@ -109,8 +109,7 @@ bool Player::isOnGround() const {
 
 
 void Player::updateControls(const KeyInputHandler& inputHandler, Game* game) {
-    bool moved = false;
-
+    // Debug inputs
     if (inputHandler.isKeyDown(SDL_SCANCODE_W)) {
         this->m_velocity.setY(0);
         this->addY(20);
@@ -121,9 +120,11 @@ void Player::updateControls(const KeyInputHandler& inputHandler, Game* game) {
         this->m_velocity.setY(0);
         //this->setRenderScale(this->getRenderScale() - 0.1f);
     }
+
+    bool moved = false;
     if (inputHandler.isKeyDown(SDL_SCANCODE_A)) {
         this->m_velocity.setX(0);
-        this->addX(20);
+        this->addX(10.0f * MOVE_MULTIPLIER);
         this->setFacingDirection(FacingDirection::LEFT);
 
         if (isOnGround()) this->setPlayerState(PlayerState::RUNNING);
@@ -131,7 +132,7 @@ void Player::updateControls(const KeyInputHandler& inputHandler, Game* game) {
     }
     if (inputHandler.isKeyDown(SDL_SCANCODE_D)) {
         this->m_velocity.setX(0);
-        this->addX(-20);
+        this->addX(10.0f * -MOVE_MULTIPLIER);
         this->setFacingDirection(FacingDirection::RIGHT);
 
         if (isOnGround()) this->setPlayerState(PlayerState::RUNNING);

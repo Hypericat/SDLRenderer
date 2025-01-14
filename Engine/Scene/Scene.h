@@ -15,7 +15,7 @@ class Game;
 class Scene {
 protected:
     Player* m_player = nullptr;
-    GameObject* m_background;
+    std::vector<GameObject*> backgrounds = std::vector<GameObject*>();
     std::vector<GameObject*> m_gameObjects;
     std::string m_name;
 
@@ -27,7 +27,7 @@ public:
 
     std::string& getName();
     std::vector<GameObject*>& getGameObjects();
-    GameObject* getBackground() const;
+    std::vector<GameObject*>& getBackgrounds();
 
     Player* getPlayer();
 
@@ -36,6 +36,10 @@ public:
     virtual void loadGameObjects(Game* game) = 0; // Must be implemented
     virtual void initCamera(Camera* camera);
     virtual void freeScene();
+    virtual void updateBackground(Game* game);
+
+protected:
+    virtual void populateBackground(GameObject* bg);
 
 };
 

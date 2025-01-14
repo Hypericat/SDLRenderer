@@ -464,6 +464,30 @@ Game/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Game.cpp.s
 .PHONY : Game/Game.cpp.s
 
+Game/Objects/MediumPlatform.obj: Game/Objects/MediumPlatform.cpp.obj
+.PHONY : Game/Objects/MediumPlatform.obj
+
+# target to build an object file
+Game/Objects/MediumPlatform.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/MediumPlatform.cpp.obj
+.PHONY : Game/Objects/MediumPlatform.cpp.obj
+
+Game/Objects/MediumPlatform.i: Game/Objects/MediumPlatform.cpp.i
+.PHONY : Game/Objects/MediumPlatform.i
+
+# target to preprocess a source file
+Game/Objects/MediumPlatform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/MediumPlatform.cpp.i
+.PHONY : Game/Objects/MediumPlatform.cpp.i
+
+Game/Objects/MediumPlatform.s: Game/Objects/MediumPlatform.cpp.s
+.PHONY : Game/Objects/MediumPlatform.s
+
+# target to generate assembly for a file
+Game/Objects/MediumPlatform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/MediumPlatform.cpp.s
+.PHONY : Game/Objects/MediumPlatform.cpp.s
+
 Game/Objects/Player.obj: Game/Objects/Player.cpp.obj
 .PHONY : Game/Objects/Player.obj
 
@@ -512,6 +536,30 @@ Game/Objects/PlayerHair.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/PlayerHair.cpp.s
 .PHONY : Game/Objects/PlayerHair.cpp.s
 
+Game/Objects/SmallPlatform.obj: Game/Objects/SmallPlatform.cpp.obj
+.PHONY : Game/Objects/SmallPlatform.obj
+
+# target to build an object file
+Game/Objects/SmallPlatform.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/SmallPlatform.cpp.obj
+.PHONY : Game/Objects/SmallPlatform.cpp.obj
+
+Game/Objects/SmallPlatform.i: Game/Objects/SmallPlatform.cpp.i
+.PHONY : Game/Objects/SmallPlatform.i
+
+# target to preprocess a source file
+Game/Objects/SmallPlatform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/SmallPlatform.cpp.i
+.PHONY : Game/Objects/SmallPlatform.cpp.i
+
+Game/Objects/SmallPlatform.s: Game/Objects/SmallPlatform.cpp.s
+.PHONY : Game/Objects/SmallPlatform.s
+
+# target to generate assembly for a file
+Game/Objects/SmallPlatform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/SmallPlatform.cpp.s
+.PHONY : Game/Objects/SmallPlatform.cpp.s
+
 Game/Objects/WallObject.obj: Game/Objects/WallObject.cpp.obj
 .PHONY : Game/Objects/WallObject.obj
 
@@ -535,6 +583,30 @@ Game/Objects/WallObject.s: Game/Objects/WallObject.cpp.s
 Game/Objects/WallObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.s
 .PHONY : Game/Objects/WallObject.cpp.s
+
+Game/Scenes/Level.obj: Game/Scenes/Level.cpp.obj
+.PHONY : Game/Scenes/Level.obj
+
+# target to build an object file
+Game/Scenes/Level.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Scenes/Level.cpp.obj
+.PHONY : Game/Scenes/Level.cpp.obj
+
+Game/Scenes/Level.i: Game/Scenes/Level.cpp.i
+.PHONY : Game/Scenes/Level.i
+
+# target to preprocess a source file
+Game/Scenes/Level.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Scenes/Level.cpp.i
+.PHONY : Game/Scenes/Level.cpp.i
+
+Game/Scenes/Level.s: Game/Scenes/Level.cpp.s
+.PHONY : Game/Scenes/Level.s
+
+# target to generate assembly for a file
+Game/Scenes/Level.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Scenes/Level.cpp.s
+.PHONY : Game/Scenes/Level.cpp.s
 
 Game/Scenes/TestScene.obj: Game/Scenes/TestScene.cpp.obj
 .PHONY : Game/Scenes/TestScene.obj
@@ -635,15 +707,24 @@ help:
 	@echo ... Game/Game.obj
 	@echo ... Game/Game.i
 	@echo ... Game/Game.s
+	@echo ... Game/Objects/MediumPlatform.obj
+	@echo ... Game/Objects/MediumPlatform.i
+	@echo ... Game/Objects/MediumPlatform.s
 	@echo ... Game/Objects/Player.obj
 	@echo ... Game/Objects/Player.i
 	@echo ... Game/Objects/Player.s
 	@echo ... Game/Objects/PlayerHair.obj
 	@echo ... Game/Objects/PlayerHair.i
 	@echo ... Game/Objects/PlayerHair.s
+	@echo ... Game/Objects/SmallPlatform.obj
+	@echo ... Game/Objects/SmallPlatform.i
+	@echo ... Game/Objects/SmallPlatform.s
 	@echo ... Game/Objects/WallObject.obj
 	@echo ... Game/Objects/WallObject.i
 	@echo ... Game/Objects/WallObject.s
+	@echo ... Game/Scenes/Level.obj
+	@echo ... Game/Scenes/Level.i
+	@echo ... Game/Scenes/Level.s
 	@echo ... Game/Scenes/TestScene.obj
 	@echo ... Game/Scenes/TestScene.i
 	@echo ... Game/Scenes/TestScene.s
