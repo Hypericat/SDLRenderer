@@ -75,6 +75,7 @@ void Scene::updateBackground(Game *game) {
 
     this->backgrounds.at(3)->setX(finalX + width);
     this->backgrounds.at(3)->setY(finalY + height);
+    this->backgrounds.at(3)->setRenderScale(100);
 }
 
 void Scene::populateBackground(GameObject *bg) {

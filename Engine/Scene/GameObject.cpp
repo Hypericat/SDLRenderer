@@ -14,10 +14,11 @@ GameObject::GameObject(Sprite&& sprite, const int width, const int height) : m_s
     this->id = GameObjectDispatcher::getNextID();
 }
 
-GameObject::GameObject(const GameObject &gameObject) : m_sprite(gameObject.m_sprite), m_width(gameObject.m_width), m_height(gameObject.m_height), m_boundingBox(this->getPos(), this->getCollisionWidth(), this->getCollisionHeight()) {
+GameObject::GameObject(const GameObject &gameObject) : m_sprite(Sprite(gameObject.m_sprite)), m_width(gameObject.m_width), m_height(gameObject.m_height), m_boundingBox(this->getPos(), this->getCollisionWidth(), this->getCollisionHeight()) {
     this->id = GameObjectDispatcher::getNextID();
     this->m_layer = gameObject.m_layer;
     this->m_collisionScale = gameObject.m_collisionScale;
+    this->m_renderScale = gameObject.m_renderScale;
     this->m_x = gameObject.getX();
     this->m_y = gameObject.getY();
 }
