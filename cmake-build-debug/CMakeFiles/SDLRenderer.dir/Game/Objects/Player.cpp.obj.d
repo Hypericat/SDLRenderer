@@ -385,6 +385,7 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+ C:\Users\Hypericats\CLionProjects\SDLRenderer\Game\Objects\JumpParticles.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Game.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \

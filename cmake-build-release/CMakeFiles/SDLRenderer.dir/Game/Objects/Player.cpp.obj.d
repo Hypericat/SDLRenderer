@@ -1,6 +1,8 @@
 CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj: \
  C:\Users\Hypericats\CLionProjects\SDLRenderer\Game\Objects\Player.cpp \
  C:\Users\Hypericats\CLionProjects\SDLRenderer\Game\Objects\Player.h \
+ C:\Users\Hypericats\CLionProjects\SDLRenderer\Game\Objects\FacingDirection.h \
+ C:\Users\Hypericats\CLionProjects\SDLRenderer\Game\Objects\PlayerState.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Input/KeyInputHandler.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
