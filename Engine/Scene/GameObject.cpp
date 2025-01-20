@@ -5,6 +5,7 @@
 #include "GameObject.h"
 
 #include "GameObjectDispatcher.h"
+#include "../../Game/Game.h"
 
 GameObject::GameObject(Sprite&& sprite) : m_sprite(std::move(sprite)), m_width(sprite.getWidth()), m_height(sprite.getHeight()), m_boundingBox(this->getPos(), this->getCollisionWidth(), this->getCollisionHeight()) {
     this->id = GameObjectDispatcher::getNextID();
@@ -152,10 +153,10 @@ GameObject::~GameObject() {
 
 }
 
-void GameObject::preRender() {
+void GameObject::preRender(Game* game) {
 }
 
-void GameObject::postRender() {
+void GameObject::postRender(Game* game) {
 }
 
 void GameObject::applyTextureXOffset(Vector2i& vec) {

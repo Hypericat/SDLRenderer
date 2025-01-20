@@ -43,6 +43,14 @@ void Animation::free() {
     sprites.clear();
 }
 
+int Animation::getSize() {
+    return sprites.size();
+}
+
+bool Animation::isLast() const {
+    return m_index >= sprites.size() - 1;
+}
+
 Animation* Animation::cpSetFlip(const SDL_RendererFlip flip) {
     Animation* animation = new Animation();
     Sprite* lastSprite = nullptr;

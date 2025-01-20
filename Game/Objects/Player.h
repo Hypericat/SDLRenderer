@@ -15,7 +15,7 @@ class Game;
 
 class Player : public GameObject {
 public:
-    Player();
+    Player(Game* game);
     Vector2f m_velocity = Vector2f(0.0F, 0.0F);
     bool m_onGround = true;
 
@@ -36,6 +36,8 @@ public:
     void setFacingDirection(FacingDirection::ENUM direction);
 
 private:
+    Game* m_game;
+
     std::unordered_map<int, Animation*> m_animations;
 
     FacingDirection::ENUM m_facingDirection = FacingDirection::RIGHT;;
@@ -45,6 +47,7 @@ private:
     static inline const float MAX_GRAVITY = 20.0F;
     static inline const float JUMP_VEL = 20.0f;
     static inline const float MOVE_MULTIPLIER = 2.0f;
+
 
     void registerAnimation(FacingDirection::ENUM direction, PlayerState::ENUM state, Animation* animation);
 

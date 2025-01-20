@@ -12,38 +12,42 @@
 #include "../Objects/SmallPlatform.h"
 
 void TestScene::loadGameObjects(Game *game) {
-    std::cout << "LOADING" << std::endl;
-    std::string path = "testBackground.bmp";
-    Sprite* sprite = Sprite::fromBMP(path);
-
-    GameObject* bg = new GameObject(std::move(*sprite));
-    bg->setCollisionScale(8.0F);
-    bg->setRenderScale(8.0F);
-    bg->setLayer(-10000);
-    this->populateBackground(bg);
-
-    path = "test.bmp";
-    sprite = Sprite::fromBMP(path);
-    GameObject* other = new GameObject(std::move(*sprite));
-    other->setX(1000);
-    other->setY(1000);
-    other->setCollisionScale(2.0F);
-    other->setRenderScale(2.0F);
-    initGameObject(other, game);
-
+    GameObject* bg = new GameObject(std::move(*Sprite::fromPNG("sky.png")));
+    bg->setCollisionScale(0);
+    bg->setRenderScale(8);
+    populateBackground(bg);
 
     SmallPlatform* platform = new SmallPlatform();
-    platform->setX(500);
-    platform->setY(100);
+    platform->setX(0);
+    platform->setY(200);
     initGameObject(platform, game);
 
     MediumPlatform* medium = new MediumPlatform();
-    medium->setX(1000);
-    medium->setY(200);
+    medium->setX(350);
+    medium->setY(100);
     initGameObject(medium, game);
 
 
-    this->m_player = new Player();
+    int lastX = -500;
+    int lastY = 350;
+
+    for (int i = 0; i < 100; i++) {
+        WallObject* wall;
+        if (rand() & 1) {
+            wall = new SmallPlatform();
+        } else {
+            wall = new MediumPlatform();
+            lastX -= 100;
+        }
+        lastX -= 400 + rand() % 200;
+        lastY += 100 + rand() % 300 - 250;
+        wall->setX(lastX);
+        wall->setY(lastY);
+        initGameObject(wall, game);
+    }
+
+
+    this->m_player = new Player(game);
     this->m_player->setY(300);
     this->m_player->setDrawHitbox(true);
     initGameObject(m_player, game);

@@ -16,18 +16,16 @@ class Scene {
 protected:
     Player* m_player = nullptr;
     std::vector<GameObject*> backgrounds = std::vector<GameObject*>();
-    std::vector<GameObject*> m_gameObjects;
+    std::unordered_map<unsigned long, GameObject*> m_gameObjects;
     std::string m_name;
-
-    void initGameObject(GameObject* gameObject, Game* game);
-
 public:
     virtual ~Scene() = default;
-    explicit Scene(const std::string& name);
+    explicit Scene(const std::string& name, Game* game);
 
     std::string& getName();
-    std::vector<GameObject*>& getGameObjects();
     std::vector<GameObject*>& getBackgrounds();
+    GameObject* getGameObject(unsigned long* id);
+    void freeGameObject(const unsigned long* id);
 
     Player* getPlayer();
 
@@ -37,9 +35,16 @@ public:
     virtual void initCamera(Camera* camera);
     virtual void freeScene();
     virtual void updateBackground(Game* game);
+    void initGameObject(GameObject* gameObject, Game* game);
+
+
 
 protected:
     virtual void populateBackground(GameObject* bg);
+
+private:
+    static constexpr int SIGN_BIT_MASK = 1 << 31;
+    Game* m_game;
 
 };
 

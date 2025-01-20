@@ -12,7 +12,7 @@ class Scene;
 class PlayerHair : public GameObject {
 public:
     explicit PlayerHair(Scene* scene);
-    void preRender() override;
+    void preRender(Game* game) override;
 
 private:
     Scene* scene;

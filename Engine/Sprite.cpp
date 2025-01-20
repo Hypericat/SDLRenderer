@@ -27,7 +27,10 @@ Sprite::Sprite(SDL_Surface *surface, const std::string& path, int width, int hei
 
 Sprite::Sprite(const Sprite &sprite) {
     this->m_path = sprite.m_path;
-    this->m_texture = Util::copyTexture(sprite.m_texture, renderer);
+    //this->m_texture = Util::copyTexture(sprite.m_texture, renderer);
+    IMG_Init(IMG_INIT_PNG);
+    this->m_texture = IMG_LoadTexture(renderer, sprite.m_path.c_str());
+
     this->m_width = sprite.m_width;
     this->m_height = sprite.m_height;
 }

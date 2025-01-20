@@ -464,6 +464,30 @@ Game/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Game.cpp.s
 .PHONY : Game/Game.cpp.s
 
+Game/Objects/JumpParticles.obj: Game/Objects/JumpParticles.cpp.obj
+.PHONY : Game/Objects/JumpParticles.obj
+
+# target to build an object file
+Game/Objects/JumpParticles.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/JumpParticles.cpp.obj
+.PHONY : Game/Objects/JumpParticles.cpp.obj
+
+Game/Objects/JumpParticles.i: Game/Objects/JumpParticles.cpp.i
+.PHONY : Game/Objects/JumpParticles.i
+
+# target to preprocess a source file
+Game/Objects/JumpParticles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/JumpParticles.cpp.i
+.PHONY : Game/Objects/JumpParticles.cpp.i
+
+Game/Objects/JumpParticles.s: Game/Objects/JumpParticles.cpp.s
+.PHONY : Game/Objects/JumpParticles.s
+
+# target to generate assembly for a file
+Game/Objects/JumpParticles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/JumpParticles.cpp.s
+.PHONY : Game/Objects/JumpParticles.cpp.s
+
 Game/Objects/MediumPlatform.obj: Game/Objects/MediumPlatform.cpp.obj
 .PHONY : Game/Objects/MediumPlatform.obj
 
@@ -608,6 +632,30 @@ Game/Scenes/Level.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Scenes/Level.cpp.s
 .PHONY : Game/Scenes/Level.cpp.s
 
+Game/Scenes/MainMenu.obj: Game/Scenes/MainMenu.cpp.obj
+.PHONY : Game/Scenes/MainMenu.obj
+
+# target to build an object file
+Game/Scenes/MainMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Scenes/MainMenu.cpp.obj
+.PHONY : Game/Scenes/MainMenu.cpp.obj
+
+Game/Scenes/MainMenu.i: Game/Scenes/MainMenu.cpp.i
+.PHONY : Game/Scenes/MainMenu.i
+
+# target to preprocess a source file
+Game/Scenes/MainMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Scenes/MainMenu.cpp.i
+.PHONY : Game/Scenes/MainMenu.cpp.i
+
+Game/Scenes/MainMenu.s: Game/Scenes/MainMenu.cpp.s
+.PHONY : Game/Scenes/MainMenu.s
+
+# target to generate assembly for a file
+Game/Scenes/MainMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Scenes/MainMenu.cpp.s
+.PHONY : Game/Scenes/MainMenu.cpp.s
+
 Game/Scenes/TestScene.obj: Game/Scenes/TestScene.cpp.obj
 .PHONY : Game/Scenes/TestScene.obj
 
@@ -707,6 +755,9 @@ help:
 	@echo ... Game/Game.obj
 	@echo ... Game/Game.i
 	@echo ... Game/Game.s
+	@echo ... Game/Objects/JumpParticles.obj
+	@echo ... Game/Objects/JumpParticles.i
+	@echo ... Game/Objects/JumpParticles.s
 	@echo ... Game/Objects/MediumPlatform.obj
 	@echo ... Game/Objects/MediumPlatform.i
 	@echo ... Game/Objects/MediumPlatform.s
@@ -725,6 +776,9 @@ help:
 	@echo ... Game/Scenes/Level.obj
 	@echo ... Game/Scenes/Level.i
 	@echo ... Game/Scenes/Level.s
+	@echo ... Game/Scenes/MainMenu.obj
+	@echo ... Game/Scenes/MainMenu.i
+	@echo ... Game/Scenes/MainMenu.s
 	@echo ... Game/Scenes/TestScene.obj
 	@echo ... Game/Scenes/TestScene.i
 	@echo ... Game/Scenes/TestScene.s

@@ -11,7 +11,7 @@ class Scene;
 
 class Level : public Scene {
 public:
-    Level() : Scene("Level the first") {};
+    Level(Game* game) : Scene("Level the first", game) {};
 
     // Gets called after the objects are loaded
     void initScene(Game* game) const override; // Remove this line if not needed

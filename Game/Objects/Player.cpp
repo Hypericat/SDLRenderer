@@ -6,13 +6,16 @@
 
 #include <iostream>
 
+#include "JumpParticles.h"
 #include "../Game.h"
 #include "../../Engine/Util.h"
 
-Player::Player() : GameObject(std::move(*Sprite::fromPNG("player\\idle00.png")), 13, 18) {
+Player::Player(Game* game) : GameObject(std::move(*Sprite::fromPNG("player\\idle00.png")), 13, 18) {
     this->setCollisionScale(6.0F);
     this->setRenderScale(8.0f);
     this->setLayer(1000);
+
+    this->m_game = game;
 
     int frameLength = 5;
     Animation *animation = new Animation();
@@ -159,6 +162,23 @@ void Player::jump() {
         this->m_velocity.setY(0);
     }
     this->m_velocity.addY(JUMP_VEL);
+
+    GameObject* particles = new JumpParticles();
+    particles->setX(this->getX());
+    particles->setY(this->getY() - 30);
+    this->m_game->getScene()->initGameObject(particles, m_game);
+
+    particles = new GameObject(*particles);
+    particles->addX(5);
+    particles->addY(2);
+    this->m_game->getScene()->initGameObject(particles, m_game);
+
+
+    particles = new GameObject(*particles);
+    particles->addX(-10);
+    particles->addY(-4);
+    this->m_game->getScene()->initGameObject(particles, m_game);
+
 }
 
 const Sprite* Player::getSprite() {

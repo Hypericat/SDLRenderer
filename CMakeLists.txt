@@ -49,6 +49,10 @@ add_executable(SDLRenderer main.cpp
         Game/Objects/MediumPlatform.h
         Game/Scenes/Level.cpp
         Game/Scenes/Level.h
+        Game/Scenes/MainMenu.cpp
+        Game/Scenes/MainMenu.h
+        Game/Objects/JumpParticles.cpp
+        Game/Objects/JumpParticles.h
 )
 
 set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/SDL2")

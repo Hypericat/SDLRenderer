@@ -29,6 +29,8 @@ void Window::initWindow(std::string name, int flags, Game* game) {
       SDL_WINDOWPOS_UNDEFINED,
       this->dimensions.getX(),
       this->dimensions.getY(),
+      //1920,
+      //1080,
       flags
     );
 

@@ -8,6 +8,7 @@
 #include "../Math/Box.h"
 #include "../Math/Vector2i.h"
 
+class Game;
 
 class GameObject {
 private:
@@ -76,8 +77,8 @@ public:
     virtual void applyTextureXOffset(Vector2i& vec);
     virtual void applyTextureYOffset(Vector2i& vec);
 
-    virtual void preRender();
-    virtual void postRender();
+    virtual void preRender(Game* game);
+    virtual void postRender(Game* game);
 
 
 

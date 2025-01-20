@@ -35,6 +35,8 @@ public:
     void run();
     void stop();
 
+    Scene* getScene();
+
     void registerGameObject(GameObject* gameObject);
     void freeGameObject(GameObject* gameObject);
     void freeGameObject(const unsigned long* id);

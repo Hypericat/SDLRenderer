@@ -11,7 +11,7 @@ PlayerHair::PlayerHair(Scene* scene): GameObject(std::move(*Sprite::fromPNG("pla
     this->scene = scene;
 }
 
-void PlayerHair::preRender() {
+void PlayerHair::preRender(Game* game) {
     this->setY(scene->getPlayer()->getY() + yOffset);
     this->setX(scene->getPlayer()->getX() + xOffset);
 }

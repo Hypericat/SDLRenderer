@@ -23,6 +23,8 @@ public:
     void setIndex(int i);
     void reset();
     void free();
+    int getSize();
+    bool isLast() const;
 
     Animation* cpSetFlip(SDL_RendererFlip flip);
 

@@ -18,7 +18,7 @@ Game::Game(Window &window): m_window(window), m_keyInputHandler(window) {
 }
 
 void Game::run() {
-    this->loadScene(new Level());
+    this->loadScene(new TestScene(this));
 
     this->running = true;
 
@@ -165,6 +165,10 @@ void Game::freeGameObject(GameObject *gameObject) {
         }
     }
     delete ptr;
+}
+
+Scene* Game::getScene() {
+    return this->m_scene;
 }
 
 void Game::freeGameObject(const unsigned long* id) {

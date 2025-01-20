@@ -6,10 +6,9 @@
 #define TESTSCENE_H
 #include "../../Engine/Scene/Scene.h"
 
-
 class TestScene : public Scene {
 public:
-    TestScene() : Scene("Test Scene") {};
+    TestScene(Game* game) : Scene("Test Scene", game) {};
 
     // Gets called after the objects are loaded
     void initScene(Game* game) const override; // Remove this line if not needed
