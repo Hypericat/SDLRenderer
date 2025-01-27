@@ -100,7 +100,11 @@ void Renderer::renderGameObject(GameObject *gameObject) const {
     pos -= Vector2i(gameObject->getRenderWidth() >> 1, gameObject->getRenderHeight() >> 1);
     renderSprite(gameObject->getSprite(), pos.getX(), pos.getY(), gameObject->getRenderWidth(), gameObject->getRenderHeight());
 
+    //if (gameObject->getSprite()->getPath() == "C:\\Users\\Hypericats\\CLionProjects\\SDLRenderer\\cmake-build-debug\\assets\\textures\\player\\zappysmoke00.png")
+    //    std::cout << gameObject->getSprite()->getPath() << std::endl;
+
     gameObject->postRender(m_game);
+
 }
 
 void Renderer::renderCenteredSprite(const Sprite *sprite, int x, int y) const {

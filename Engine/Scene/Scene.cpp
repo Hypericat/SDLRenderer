@@ -72,8 +72,10 @@ void Scene::updateBackground(Game *game) {
     int finalY = camera->getY() / height * height;
     int finalX   = camera->getX() / width * width;
 
-    int xSign = m_player->getX() & SIGN_BIT_MASK | 1;
-    int ySign = m_player->getY() & SIGN_BIT_MASK | 1;
+
+
+    int xSign = game->getWindow().getCamera().getX() & SIGN_BIT_MASK | 1;
+    int ySign = game->getWindow().getCamera().getY() & SIGN_BIT_MASK | 1;
 
     // Set to -1 if -2147483647
     if (xSign & SIGN_BIT_MASK) {

@@ -163,21 +163,21 @@ void Player::jump() {
     }
     this->m_velocity.addY(JUMP_VEL);
 
-    GameObject* particles = new JumpParticles();
+    JumpParticles* particles = new JumpParticles();
     particles->setX(this->getX());
-    particles->setY(this->getY() - 30);
+    particles->setY(this->getY() - 50);
     this->m_game->getScene()->initGameObject(particles, m_game);
 
-    particles = new GameObject(*particles);
-    particles->addX(5);
-    particles->addY(2);
-    this->m_game->getScene()->initGameObject(particles, m_game);
-
-
-    particles = new GameObject(*particles);
-    particles->addX(-10);
-    particles->addY(-4);
-    this->m_game->getScene()->initGameObject(particles, m_game);
+    //particles = new JumpParticles(*particles);
+    //particles->addX(5);
+    //particles->addY(2);
+    //this->m_game->getScene()->initGameObject(particles, m_game);
+//
+//
+    //particles = new JumpParticles(*particles);
+    //particles->addX(-10);
+    //particles->addY(-4);
+    //this->m_game->getScene()->initGameObject(particles, m_game);
 
 }
 

@@ -119,7 +119,7 @@ SDL_Texture *Sprite::getTexture() const {
     return this->m_texture;
 }
 
-const std::string &Sprite::getPath() {
+const std::string &Sprite::getPath() const {
     return this->m_path;
 }
 

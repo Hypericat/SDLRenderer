@@ -245,6 +245,9 @@ SDL2_DIR:PATH=C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2
 //The directory containing a CMake configuration file for SDL2_image.
 SDL2_image_DIR:PATH=C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/cmake
 
+//The directory containing a CMake configuration file for SDL2_ttf.
+SDL2_ttf_DIR:PATH=C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_ttf/cmake
+
 //Value Computed by CMake
 SDLRenderer_BINARY_DIR:STATIC=C:/Users/Hypericats/CLionProjects/SDLRenderer/cmake-build-debug
 

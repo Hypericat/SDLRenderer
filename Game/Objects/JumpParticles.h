@@ -15,6 +15,7 @@ private:
 
 public:
     JumpParticles();
+    JumpParticles(const JumpParticles& jumpParticles);
     const Sprite* getSprite() override;
 
     void postRender(Game* game) override;

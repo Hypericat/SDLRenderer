@@ -16,6 +16,7 @@ private:
 
 public:
     Animation();
+    Animation(const Animation& animation);
     void addSprite(Sprite* sprite, int length);
     Sprite* nextSprite();
     Sprite* getSprite(int index) const;

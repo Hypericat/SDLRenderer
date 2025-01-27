@@ -40,7 +40,7 @@ public:
     inline static SDL_Renderer *renderer;
 
     SDL_Texture* getTexture() const;
-    const std::string& getPath();
+    const std::string& getPath() const;
 
     int getWidth() const;
     int getHeight() const;

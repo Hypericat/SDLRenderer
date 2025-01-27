@@ -4,6 +4,8 @@
 
 #include "Animation.h"
 
+#include <iostream>
+
 Animation::Animation() {
     m_index = 0;
 }
@@ -67,6 +69,27 @@ Animation* Animation::cpSetFlip(const SDL_RendererFlip flip) {
         lastSprite = sprite;
     }
     return animation;
+}
+
+// This does not work
+// PLEASE DO NOT USE THIS
+// IT CRASHES BECAUSE FOR SOME REASON THE SPRITES BECOME NULL
+Animation::Animation(const Animation &animation) {
+    this->m_index = 0;
+    Sprite* lastSprite = nullptr;
+    Sprite* newSprite = nullptr;
+    for (Sprite* sprite : animation.sprites) {
+        if (lastSprite == sprite && sprite != nullptr) {
+            this->addSprite(newSprite);
+            continue;
+        }
+        if (sprite == nullptr) {
+            std::cout << "NULL" << std::endl;
+            continue;
+        }
+        this->addSprite(Sprite::fromFullPNG(sprite->getPath()));
+        lastSprite = sprite;
+    }
 }
 
 void Animation::addSprite(Sprite *sprite) {

@@ -10,6 +10,7 @@
 #include <SDL_timer.h>
 
 #include "Scenes/Level.h"
+#include "Scenes/MainMenu.h"
 #include "Scenes/TestScene.h"
 
 Game::Game(Window &window): m_window(window), m_keyInputHandler(window) {
@@ -18,7 +19,7 @@ Game::Game(Window &window): m_window(window), m_keyInputHandler(window) {
 }
 
 void Game::run() {
-    this->loadScene(new TestScene(this));
+    this->loadScene(new MainMenu(this));
 
     this->running = true;
 
@@ -159,7 +160,7 @@ void Game::freeGameObject(GameObject *gameObject) {
 
     auto range = m_layerObjects.equal_range(gameObject->getLayer());
     for (auto it = range.first; it != range.second; ++it) {
-        if (it->second == gameObject) {
+        if (it->second->getId() == gameObject->getId()) {
             m_layerObjects.erase(it);
             break;
         }

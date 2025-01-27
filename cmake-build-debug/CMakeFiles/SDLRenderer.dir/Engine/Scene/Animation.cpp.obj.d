@@ -340,4 +340,7 @@ CMakeFiles/SDLRenderer.dir/Engine/Scene/Animation.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_misc.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_version.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/begin_code.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/close_code.h
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/close_code.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc

@@ -53,19 +53,22 @@ add_executable(SDLRenderer main.cpp
         Game/Scenes/MainMenu.h
         Game/Objects/JumpParticles.cpp
         Game/Objects/JumpParticles.h
+        Game/Objects/TextObject.cpp
+        Game/Objects/TextObject.h
 )
 
 set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/SDL2")
-
 find_package(SDL2 REQUIRED)
 
 set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/SDL2_image")
-
 find_package(SDL2_image REQUIRED SDL2_image>=2.0.0)
 
-include_directories(${SDL2_INCLUDE_DIRS} ${SDL2IMAGE_INCLUDE_DIRS})
+set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/SDL2_ttf")
+find_package(SDL2_ttf)
 
-target_link_libraries(SDLRenderer SDL2::SDL2 SDL2_image::SDL2_image)
+include_directories(${SDL2_INCLUDE_DIRS} ${SDL2IMAGE_INCLUDE_DIRS}, "SDL2_ttf/x86_64-w64-mingw32/include")
+
+target_link_libraries(SDLRenderer SDL2::SDL2 SDL2_image::SDL2_image SDL2_ttf::SDL2_ttf)
 
 
 # Removes terminal and adds static libraries for release

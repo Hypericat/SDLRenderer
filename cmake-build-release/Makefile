@@ -584,6 +584,30 @@ Game/Objects/SmallPlatform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/SmallPlatform.cpp.s
 .PHONY : Game/Objects/SmallPlatform.cpp.s
 
+Game/Objects/TextObject.obj: Game/Objects/TextObject.cpp.obj
+.PHONY : Game/Objects/TextObject.obj
+
+# target to build an object file
+Game/Objects/TextObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/TextObject.cpp.obj
+.PHONY : Game/Objects/TextObject.cpp.obj
+
+Game/Objects/TextObject.i: Game/Objects/TextObject.cpp.i
+.PHONY : Game/Objects/TextObject.i
+
+# target to preprocess a source file
+Game/Objects/TextObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/TextObject.cpp.i
+.PHONY : Game/Objects/TextObject.cpp.i
+
+Game/Objects/TextObject.s: Game/Objects/TextObject.cpp.s
+.PHONY : Game/Objects/TextObject.s
+
+# target to generate assembly for a file
+Game/Objects/TextObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/TextObject.cpp.s
+.PHONY : Game/Objects/TextObject.cpp.s
+
 Game/Objects/WallObject.obj: Game/Objects/WallObject.cpp.obj
 .PHONY : Game/Objects/WallObject.obj
 
@@ -770,6 +794,9 @@ help:
 	@echo ... Game/Objects/SmallPlatform.obj
 	@echo ... Game/Objects/SmallPlatform.i
 	@echo ... Game/Objects/SmallPlatform.s
+	@echo ... Game/Objects/TextObject.obj
+	@echo ... Game/Objects/TextObject.i
+	@echo ... Game/Objects/TextObject.s
 	@echo ... Game/Objects/WallObject.obj
 	@echo ... Game/Objects/WallObject.i
 	@echo ... Game/Objects/WallObject.s
