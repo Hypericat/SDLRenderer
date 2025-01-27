@@ -1,1 +1,1 @@
--isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem "C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2"
+-IC:/Users/Hypericats/CLionProjects/SDLRenderer/, -I"C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_ttf/x86_64-w64-mingw32/include" -isystem C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include -isystem "C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2" -isystem "C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_ttf/x86_64-w64-mingw32/include/SDL2"
