@@ -66,6 +66,6 @@ void TestScene::freeScene() {
     Scene::freeScene();
 }
 
-void TestScene::initScene(Game* game) const {
+void TestScene::initScene(Game* game) {
 
 }

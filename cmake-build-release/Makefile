@@ -464,6 +464,54 @@ Game/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Game.cpp.s
 .PHONY : Game/Game.cpp.s
 
+Game/Handlers/DecorationHandler.obj: Game/Handlers/DecorationHandler.cpp.obj
+.PHONY : Game/Handlers/DecorationHandler.obj
+
+# target to build an object file
+Game/Handlers/DecorationHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj
+.PHONY : Game/Handlers/DecorationHandler.cpp.obj
+
+Game/Handlers/DecorationHandler.i: Game/Handlers/DecorationHandler.cpp.i
+.PHONY : Game/Handlers/DecorationHandler.i
+
+# target to preprocess a source file
+Game/Handlers/DecorationHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.i
+.PHONY : Game/Handlers/DecorationHandler.cpp.i
+
+Game/Handlers/DecorationHandler.s: Game/Handlers/DecorationHandler.cpp.s
+.PHONY : Game/Handlers/DecorationHandler.s
+
+# target to generate assembly for a file
+Game/Handlers/DecorationHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.s
+.PHONY : Game/Handlers/DecorationHandler.cpp.s
+
+Game/Objects/Decoration.obj: Game/Objects/Decoration.cpp.obj
+.PHONY : Game/Objects/Decoration.obj
+
+# target to build an object file
+Game/Objects/Decoration.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/Decoration.cpp.obj
+.PHONY : Game/Objects/Decoration.cpp.obj
+
+Game/Objects/Decoration.i: Game/Objects/Decoration.cpp.i
+.PHONY : Game/Objects/Decoration.i
+
+# target to preprocess a source file
+Game/Objects/Decoration.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/Decoration.cpp.i
+.PHONY : Game/Objects/Decoration.cpp.i
+
+Game/Objects/Decoration.s: Game/Objects/Decoration.cpp.s
+.PHONY : Game/Objects/Decoration.s
+
+# target to generate assembly for a file
+Game/Objects/Decoration.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/Decoration.cpp.s
+.PHONY : Game/Objects/Decoration.cpp.s
+
 Game/Objects/JumpParticles.obj: Game/Objects/JumpParticles.cpp.obj
 .PHONY : Game/Objects/JumpParticles.obj
 
@@ -803,6 +851,12 @@ help:
 	@echo ... Game/Game.obj
 	@echo ... Game/Game.i
 	@echo ... Game/Game.s
+	@echo ... Game/Handlers/DecorationHandler.obj
+	@echo ... Game/Handlers/DecorationHandler.i
+	@echo ... Game/Handlers/DecorationHandler.s
+	@echo ... Game/Objects/Decoration.obj
+	@echo ... Game/Objects/Decoration.i
+	@echo ... Game/Objects/Decoration.s
 	@echo ... Game/Objects/JumpParticles.obj
 	@echo ... Game/Objects/JumpParticles.i
 	@echo ... Game/Objects/JumpParticles.s

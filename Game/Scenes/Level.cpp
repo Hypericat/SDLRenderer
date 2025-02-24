@@ -9,7 +9,7 @@
 #include "../Objects/SmallPlatform.h"
 #include "../Objects/Spike.h"
 
-void Level::initScene(Game *game) const {
+void Level::initScene(Game *game) {
     Scene::initScene(game);
 }
 

@@ -22,6 +22,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Util.cpp" "CMakeFiles/SDLRenderer.dir/Engine/Util.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/Util.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Window.cpp" "CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Game.cpp" "CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj.d"
+  "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Handlers/DecorationHandler.cpp" "CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj.d"
+  "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Decoration.cpp" "CMakeFiles/SDLRenderer.dir/Game/Objects/Decoration.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Objects/Decoration.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/JumpParticles.cpp" "CMakeFiles/SDLRenderer.dir/Game/Objects/JumpParticles.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Objects/JumpParticles.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/MediumPlatform.cpp" "CMakeFiles/SDLRenderer.dir/Game/Objects/MediumPlatform.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Objects/MediumPlatform.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Player.cpp" "CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj.d"

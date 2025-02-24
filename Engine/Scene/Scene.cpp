@@ -13,8 +13,8 @@ Scene::Scene(const std::string& name, Game* game) {
     this->m_game = game;
 }
 
-void Scene::initScene(Game* game) const {
-
+void Scene::initScene(Game* game) {
+    this->m_decorationHandler = new DecorationHandler(game, this);
 }
 
 void Scene::initGameObject(GameObject *gameObject, Game* game) {
@@ -55,10 +55,20 @@ void Scene::freeScene() {
     }
 
     this->m_gameObjects.clear();
+    delete this->m_decorationHandler;
 }
 
 Player* Scene::getPlayer() {
     return this->m_player;
+}
+
+void Scene::updateDecorations(Game* game) {
+
+}
+
+void Scene::onRender(Game* game) {
+    this->updateBackground(game);
+    this->updateDecorations(game);
 }
 
 void Scene::updateBackground(Game *game) {
@@ -98,6 +108,10 @@ void Scene::updateBackground(Game *game) {
 
     this->backgrounds.at(3)->setX(finalX + width * xSign);
     this->backgrounds.at(3)->setY(finalY + height * ySign);
+}
+
+DecorationHandler* Scene::getDecorationHandler() const {
+    return this->m_decorationHandler;
 }
 
 void Scene::populateBackground(GameObject *bg) {

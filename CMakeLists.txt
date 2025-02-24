@@ -57,6 +57,10 @@ add_executable(SDLRenderer main.cpp
         Game/Objects/TextObject.h
         Game/Objects/Spike.cpp
         Game/Objects/Spike.h
+        Game/Objects/Decoration.cpp
+        Game/Objects/Decoration.h
+        Game/Handlers/DecorationHandler.cpp
+        Game/Handlers/DecorationHandler.h
 )
 
 set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/SDL2")

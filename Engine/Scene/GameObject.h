@@ -20,11 +20,13 @@ private:
     float m_collisionScale = 1.0F;
     float m_renderScale = 1.0F;
     int m_layer = 0;
-    Box m_boundingBox;
     unsigned long id;
     bool m_drawHitbox = false;
     bool m_registered = false;
     bool m_collideable = false;
+
+protected:
+    Box m_boundingBox;
 
 public:
     explicit GameObject(Sprite&& sprite);

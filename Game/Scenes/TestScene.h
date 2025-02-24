@@ -11,7 +11,7 @@ public:
     TestScene(Game* game) : Scene("Test Scene", game) {};
 
     // Gets called after the objects are loaded
-    void initScene(Game* game) const override; // Remove this line if not needed
+    void initScene(Game* game) override; // Remove this line if not needed
     void loadGameObjects(Game* game) override;
 
     void initCamera(Camera* camera) override; // Remove this line to use default implementation

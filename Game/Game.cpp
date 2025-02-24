@@ -125,7 +125,7 @@ void Game::updatePhysics() {
 void Game::renderFrame() {
     this->m_window.getRenderer().initRender();
 
-    this->m_scene->updateBackground(this);
+    this->m_scene->onRender(this);
     for (GameObject* bg : this->m_scene->getBackgrounds()) {
         this->m_window.getRenderer().renderGameObject(bg);
     }
