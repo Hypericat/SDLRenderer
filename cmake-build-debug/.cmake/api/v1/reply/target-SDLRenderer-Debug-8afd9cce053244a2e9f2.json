@@ -59,26 +59,26 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/Hypericats/CLionProjects/SDLRenderer/,"
+					"path" : "C:/Users/Loikd/CLionProjects/SDLRenderer/,"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_ttf/x86_64-w64-mingw32/include"
+					"path" : "C:/Users/Loikd/CLionProjects/SDLRenderer/SDL2_ttf/x86_64-w64-mingw32/include"
 				},
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include"
+					"path" : "C:/Users/Loikd/CLionProjects/SDLRenderer/SDL2/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2"
+					"path" : "C:/Users/Loikd/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_ttf/x86_64-w64-mingw32/include/SDL2"
+					"path" : "C:/Users/Loikd/CLionProjects/SDLRenderer/SDL2_ttf/x86_64-w64-mingw32/include/SDL2"
 				}
 			],
 			"language" : "CXX",
@@ -136,17 +136,17 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\Hypericats\\CLionProjects\\SDLRenderer\\SDL2\\lib\\x64\\SDL2.lib",
+				"fragment" : "C:\\Users\\Loikd\\CLionProjects\\SDLRenderer\\SDL2\\lib\\x64\\SDL2.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\Hypericats\\CLionProjects\\SDLRenderer\\SDL2_image\\x86_64-w64-mingw32\\lib\\libSDL2_image.dll.a",
+				"fragment" : "C:\\Users\\Loikd\\CLionProjects\\SDLRenderer\\SDL2_image\\x86_64-w64-mingw32\\lib\\libSDL2_image.dll.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\Hypericats\\CLionProjects\\SDLRenderer\\SDL2_ttf\\x86_64-w64-mingw32\\lib\\libSDL2_ttf.dll.a",
+				"fragment" : "C:\\Users\\Loikd\\CLionProjects\\SDLRenderer\\SDL2_ttf\\x86_64-w64-mingw32\\lib\\libSDL2_ttf.dll.a",
 				"role" : "libraries"
 			},
 			{

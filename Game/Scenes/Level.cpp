@@ -29,8 +29,7 @@ void Level::loadGameObjects(Game *game) {
     medium->setY(100);
     initGameObject(medium, game);
 
-    Sprite spikeSprite = std::move(*Sprite::fromPNG("spike.png"));
-    Spike* spike = new Spike(std::move(spikeSprite), 200, 250);
+    Spike* spike = new Spike(400, 250);
     initGameObject(spike, game);
 
 
@@ -39,18 +38,29 @@ void Level::loadGameObjects(Game *game) {
 
     for (int i = 0; i < 100; i++) {
         WallObject* wall;
+
         if (rand() & 1) {
             wall = new SmallPlatform();
         } else {
             wall = new MediumPlatform();
             lastX -= 100;
         }
+
         lastX -= 400 + rand() % 200;
         lastY += 100 + rand() % 300 - 250;
+
         wall->setX(lastX);
         wall->setY(lastY);
         initGameObject(wall, game);
+
+        if (rand() % 10 < 3) {
+            Spike* spike = new Spike(lastX + rand() % 150 - 75, lastY - 50);
+            initGameObject(spike, game);
+        }
     }
+
+
+
 
 
     this->m_player = new Player(game);

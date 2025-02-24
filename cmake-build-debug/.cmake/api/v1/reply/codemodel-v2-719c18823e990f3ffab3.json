@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SDLRenderer::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SDLRenderer-Debug-6de1405551663c44b9a1.json",
+					"jsonFile" : "target-SDLRenderer-Debug-8afd9cce053244a2e9f2.json",
 					"name" : "SDLRenderer",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Hypericats/CLionProjects/SDLRenderer/cmake-build-debug",
-		"source" : "C:/Users/Hypericats/CLionProjects/SDLRenderer"
+		"build" : "C:/Users/Loikd/CLionProjects/SDLRenderer/cmake-build-debug",
+		"source" : "C:/Users/Loikd/CLionProjects/SDLRenderer"
 	},
 	"version" : 
 	{

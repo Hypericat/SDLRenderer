@@ -209,8 +209,8 @@ void Player::setFacingDirection(const FacingDirection::ENUM direction) {
 
 void Player::die() {
     // reset the player position
-    setX(50); // Spawn X
-    setY(50); // Spawn Y
+    setX(50);
+    setY(50);
 
     // add lives, a game-over state, or animations here
 }
