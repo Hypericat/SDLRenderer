@@ -27,6 +27,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Player.cpp" "CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/PlayerHair.cpp" "CMakeFiles/SDLRenderer.dir/Game/Objects/PlayerHair.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Objects/PlayerHair.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/SmallPlatform.cpp" "CMakeFiles/SDLRenderer.dir/Game/Objects/SmallPlatform.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Objects/SmallPlatform.cpp.obj.d"
+  "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Spike.cpp" "CMakeFiles/SDLRenderer.dir/Game/Objects/Spike.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Objects/Spike.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/TextObject.cpp" "CMakeFiles/SDLRenderer.dir/Game/Objects/TextObject.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Objects/TextObject.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/WallObject.cpp" "CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj.d"
   "C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Scenes/Level.cpp" "CMakeFiles/SDLRenderer.dir/Game/Scenes/Level.cpp.obj" "gcc" "CMakeFiles/SDLRenderer.dir/Game/Scenes/Level.cpp.obj.d"

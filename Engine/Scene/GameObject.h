@@ -45,6 +45,8 @@ public:
     void addY(int y);
     void addX(int x);
 
+    virtual void onCollision(GameObject* other, const Direction::ENUM& dir);
+
     int getCollisionWidth() const;
     int getCollisionHeight() const;
 

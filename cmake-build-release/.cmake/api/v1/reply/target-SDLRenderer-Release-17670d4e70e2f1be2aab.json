@@ -14,6 +14,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"target_link_options",
 			"target_link_libraries",
 			"include_directories"
 		],
@@ -35,11 +36,17 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 73,
+				"line" : 79,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
+				"file" : 0,
+				"line" : 73,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
 				"file" : 0,
 				"line" : 71,
 				"parent" : 0
@@ -52,33 +59,33 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++20 -fdiagnostics-color=always"
+					"fragment" : " -static-libstdc++ -static-libgcc -O3 -O3 -DNDEBUG -std=gnu++20 -fdiagnostics-color=always"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
-					"path" : "C:/Users/Loikd/CLionProjects/SDLRenderer/,"
+					"backtrace" : 4,
+					"path" : "C:/Users/Hypericats/CLionProjects/SDLRenderer/,"
 				},
 				{
-					"backtrace" : 3,
-					"path" : "C:/Users/Loikd/CLionProjects/SDLRenderer/SDL2_ttf/x86_64-w64-mingw32/include"
+					"backtrace" : 4,
+					"path" : "C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_ttf/x86_64-w64-mingw32/include"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include"
 				},
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "C:/Users/Loikd/CLionProjects/SDLRenderer/SDL2/include"
+					"path" : "C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "C:/Users/Loikd/CLionProjects/SDLRenderer/SDL2_image/x86_64-w64-mingw32/include/SDL2"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
-					"path" : "C:/Users/Loikd/CLionProjects/SDLRenderer/SDL2_ttf/x86_64-w64-mingw32/include/SDL2"
+					"path" : "C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2_ttf/x86_64-w64-mingw32/include/SDL2"
 				}
 			],
 			"language" : "CXX",
@@ -127,7 +134,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-static-libstdc++ -static-libgcc -O3 -O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -136,17 +143,22 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\Loikd\\CLionProjects\\SDLRenderer\\SDL2\\lib\\x64\\SDL2.lib",
+				"fragment" : "-mwindows",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "C:\\Users\\Hypericats\\CLionProjects\\SDLRenderer\\SDL2\\lib\\x64\\SDL2.lib",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
-				"fragment" : "C:\\Users\\Loikd\\CLionProjects\\SDLRenderer\\SDL2_image\\x86_64-w64-mingw32\\lib\\libSDL2_image.dll.a",
+				"backtrace" : 3,
+				"fragment" : "C:\\Users\\Hypericats\\CLionProjects\\SDLRenderer\\SDL2_image\\x86_64-w64-mingw32\\lib\\libSDL2_image.dll.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
-				"fragment" : "C:\\Users\\Loikd\\CLionProjects\\SDLRenderer\\SDL2_ttf\\x86_64-w64-mingw32\\lib\\libSDL2_ttf.dll.a",
+				"backtrace" : 3,
+				"fragment" : "C:\\Users\\Hypericats\\CLionProjects\\SDLRenderer\\SDL2_ttf\\x86_64-w64-mingw32\\lib\\libSDL2_ttf.dll.a",
 				"role" : "libraries"
 			},
 			{

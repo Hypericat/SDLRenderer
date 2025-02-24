@@ -37,6 +37,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDLRenderer.dir/Game/Objects/PlayerHair.cpp.obj.d"
   "CMakeFiles/SDLRenderer.dir/Game/Objects/SmallPlatform.cpp.obj"
   "CMakeFiles/SDLRenderer.dir/Game/Objects/SmallPlatform.cpp.obj.d"
+  "CMakeFiles/SDLRenderer.dir/Game/Objects/Spike.cpp.obj"
+  "CMakeFiles/SDLRenderer.dir/Game/Objects/Spike.cpp.obj.d"
   "CMakeFiles/SDLRenderer.dir/Game/Objects/TextObject.cpp.obj"
   "CMakeFiles/SDLRenderer.dir/Game/Objects/TextObject.cpp.obj.d"
   "CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj"

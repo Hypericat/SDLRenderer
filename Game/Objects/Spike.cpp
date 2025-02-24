@@ -1,4 +1,7 @@
 #include "Spike.h"
+
+#include <iostream>
+
 #include "Player.h" // Assuming there's a Player class
 
 Spike::Spike(Sprite&& sprite, int x, int y)
@@ -8,8 +11,6 @@ Spike::Spike(Sprite&& sprite, int x, int y)
     setCollideable(true);
 }
 
-void Spike::onCollision(GameObject* other) {
-    if (auto player = dynamic_cast<Player*>(other)) {
-        player->die(); // Call death function
-    }
+void Spike::onCollision(GameObject* other, const Direction::ENUM& dir) {
+
 }

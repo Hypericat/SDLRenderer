@@ -62,8 +62,8 @@ Player::Player(Game* game) : GameObject(std::move(*Sprite::fromPNG("player\\idle
 
 }
 
-\
-void Player::collideWith(GameObject *other, const Direction::ENUM& dir) {
+
+void Player::onCollision(GameObject *other, const Direction::ENUM& dir) {
     Direction::ENUM cpy = dir;
     Direction::negate(cpy);
     Vector2i otherBoxOutline = other->getBoundingBox().getDirPos(cpy);

@@ -24,6 +24,11 @@ GameObject::GameObject(const GameObject &gameObject) : m_sprite(Sprite(gameObjec
     this->m_y = gameObject.getY();
 }
 
+
+void GameObject::onCollision(GameObject* other, const Direction::ENUM& dir) {
+    // Empty boilerplate
+}
+
 const Sprite* GameObject::getSprite() {
     return &this->m_sprite;
 }

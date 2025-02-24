@@ -584,6 +584,30 @@ Game/Objects/SmallPlatform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/SmallPlatform.cpp.s
 .PHONY : Game/Objects/SmallPlatform.cpp.s
 
+Game/Objects/Spike.obj: Game/Objects/Spike.cpp.obj
+.PHONY : Game/Objects/Spike.obj
+
+# target to build an object file
+Game/Objects/Spike.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/Spike.cpp.obj
+.PHONY : Game/Objects/Spike.cpp.obj
+
+Game/Objects/Spike.i: Game/Objects/Spike.cpp.i
+.PHONY : Game/Objects/Spike.i
+
+# target to preprocess a source file
+Game/Objects/Spike.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/Spike.cpp.i
+.PHONY : Game/Objects/Spike.cpp.i
+
+Game/Objects/Spike.s: Game/Objects/Spike.cpp.s
+.PHONY : Game/Objects/Spike.s
+
+# target to generate assembly for a file
+Game/Objects/Spike.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLRenderer.dir\build.make CMakeFiles/SDLRenderer.dir/Game/Objects/Spike.cpp.s
+.PHONY : Game/Objects/Spike.cpp.s
+
 Game/Objects/TextObject.obj: Game/Objects/TextObject.cpp.obj
 .PHONY : Game/Objects/TextObject.obj
 
@@ -794,6 +818,9 @@ help:
 	@echo ... Game/Objects/SmallPlatform.obj
 	@echo ... Game/Objects/SmallPlatform.i
 	@echo ... Game/Objects/SmallPlatform.s
+	@echo ... Game/Objects/Spike.obj
+	@echo ... Game/Objects/Spike.i
+	@echo ... Game/Objects/Spike.s
 	@echo ... Game/Objects/TextObject.obj
 	@echo ... Game/Objects/TextObject.i
 	@echo ... Game/Objects/TextObject.s

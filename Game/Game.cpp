@@ -101,7 +101,9 @@ void Game::updatePhysics() {
     for (const std::pair<int, GameObject*> pair : m_layerObjects) {
         if (pair.second->isCollideable() && pair.second->getId() != player->getId()) {
             if (Direction::ENUM dir = pair.second->getBoundingBox().testCollision(player->getBoundingBox()); dir != Direction::NONE) {
-                player->collideWith(pair.second, dir);
+                // Both player & object will receive the collide event
+                player->onCollision(pair.second, dir);
+                pair.second->onCollision(player, dir);
                 player->updateBoundingBox();
                 if (dir == Direction::DOWN) {
                     playerCollidedDown = true;
