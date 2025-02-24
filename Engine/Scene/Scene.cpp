@@ -14,7 +14,7 @@ Scene::Scene(const std::string& name, Game* game) {
 }
 
 void Scene::initScene(Game* game) {
-    this->m_decorationHandler = new DecorationHandler(game, this);
+    this->m_decorationHandler = new DecorationHandler(game, this, 3);
 }
 
 void Scene::initGameObject(GameObject *gameObject, Game* game) {
@@ -63,7 +63,7 @@ Player* Scene::getPlayer() {
 }
 
 void Scene::updateDecorations(Game* game) {
-
+    this->m_decorationHandler->updateDecorations(game, this);
 }
 
 void Scene::onRender(Game* game) {

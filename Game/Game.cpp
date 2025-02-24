@@ -131,6 +131,8 @@ void Game::renderFrame() {
     }
     // Render GameObjects
     for (const std::pair<int, GameObject*> pair : m_layerObjects) {
+        if (!pair.second->isVisible()) continue;
+
         this->m_window.getRenderer().renderGameObject(pair.second);
         if (pair.second->shouldDrawHitbox())
             this->m_window.getRenderer().drawBox(pair.second->getBoundingBox());

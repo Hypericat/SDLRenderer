@@ -24,6 +24,7 @@ private:
     bool m_drawHitbox = false;
     bool m_registered = false;
     bool m_collideable = false;
+    bool m_visible = true;
 
 protected:
     Box m_boundingBox;
@@ -32,8 +33,6 @@ public:
     explicit GameObject(Sprite&& sprite);
     GameObject(const GameObject& gameObject);
     GameObject(Sprite&& sprite, int width, int height);
-
-    GameObject();
 
     virtual ~GameObject();
 
@@ -69,6 +68,9 @@ public:
 
     const Box& getBoundingBox();
     virtual void updateBoundingBox();
+
+    bool isVisible();
+    void setVisible(bool visible);
 
     Vector2i getPos() const;
 

@@ -386,13 +386,17 @@ CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Camera.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Handlers/DecorationHandler.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Decoration.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Player.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/FacingDirection.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/PlayerState.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Input/KeyInputHandler.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2f.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/Animation.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \

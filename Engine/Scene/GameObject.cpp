@@ -24,6 +24,14 @@ GameObject::GameObject(const GameObject &gameObject) : m_sprite(Sprite(gameObjec
     this->m_y = gameObject.getY();
 }
 
+bool GameObject::isVisible() {
+    return this->m_visible;
+}
+
+void GameObject::setVisible(bool visible) {
+    this->m_visible = visible;
+}
+
 
 void GameObject::onCollision(GameObject* other, const Direction::ENUM& dir) {
     // Empty boilerplate
