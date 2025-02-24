@@ -5,7 +5,7 @@ Spike::Spike(Sprite&& sprite, int x, int y)
     : GameObject(std::move(sprite), sprite.getWidth(), sprite.getHeight()) {
     setX(x);
     setY(y);
-    setCollideable(true); // Ensure it interacts with other objects
+    setCollideable(true);
 }
 
 void Spike::onCollision(GameObject* other) {
