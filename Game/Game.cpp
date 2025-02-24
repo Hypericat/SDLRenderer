@@ -19,7 +19,7 @@ Game::Game(Window &window): m_window(window), m_keyInputHandler(window) {
 }
 
 void Game::run() {
-    this->loadScene(new MainMenu(this));
+    this->loadScene(new Level(this));
 
     this->running = true;
 

@@ -7,6 +7,7 @@
 #include "../Objects/MediumPlatform.h"
 #include "../Objects/PlayerHair.h"
 #include "../Objects/SmallPlatform.h"
+#include "../Objects/Spike.h"
 
 void Level::initScene(Game *game) const {
     Scene::initScene(game);
@@ -27,6 +28,10 @@ void Level::loadGameObjects(Game *game) {
     medium->setX(350);
     medium->setY(100);
     initGameObject(medium, game);
+
+    Sprite spikeSprite = std::move(*Sprite::fromPNG("spike.png"));
+    Spike* spike = new Spike(std::move(spikeSprite), 200, 250);
+    initGameObject(spike, game);
 
 
     int lastX = -500;

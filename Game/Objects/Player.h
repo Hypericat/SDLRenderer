@@ -34,6 +34,11 @@ public:
 
     FacingDirection::ENUM getFacingDirection() const;
     void setFacingDirection(FacingDirection::ENUM direction);
+    Player(Sprite&& sprite, int x, int y);
+
+    void die(); // Death function
+
+
 
 private:
     Game* m_game;

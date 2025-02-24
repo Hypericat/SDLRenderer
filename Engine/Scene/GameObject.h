@@ -15,7 +15,7 @@ private:
     Sprite m_sprite;
     int m_x = 0;
     int m_y = 0;
-    int m_width;
+    int m_width = 0;
     int m_height;
     float m_collisionScale = 1.0F;
     float m_renderScale = 1.0F;
@@ -30,6 +30,8 @@ public:
     explicit GameObject(Sprite&& sprite);
     GameObject(const GameObject& gameObject);
     GameObject(Sprite&& sprite, int width, int height);
+
+    GameObject();
 
     virtual ~GameObject();
 

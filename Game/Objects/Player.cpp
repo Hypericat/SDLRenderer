@@ -207,6 +207,14 @@ void Player::setFacingDirection(const FacingDirection::ENUM direction) {
     this->m_facingDirection = direction;
 }
 
+void Player::die() {
+    // reset the player position
+    setX(50); // Spawn X
+    setY(50); // Spawn Y
+
+    // add lives, a game-over state, or animations here
+}
+
 void Player::registerAnimation(FacingDirection::ENUM direction, PlayerState::ENUM state, Animation *animation) {
     this->m_animations.emplace(static_cast<int>(direction) << 16 | static_cast<int>(state), animation);
 }
