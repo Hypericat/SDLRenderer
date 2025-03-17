@@ -22,7 +22,7 @@ protected:
     std::string m_name;
 
     virtual void updateBackground(Game* game);
-    virtual void updateDecorations(Game* game);
+    virtual void updateDecorations(Game* game, int x, int y, int width, int height, int xSign, int ySign);
 
 public:
     virtual ~Scene() = default;

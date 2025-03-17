@@ -533,6 +533,29 @@ CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2f.cpp.obj: C:/Users/Hypericats/CLi
   C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h
 
 CMakeFiles/SDLRenderer.dir/Engine/Math/Vector2i.cpp.obj: C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.cpp \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/errno.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/limits.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2f.h \
   C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h
 
@@ -614,7 +637,6 @@ CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj: C:/Users/Hypericats/CLionPro
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -655,7 +677,6 @@ CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj: C:/Users/Hypericats/CLionPro
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_numeric.h \
@@ -704,7 +725,6 @@ CMakeFiles/SDLRenderer.dir/Engine/Renderer.cpp.obj: C:/Users/Hypericats/CLionPro
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -1357,7 +1377,6 @@ CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObject.cpp.obj: C:/Users/Hypericats/
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -1396,7 +1415,6 @@ CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObject.cpp.obj: C:/Users/Hypericats/
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -1440,7 +1458,6 @@ CMakeFiles/SDLRenderer.dir/Engine/Scene/GameObject.cpp.obj: C:/Users/Hypericats/
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -1748,7 +1765,6 @@ CMakeFiles/SDLRenderer.dir/Engine/Scene/Scene.cpp.obj: C:/Users/Hypericats/CLion
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -1787,7 +1803,6 @@ CMakeFiles/SDLRenderer.dir/Engine/Scene/Scene.cpp.obj: C:/Users/Hypericats/CLion
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -1833,7 +1848,6 @@ CMakeFiles/SDLRenderer.dir/Engine/Scene/Scene.cpp.obj: C:/Users/Hypericats/CLion
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -2568,7 +2582,6 @@ CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj: C:/Users/Hypericats/CLionProje
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -2607,7 +2620,6 @@ CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj: C:/Users/Hypericats/CLionProje
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -2653,7 +2665,6 @@ CMakeFiles/SDLRenderer.dir/Engine/Window.cpp.obj: C:/Users/Hypericats/CLionProje
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -2966,7 +2977,6 @@ CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj: C:/Users/Hypericats/CLionProjects/
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
@@ -3013,7 +3023,6 @@ CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj: C:/Users/Hypericats/CLionProjects/
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -3066,7 +3075,6 @@ CMakeFiles/SDLRenderer.dir/Game/Game.cpp.obj: C:/Users/Hypericats/CLionProjects/
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
@@ -3379,8 +3387,8 @@ CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj: C:/Users/Hyp
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -3419,7 +3427,6 @@ CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj: C:/Users/Hyp
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -3462,8 +3469,9 @@ CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj: C:/Users/Hyp
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
+  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -4105,7 +4113,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/JumpParticles.cpp.obj: C:/Users/Hyperica
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -4144,7 +4151,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/JumpParticles.cpp.obj: C:/Users/Hyperica
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -4190,7 +4196,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/JumpParticles.cpp.obj: C:/Users/Hyperica
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -4493,7 +4498,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/MediumPlatform.cpp.obj: C:/Users/Hyperic
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -4532,7 +4536,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/MediumPlatform.cpp.obj: C:/Users/Hyperic
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -4576,7 +4579,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/MediumPlatform.cpp.obj: C:/Users/Hyperic
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -4881,7 +4883,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj: C:/Users/Hypericats/CLio
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -4920,7 +4921,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj: C:/Users/Hypericats/CLio
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -4966,7 +4966,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/Player.cpp.obj: C:/Users/Hypericats/CLio
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -5271,7 +5270,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/PlayerHair.cpp.obj: C:/Users/Hypericats/
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -5310,7 +5308,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/PlayerHair.cpp.obj: C:/Users/Hypericats/
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
@@ -5351,7 +5348,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/PlayerHair.cpp.obj: C:/Users/Hypericats/
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
@@ -5652,7 +5648,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/SmallPlatform.cpp.obj: C:/Users/Hyperica
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -5691,7 +5686,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/SmallPlatform.cpp.obj: C:/Users/Hyperica
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -5735,7 +5729,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/SmallPlatform.cpp.obj: C:/Users/Hyperica
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -6759,7 +6752,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj: C:/Users/Hypericats/
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -6798,7 +6790,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj: C:/Users/Hypericats/
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -6842,7 +6833,6 @@ CMakeFiles/SDLRenderer.dir/Game/Objects/WallObject.cpp.obj: C:/Users/Hypericats/
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -7145,7 +7135,6 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/Level.cpp.obj: C:/Users/Hypericats/CLionP
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -7184,7 +7173,6 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/Level.cpp.obj: C:/Users/Hypericats/CLionP
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -7228,7 +7216,6 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/Level.cpp.obj: C:/Users/Hypericats/CLionP
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -7537,7 +7524,6 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/MainMenu.cpp.obj: C:/Users/Hypericats/CLi
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -7576,7 +7562,6 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/MainMenu.cpp.obj: C:/Users/Hypericats/CLi
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -7622,7 +7607,6 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/MainMenu.cpp.obj: C:/Users/Hypericats/CLi
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -7930,7 +7914,6 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj: C:/Users/Hypericats/CL
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -7969,7 +7952,6 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj: C:/Users/Hypericats/CL
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -8015,7 +7997,6 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj: C:/Users/Hypericats/CL
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -8323,7 +8304,6 @@ CMakeFiles/SDLRenderer.dir/main.cpp.obj: C:/Users/Hypericats/CLionProjects/SDLRe
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/iterator_concepts.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
@@ -8362,7 +8342,6 @@ CMakeFiles/SDLRenderer.dir/main.cpp.obj: C:/Users/Hypericats/CLionProjects/SDLRe
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
@@ -8408,7 +8387,6 @@ CMakeFiles/SDLRenderer.dir/main.cpp.obj: C:/Users/Hypericats/CLionProjects/SDLRe
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
-  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
@@ -9482,15 +9460,7 @@ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2f.cpp:
 
 C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.cpp:
 
-C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc:
-
 C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h:
-
-C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array:
-
-C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Util.cpp:
-
-C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h:
 
@@ -9501,8 +9471,6 @@ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Users/Hypericats/CLionProjects/SDLRenderer/main.cpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint:
-
-C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map:
 
@@ -9523,6 +9491,10 @@ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObjectDispatcher.
 C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/Scene.cpp:
 
 C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Sprite.cpp:
+
+C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array:
+
+C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Util.cpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h:
 

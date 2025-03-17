@@ -38,6 +38,8 @@ public:
     Vector2i& operator*=(const Vector2i& vec);
     Vector2i& operator/=(const Vector2i& vec);
 
+    int seed() const;
+
     void div(int divisor);
 
     void setY(int y);

@@ -3,6 +3,9 @@
 //
 
 #include "Vector2i.h"
+
+#include <stdlib.h>
+
 #include "Vector2f.h"
 
 
@@ -101,6 +104,10 @@ Vector2i& Vector2i::operator=(const Vector2i &vec) {
 void Vector2i::div(const int divisor) {
     this->m_x /= divisor;
     this->m_y /= divisor;
+}
+
+int Vector2i::seed() const {
+    return m_x ^ m_y;
 }
 
 Vector2i::Vector2i(const Vector2f *vec2f) : Vector2i(vec2f->getX(), vec2f->getY()) {

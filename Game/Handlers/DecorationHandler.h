@@ -4,7 +4,8 @@
 
 #ifndef DECORATIONHANDLER_H
 #define DECORATIONHANDLER_H
-#include <list>
+
+#include <vector>
 
 #include "../Objects/Decoration.h"
 
@@ -14,10 +15,12 @@ class Scene;
 
 class DecorationHandler {
 private:
-    std::list<Decoration*> m_decorations;
+    int m_decorationIndex = 0;
+    std::pmr::vector<Decoration*> m_decorations;
+    void decorate(const Vector2i* chunk, int width, int height);
 public:
     DecorationHandler(Game* game, Scene* scene, int count);
-    void updateDecorations(Game* game, Scene* scene);
+    void updateDecorations(Game* game, Scene* scene, int x, int y, int width, int height);
 };
 
 

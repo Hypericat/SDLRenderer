@@ -62,13 +62,12 @@ Player* Scene::getPlayer() {
     return this->m_player;
 }
 
-void Scene::updateDecorations(Game* game) {
-    this->m_decorationHandler->updateDecorations(game, this);
+void Scene::updateDecorations(Game* game, int x, int y, int width, int height, int xSign, int ySign) {
+    this->m_decorationHandler->updateDecorations(game, this, x, y, width * xSign, height * ySign);
 }
 
 void Scene::onRender(Game* game) {
     this->updateBackground(game);
-    this->updateDecorations(game);
 }
 
 void Scene::updateBackground(Game *game) {
@@ -81,8 +80,6 @@ void Scene::updateBackground(Game *game) {
     // This rounds it down, it's not completely useless
     int finalY = camera->getY() / height * height;
     int finalX   = camera->getX() / width * width;
-
-
 
     int xSign = game->getWindow().getCamera().getX() & SIGN_BIT_MASK | 1;
     int ySign = game->getWindow().getCamera().getY() & SIGN_BIT_MASK | 1;
@@ -108,6 +105,8 @@ void Scene::updateBackground(Game *game) {
 
     this->backgrounds.at(3)->setX(finalX + width * xSign);
     this->backgrounds.at(3)->setY(finalY + height * ySign);
+
+    this->updateDecorations(game, finalX, finalX, width, height, xSign, ySign);
 }
 
 DecorationHandler* Scene::getDecorationHandler() const {
