@@ -21,6 +21,11 @@ Sprite* Animation::nextSprite() {
     return sprites.at(m_index++);
 }
 
+Sprite* Animation::nextSprite(int &index) const {
+    if (index >= sprites.size()) index = 0;
+    return sprites.at(index++);
+}
+
 Sprite* Animation::getSprite(int index) const {
     if (index >= sprites.size()) index = 0;
     return sprites.at(index);

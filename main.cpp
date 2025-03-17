@@ -5,6 +5,7 @@
 
 #include "Game/Game.h"
 #include "Engine/Window.h"
+#include "Game/Objects/Spike.h"
 
 static const std::string WINDOW_TITLE = "Mighty Triangle";
 
@@ -15,6 +16,11 @@ int main(int argc, char *argv[]) {
 
     Game game = Game(window);
     window.initWindow(WINDOW_TITLE, SDL_WINDOW_RESIZABLE | SDL_WINDOW_SHOWN, &game);
+
+    // Init
+    Spike::initAnimation();
+
+
     game.run();
 
     window.destroyWindow();

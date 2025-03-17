@@ -19,13 +19,14 @@ public:
     Animation(const Animation& animation);
     void addSprite(Sprite* sprite, int length);
     Sprite* nextSprite();
-    Sprite* getSprite(int index) const;
-    int getIndex() const;
+    Sprite* nextSprite(int &index) const;
+    [[nodiscard]] Sprite* getSprite(int index) const;
+    [[nodiscard]] int getIndex() const;
     void setIndex(int i);
     void reset();
     void free();
     int getSize();
-    bool isLast() const;
+    [[nodiscard]] bool isLast() const;
 
     Animation* cpSetFlip(SDL_RendererFlip flip);
 

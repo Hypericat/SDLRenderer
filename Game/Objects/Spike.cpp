@@ -4,15 +4,28 @@
 
 #include "Player.h" // Assuming there's a Player class
 
-Spike::Spike(int x, int y) : GameObject(std::move(*Sprite::fromPNG("spike.png"))) {
+Spike::Spike(int x, int y) : GameObject(std::move(*Sprite::fromPNG("spike\\sprite_00.png"))) {
     setX(x);
     setY(y);
     this->setDrawHitbox(true);
     this->setCollideable(true);
-    this->setCollisionScale(0.3F);
-    this->setRenderScale(0.5f);
+    this->setCollisionScale(3.5f);
+    this->setRenderScale(5.0f);
     this->setLayer(800);
+}
 
+const Sprite* Spike::getSprite() {
+    return m_animation->nextSprite(this->m_animationIndex);
+}
+
+void Spike::onCollision(GameObject* other, const Direction::ENUM& dir) {
+    Player* player = dynamic_cast<Player*>(other);
+    if (player) {
+        player->die();
+    }
+}
+
+void Spike::initAnimation() {
     int frameLength = 8;
     m_animation = new Animation();
 
@@ -30,15 +43,4 @@ Spike::Spike(int x, int y) : GameObject(std::move(*Sprite::fromPNG("spike.png"))
     m_animation->addSprite(Sprite::fromPNG("spike\\sprite_12.png"), frameLength);
     m_animation->addSprite(Sprite::fromPNG("spike\\sprite_13.png"), frameLength);
     m_animation->addSprite(Sprite::fromPNG("spike\\sprite_14.png"), frameLength);
-}
-
-const Sprite* Spike::getSprite() {
-    return this->m_animation->nextSprite();
-}
-
-void Spike::onCollision(GameObject* other, const Direction::ENUM& dir) {
-    Player* player = dynamic_cast<Player*>(other);
-    if (player) {
-        player->die();
-    }
 }

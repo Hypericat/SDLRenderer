@@ -7,12 +7,15 @@
 class Spike : public GameObject {
 
 private:
-    Animation* m_animation;
+    static inline Animation* m_animation;
+    int m_animationIndex = 0;
 
 public:
     Spike(int x, int y);
     void onCollision(GameObject* other, const Direction::ENUM& dir) override;
     const Sprite* getSprite() override;
+
+    static void initAnimation();
 
 };
 
