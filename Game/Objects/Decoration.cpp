@@ -7,5 +7,6 @@
 Decoration::Decoration() : GameObject(std::move(*Sprite::fromPNG("goldblock.png"))) {
     this->setCollideable(false);
     this->setRenderScale(5);
+    this->setLayer(120);
     this->setVisible(false);
 }

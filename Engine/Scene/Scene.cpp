@@ -116,6 +116,7 @@ DecorationHandler* Scene::getDecorationHandler() const {
 void Scene::populateBackground(GameObject *bg) {
     bg->setX(0);
     bg->setY(0);
+    bg->setLayer(100);
     this->backgrounds.reserve(4);
     this->backgrounds.push_back(bg);
     this->backgrounds.push_back(new GameObject(*bg));

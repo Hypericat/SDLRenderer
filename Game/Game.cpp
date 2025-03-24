@@ -136,6 +136,12 @@ void Game::renderFrame() {
         this->m_window.getRenderer().renderGameObject(pair.second);
         if (pair.second->shouldDrawHitbox())
             this->m_window.getRenderer().drawBox(pair.second->getBoundingBox());
+
+
+
+        if(!pair.second->isCollideable()) {
+            this->m_window.getRenderer().drawLine(pair.second->getPos(), this->getScene()->getPlayer()->getBoundingBox().getCenter());
+        }
     }
     //this->window.getRenderer().testRender();
     this->m_window.getRenderer().render();

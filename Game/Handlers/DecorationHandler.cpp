@@ -9,14 +9,16 @@
 #include "../Game.h"
 
 DecorationHandler::DecorationHandler(Game* game, Scene* scene, int count) {
-    m_decorations.resize(count);
+    this->m_game = game;
+    m_decorations.reserve(count);
     for (int i = 0; i < count; i++) {
-        m_decorations.push_back(new Decoration());
+        Decoration* decoration = new Decoration();;
+        m_decorations.push_back(decoration);
+        scene->initGameObject(decoration, game);
     }
 }
 
 void DecorationHandler::updateDecorations(Game* game, Scene* scene, int x, int y, int width, int height) {
-    if (true) return;
 
     this->m_decorationIndex = 0;
     decorate(new Vector2i(x, y), width, height);
@@ -40,15 +42,26 @@ void DecorationHandler::decorate(const Vector2i* chunk, int width, int height) {
     int xOffset = rand() %  width;
     int yOffset = rand() % height;
 
-    std::cout << "Width : " << width << ", offset : " << xOffset << std::endl;
-
     Decoration* decoration = this->m_decorations.at(m_decorationIndex++);
+
+    //std::cout << "Showing object at " << chunk->getX() + xOffset << " : " << chunk->getY() + yOffset << std::endl;
+
+    if (decoration == nullptr) std::cout << "NULL" << std::endl;
+
+    m_game->getWindow().getRenderer().drawLine(m_game->getScene()->getPlayer()->getPos(), Vector2i(chunk->getX() + xOffset, chunk->getY() + yOffset));
 
     decoration->setX(chunk->getX() + xOffset);// Crashing here because the pointer is null
     decoration->setY(chunk->getY() + yOffset);
     decoration->setVisible(true);
 
     delete chunk;
+}
+
+void DecorationHandler::free() {
+    for (int i = 0; i < m_decorations.size(); i++) {
+        delete m_decorations.at(i);
+    }
+    m_decorations.clear();
 }
 
 
