@@ -14,7 +14,7 @@ Scene::Scene(const std::string& name, Game* game) {
 }
 
 void Scene::initScene(Game* game) {
-    this->m_decorationHandler = new DecorationHandler(game, this, 3);
+    this->m_decorationHandler = new DecorationHandler(game, this, 4);
 }
 
 void Scene::initGameObject(GameObject *gameObject, Game* game) {
@@ -79,7 +79,7 @@ void Scene::updateBackground(Game *game) {
 
     // This rounds it down, it's not completely useless
     int finalY = camera->getY() / height * height;
-    int finalX   = camera->getX() / width * width;
+    int finalX = camera->getX() / width * width;
 
     int xSign = game->getWindow().getCamera().getX() & SIGN_BIT_MASK | 1;
     int ySign = game->getWindow().getCamera().getY() & SIGN_BIT_MASK | 1;
@@ -106,7 +106,7 @@ void Scene::updateBackground(Game *game) {
     this->backgrounds.at(3)->setX(finalX + width * xSign);
     this->backgrounds.at(3)->setY(finalY + height * ySign);
 
-    this->updateDecorations(game, finalX, finalX, width, height, xSign, ySign);
+    this->updateDecorations(game, finalX, finalY, width, height, xSign, ySign);
 }
 
 DecorationHandler* Scene::getDecorationHandler() const {

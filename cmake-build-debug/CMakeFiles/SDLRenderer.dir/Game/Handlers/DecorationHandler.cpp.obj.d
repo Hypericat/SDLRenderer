@@ -69,6 +69,34 @@ CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_base.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/max_size_type.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numbers \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/math.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/errno.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/gamma.tcc \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/special_function_util.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/bessel_function.tcc \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/beta_function.tcc \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/ell_integral.tcc \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/exp_integral.tcc \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/hypergeometric.tcc \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/legendre_function.tcc \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/modified_bessel_func.tcc \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_hermite.tcc \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_laguerre.tcc \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/riemann_zeta.tcc \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Decoration.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Sprite.h \
@@ -87,7 +115,6 @@ CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/_mingw_stat64.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
@@ -111,13 +138,9 @@ CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/errno.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/process.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/limits.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/signal.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/time.h \
@@ -137,12 +160,6 @@ CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
@@ -371,22 +388,6 @@ CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Sprite.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Input/KeyInputHandler.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/math.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/gamma.tcc \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/special_function_util.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/bessel_function.tcc \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/beta_function.tcc \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/ell_integral.tcc \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/exp_integral.tcc \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/hypergeometric.tcc \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/legendre_function.tcc \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/modified_bessel_func.tcc \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_hermite.tcc \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_laguerre.tcc \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/riemann_zeta.tcc \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Window.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/Scene.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \

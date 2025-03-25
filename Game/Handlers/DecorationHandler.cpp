@@ -19,38 +19,37 @@ DecorationHandler::DecorationHandler(Game* game, Scene* scene, int count) {
 }
 
 void DecorationHandler::updateDecorations(Game* game, Scene* scene, int x, int y, int width, int height) {
-
     this->m_decorationIndex = 0;
     decorate(new Vector2i(x, y), width, height);
     decorate(new Vector2i((x + width), y), width, height);
     decorate(new Vector2i(x, (y + height)), width, height);
     decorate(new Vector2i((x + width), (y + height)), width, height);
-
-
-
-    //Vector2i cameraPos = camera.getPos();
 }
 
 void DecorationHandler::decorate(const Vector2i* chunk, int width, int height) {
     if (this->m_decorationIndex >= this->m_decorations.size()) return;
 
+    //Decoration* dec = this->m_decorations.at(m_decorationIndex++);
+    //dec->setX(chunk->getX());// Crashing here because the pointer is null
+    //dec->setY(chunk->getY());
+    //dec->setVisible(true);
+    //delete chunk;
+    //return;
+
     srand(chunk->seed());
+
+
 
     // Returns true half the time
     // It should?
-    if (rand() & 1) return;
-    int xOffset = rand() %  width;
+    //if (rand() & 1) return;
+    int xOffset = rand() % width;
     int yOffset = rand() % height;
 
     Decoration* decoration = this->m_decorations.at(m_decorationIndex++);
 
     //std::cout << "Showing object at " << chunk->getX() + xOffset << " : " << chunk->getY() + yOffset << std::endl;
-
-    if (decoration == nullptr) std::cout << "NULL" << std::endl;
-
-    m_game->getWindow().getRenderer().drawLine(m_game->getScene()->getPlayer()->getPos(), Vector2i(chunk->getX() + xOffset, chunk->getY() + yOffset));
-
-    decoration->setX(chunk->getX() + xOffset);// Crashing here because the pointer is null
+    decoration->setX(chunk->getX() + xOffset);
     decoration->setY(chunk->getY() + yOffset);
     decoration->setVisible(true);
 

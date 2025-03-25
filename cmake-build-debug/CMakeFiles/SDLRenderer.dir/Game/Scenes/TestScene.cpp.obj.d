@@ -350,12 +350,6 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Camera.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Handlers/DecorationHandler.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Decoration.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Player.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/FacingDirection.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/PlayerState.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Input/KeyInputHandler.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/x86_64-w64-mingw32/include/math.h \
@@ -373,6 +367,13 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_hermite.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_laguerre.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/riemann_zeta.tcc \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Decoration.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Player.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/FacingDirection.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/PlayerState.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Input/KeyInputHandler.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Window.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_video.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Camera.h \

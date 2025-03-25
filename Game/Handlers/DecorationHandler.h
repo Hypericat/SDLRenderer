@@ -6,6 +6,7 @@
 #define DECORATIONHANDLER_H
 
 #include <vector>
+#include <Math.h>
 
 #include "../Objects/Decoration.h"
 
