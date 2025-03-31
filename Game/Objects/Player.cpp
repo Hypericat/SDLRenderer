@@ -10,52 +10,56 @@
 #include "../Game.h"
 #include "../../Engine/Util.h"
 
-Player::Player(Game* game) : GameObject(std::move(*Sprite::fromPNG("player\\idle00.png")), 13, 18) {
-    this->setCollisionScale(6.0F);
-    this->setRenderScale(8.0f);
+Player::Player(Game* game) : GameObject(std::move(*Sprite::fromPNG("player\\Idle\\Idle0.png")), 18, 26) {
+    this->setCollisionScale(3.0F);
+    this->setRenderScale(6.0f);
     this->setLayer(1000);
 
     this->m_game = game;
 
-    int frameLength = 5;
+    int frameLength = 8;
     Animation *animation = new Animation();
 
-    animation->addSprite(Sprite::fromPNG("player\\idle00.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle01.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle02.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle03.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle04.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle05.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle06.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle07.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\idle08.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Idle\\Idle0.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Idle\\Idle1.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Idle\\Idle2.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Idle\\Idle3.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Idle\\Idle4.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Idle\\Idle5.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Idle\\Idle6.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Idle\\Idle7.png"), frameLength);
     registerAnimation(FacingDirection::RIGHT, PlayerState::IDLE, animation);
     registerAnimation(FacingDirection::LEFT, PlayerState::IDLE, animation->cpSetFlip(SDL_FLIP_HORIZONTAL));
 
     animation = new Animation();
-    animation->addSprite(Sprite::fromPNG("player\\runFast00.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast01.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast02.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast03.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast04.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast05.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast06.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast07.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast08.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast09.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast10.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\runFast11.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Walk\\Walk0.png"), 4);
+    animation->addSprite(Sprite::fromPNG("player\\Walk\\Walk1.png"), 4);
+    animation->addSprite(Sprite::fromPNG("player\\Walk\\Walk2.png"), 4);
+    animation->addSprite(Sprite::fromPNG("player\\Walk\\Walk3.png"), 4);
+    animation->addSprite(Sprite::fromPNG("player\\Walk\\Walk4.png"), 4);
+    animation->addSprite(Sprite::fromPNG("player\\Walk\\Walk5.png"), 4);
+    animation->addSprite(Sprite::fromPNG("player\\Walk\\Walk6.png"), 4);
+    animation->addSprite(Sprite::fromPNG("player\\Walk\\Walk7.png"), 4);
     registerAnimation(FacingDirection::RIGHT, PlayerState::RUNNING, animation);
     registerAnimation(FacingDirection::LEFT, PlayerState::RUNNING, animation->cpSetFlip(SDL_FLIP_HORIZONTAL));
 
 
     animation = new Animation();
-    animation->addSprite(Sprite::fromPNG("player\\jumpFast00.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\jumpFast01.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\jumpFast02.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\jumpFast03.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Jump\\Jump00.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Jump\\Jump01.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Jump\\Jump02.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Jump\\Jump03.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Jump\\Jump04.png"), frameLength);
     registerAnimation(FacingDirection::RIGHT, PlayerState::JUMPING, animation);
     registerAnimation(FacingDirection::LEFT, PlayerState::JUMPING, animation->cpSetFlip(SDL_FLIP_HORIZONTAL));
+
+    animation = new Animation();
+    animation->addSprite(Sprite::fromPNG("player\\Fall\\Down0.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Fall\\Down1.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Fall\\Down2.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\Fall\\Down3.png"), frameLength);
+    registerAnimation(FacingDirection::RIGHT, PlayerState::FALLING, animation);
+    registerAnimation(FacingDirection::LEFT, PlayerState::FALLING, animation->cpSetFlip(SDL_FLIP_HORIZONTAL));
 
 
 
@@ -146,7 +150,12 @@ void Player::updateControls(const KeyInputHandler& inputHandler, Game* game) {
     }
 
     if (!moved && this->isOnGround()) this->setPlayerState(PlayerState::IDLE);
-    if (!m_onGround) this->setPlayerState(PlayerState::JUMPING);
+    if (!m_onGround) {
+        if (this->m_velocity.getY() > 0)
+            this->setPlayerState(PlayerState::JUMPING);
+        else
+            this->setPlayerState(PlayerState::FALLING);
+    }
 }
 
 void Player::setOnGround(const bool bl) {
@@ -188,7 +197,7 @@ const Sprite* Player::getSprite() {
 }
 
 void Player::applyTextureYOffset(Vector2i& vec) {
-    vec.setY(this->getBoundingBox().getMin().getY() + 16 * this->getRenderScale());
+    vec.setY(this->getBoundingBox().getMin().getY() + 10 * this->getRenderScale());
 }
 
 PlayerState::ENUM Player::getPlayerState() const {

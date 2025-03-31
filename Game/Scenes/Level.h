@@ -10,8 +10,11 @@
 class Scene;
 
 class Level : public Scene {
+private:
+    std::vector<GameObject*> gameObjects;
+
 public:
-    Level(Game* game) : Scene("Level the first", game) {};
+    Level(Game* game) : Scene("Level", game) {};
 
     // Gets called after the objects are loaded
     void initScene(Game* game) override; // Remove this line if not needed

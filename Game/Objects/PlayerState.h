@@ -11,6 +11,8 @@ public:
     enum ENUM {
         JUMPING,
         IDLE,
-        RUNNING
+        RUNNING,
+        NUDE,
+        FALLING
     };
 };

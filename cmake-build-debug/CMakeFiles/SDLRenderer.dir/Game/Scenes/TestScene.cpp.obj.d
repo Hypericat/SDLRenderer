@@ -368,6 +368,7 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_laguerre.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/riemann_zeta.tcc \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Decoration.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/Animation.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Player.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/FacingDirection.h \
@@ -388,7 +389,6 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/TestScene.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Sprite.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2f.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/Animation.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \

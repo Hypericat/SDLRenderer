@@ -19,6 +19,7 @@ int main(int argc, char *argv[]) {
 
     // Init
     Spike::initAnimation();
+    Decoration::init();
 
 
     game.run();

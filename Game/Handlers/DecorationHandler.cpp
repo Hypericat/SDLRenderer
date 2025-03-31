@@ -47,6 +47,7 @@ void DecorationHandler::decorate(const Vector2i* chunk, int width, int height) {
     int yOffset = rand() % height;
 
     Decoration* decoration = this->m_decorations.at(m_decorationIndex++);
+    decoration->random();
 
     //std::cout << "Showing object at " << chunk->getX() + xOffset << " : " << chunk->getY() + yOffset << std::endl;
     decoration->setX(chunk->getX() + xOffset);

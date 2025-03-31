@@ -27,6 +27,8 @@ void Level::loadGameObjects(Game *game) {
     MediumPlatform* medium = new MediumPlatform();
     medium->setX(350);
     medium->setY(100);
+    medium->setCollisionScale(40);
+    medium->setRenderScale(40);
     initGameObject(medium, game);
 
     Spike* spike = new Spike(400, 250);
@@ -60,14 +62,12 @@ void Level::loadGameObjects(Game *game) {
     }
 
 
-
-
-
     this->m_player = new Player(game);
     this->m_player->setY(300);
     this->m_player->setDrawHitbox(true);
     initGameObject(m_player, game);
-
-    PlayerHair* hair = new PlayerHair(this);
-    initGameObject(hair, game);
 }
+
+
+
+

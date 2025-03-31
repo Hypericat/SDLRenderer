@@ -98,7 +98,7 @@ CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_laguerre.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/riemann_zeta.tcc \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/Decoration.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/Animation.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Sprite.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
@@ -360,6 +360,7 @@ CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/SDL_version.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/begin_code.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/SDL2/include/close_code.h \
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/GameObject.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Box.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Direction.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2i.h \
@@ -397,5 +398,4 @@ CMakeFiles/SDLRenderer.dir/Game/Handlers/DecorationHandler.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/FacingDirection.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/PlayerState.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Input/KeyInputHandler.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2f.h \
- C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Scene/Animation.h
+ C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2f.h
