@@ -20,6 +20,7 @@ int main(int argc, char *argv[]) {
     // Init
     Spike::initAnimation();
     Decoration::init();
+    Animation::game = &game;
 
 
     game.run();

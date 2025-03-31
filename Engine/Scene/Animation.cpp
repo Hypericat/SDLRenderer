@@ -6,8 +6,16 @@
 
 #include <iostream>
 
+#include "../../Game/Game.h"
+
+
 Animation::Animation() {
     m_index = 0;
+
+}
+
+Animation::Animation(int type) {
+    this->secretType = type;
 }
 
 void Animation::addSprite(Sprite *sprite, const int length) {
@@ -33,6 +41,9 @@ Sprite* Animation::getSprite(int index) const {
 
 void Animation::reset() {
     this->m_index = 0;
+    if (this->secretType == 1) {
+        game->getScene()->getPlayer()->attemptPants();
+    }
 }
 
 int Animation::getIndex() const {
@@ -81,6 +92,7 @@ Animation* Animation::cpSetFlip(const SDL_RendererFlip flip) {
 // IT CRASHES BECAUSE FOR SOME REASON THE SPRITES BECOME NULL
 Animation::Animation(const Animation &animation) {
     this->m_index = 0;
+    this->secretType = animation.secretType;
     Sprite* lastSprite = nullptr;
     Sprite* newSprite = nullptr;
     for (Sprite* sprite : animation.sprites) {

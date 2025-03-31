@@ -9,13 +9,17 @@
 #include "../Sprite.h"
 
 
+class Game;
 class Animation {
 private:
     std::vector<Sprite*> sprites;
     int m_index;
+    int secretType = 0;
 
 public:
+    static inline Game* game;
     Animation();
+    Animation(int type);
     Animation(const Animation& animation);
     void addSprite(Sprite* sprite, int length);
     Sprite* nextSprite();

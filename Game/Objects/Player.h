@@ -38,6 +38,7 @@ public:
     Player(Sprite&& sprite, int x, int y);
 
     void die(); // Death function
+    void attemptPants();
 
 
 
@@ -48,6 +49,8 @@ private:
 
     FacingDirection::ENUM m_facingDirection = FacingDirection::RIGHT;;
     PlayerState::ENUM m_playerState = PlayerState::IDLE;
+
+    bool pantsDone() const;
 
     static inline const float GRAVITY = 0.981F;
     static inline const float MAX_GRAVITY = 20.0F;

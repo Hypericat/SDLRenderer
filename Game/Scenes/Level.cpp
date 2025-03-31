@@ -68,6 +68,22 @@ void Level::loadGameObjects(Game *game) {
     initGameObject(m_player, game);
 }
 
+void Level::updateLevel(Game *game) {
+
+}
+
+bool Level::isInScreen(const Box &box, Camera &camera) {
+    //Box(camera.getX(), camera.getY(),)
+}
+
+bool Level::isInScreen(GameObject *gameObject, Camera &camera) {
+    return this->isInScreen(gameObject->getBoundingBox(), camera);
+}
+
+void updateLevel(Game* game) {
+
+}
+
 
 
 

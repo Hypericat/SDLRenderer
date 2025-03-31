@@ -396,6 +396,9 @@ CMakeFiles/SDLRenderer.dir/Game/Scenes/Level.cpp.obj: \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/PlayerState.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Input/KeyInputHandler.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Engine/Math/Vector2f.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/MediumPlatform.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Objects/WallObject.h \
  C:/Users/Hypericats/CLionProjects/SDLRenderer/Game/Game.h \
