@@ -62,54 +62,54 @@ Player::Player(Game* game) : GameObject(std::move(*Sprite::fromPNG("player\\Idle
     registerAnimation(FacingDirection::LEFT, PlayerState::FALLING, animation->cpSetFlip(SDL_FLIP_HORIZONTAL));
 
     animation = new Animation();
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants00.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants01.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants02.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants03.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants04.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants05.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants06.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants07.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants08.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants09.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants10.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants11.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants12.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants13.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants14.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants15.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants16.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants17.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants18.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants19.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants20.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants21.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants22.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants23.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants24.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants25.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants26.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants27.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants28.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants29.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants30.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants31.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants32.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants33.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants34.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants35.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants36.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants37.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants38.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants39.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants40.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants41.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants42.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants43.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants44.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants45.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants46.png"), frameLength);
-    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants47.png"), frameLength);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants00.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants01.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants02.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants03.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants04.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants05.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants06.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants07.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants08.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants09.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants10.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants11.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants12.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants13.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants14.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants15.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants16.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants17.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants18.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants19.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants20.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants21.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants22.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants23.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants24.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants25.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants26.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants27.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants28.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants29.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants30.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants31.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants32.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants33.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants34.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants35.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants36.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants37.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants38.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants39.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants40.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants41.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants42.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants43.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants44.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants45.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants46.png"), 6);
+    animation->addSprite(Sprite::fromPNG("player\\IdlePants\\pants47.png"), 6);
     registerAnimation(FacingDirection::RIGHT, PlayerState::NUDE, animation);
     registerAnimation(FacingDirection::LEFT, PlayerState::NUDE, animation->cpSetFlip(SDL_FLIP_HORIZONTAL));
 }
@@ -197,7 +197,10 @@ void Player::updateControls(const KeyInputHandler& inputHandler, Game* game) {
         this->jump();
     }
 
-    if (!moved && this->isOnGround() && pantsDone()) this->setPlayerState(PlayerState::IDLE);
+    if (!moved && this->isOnGround() && pantsDone()) {
+        this->setPlayerState(PlayerState::IDLE);
+    }
+
     if (!m_onGround) {
         if (this->m_velocity.getY() > 0)
             this->setPlayerState(PlayerState::JUMPING);
@@ -266,8 +269,11 @@ void Player::setFacingDirection(const FacingDirection::ENUM direction) {
 
 
 void Player::attemptPants() {
-    //if (rand() % 16 == 0)
+    srand((unsigned)time(0));
+    if (rand() % 8 == 0) {
         this->m_playerState = PlayerState::NUDE;
+    }
+
 }
 
 void Player::die() {
@@ -282,7 +288,10 @@ bool Player::pantsDone() const {
     if (this->m_playerState != PlayerState::NUDE) return true;
     Animation *animation = m_animations.at(static_cast<int>(m_facingDirection) << 16 | static_cast<int>(m_playerState));
     if (animation == nullptr) return true;
-    if (animation->getIndex() >= animation->getSize() - 1) return true;
+    if (animation->getIndex() >= animation->getSize() - 1) {
+        animation->reset();
+        return true;
+    }
     return false;
 }
 
